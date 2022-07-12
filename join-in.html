@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         body,
         h1,
@@ -84,7 +84,7 @@
             </a>
             <a href="/index.html#home" class="w3-bar-item w3-button">HOME</a>
             <a href="/index.html#about" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
-            <a href="/index.html#action" class="w3-bar-item w3-button w3-hide-small">ACTION</a>
+            <a href="/index.html#preaction" class="w3-bar-item w3-button w3-hide-small">ACTION</a>
             <a href="/join-in.html" class="w3-bar-item w3-button w3-hide-small">JOIN-IN</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -94,7 +94,7 @@
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="/index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="/index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
             <a href="#joinin" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN-IN</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
             <a href="#" class="w3-bar-item w3-button">SEARCH</a>
@@ -169,8 +169,6 @@
 
     </div>
 
-
-
     <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
@@ -178,45 +176,19 @@
         </div>
     </div>
 
-
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
-        <h3 class="w3-center">Contact <strong>I &hearts; Bethnal Green</strong></h3>
-        <p class="w3-center w3-padding-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please join and contact us via our <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook group</a>.</em></p>
-
-        <div class="w3-hide w3-row w3-padding-32 w3-section">
-            <div class="w3-col m8 w3-panel">
-                <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-                </div>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-                </form>
-            </div>
-        </div>
+        <h3 class="w3-center">Contact <strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong></h3>
+        <p class="w3-center w3-padding-large  w3-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please contact us via <a href="mailto:lovebethnalgreen@gmail" class="w3-hover-text-green">email</a> and/or join our <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook group</a>.</em>
+        </p>
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
-            <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-            <i class="w3-hide fa fa-instagram w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-snapchat w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-twitter w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-linkedin w3-hover-opacity"></i>
+            <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title="Facebook" target="_blank" class="w3-hover-text-green w3-margin-right"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
+            <a href="mailto:lovebethnalgreen@gmail" class="w3-hover-text-green" title="email" target="_blank"><i class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
         </div>
         <p>Powered by <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank" class="w3-hover-text-green">Tower Hamlet Residents</a></p>
     </footer>

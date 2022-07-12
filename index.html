@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         body,
         h1,
@@ -84,7 +84,7 @@
             </a>
             <a href="#home" class="w3-bar-item w3-button">HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
-            <a href="#action" class="w3-bar-item w3-button w3-hide-small">ACTION</a>
+            <a href="#preaction" class="w3-bar-item w3-button w3-hide-small">ACTION</a>
             <a href="/join-in.html" class="w3-bar-item w3-button w3-hide-small">JOIN-IN</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -94,8 +94,8 @@
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#action" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
-            <a href="#joinin" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN-IN</a>
+            <a href="#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
+            <a href="/join-in.html#joinin" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN-IN</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
             <a href="#" class="w3-bar-item w3-button">SEARCH</a>
         </div>
@@ -109,6 +109,9 @@
         </div>
         <div class="w3-display-middle w3-animate-fading" style="white-space:nowrap;">
             <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">Save our safer streets</div>
+        </div>
+        <div class="w3-display-bottommiddle w3-margin-bottom w3-xlarge w3-black w3-opacity">
+            <a href="#preaction" class="w3-bar-item w3-button">Take me to the action <i class="fa-solid fa-hand-back-point-down"></i></a>
         </div>
     </div>
 
@@ -128,7 +131,7 @@
             <span class="w3-xlarge"> </span><br>
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">300+</span><br> Followers
+            <span class="w3-xlarge">145+</span><br> Followers
         </div>
         <div class="w3-quarter w3-section">
             <span class="w3-xlarge">55+</span><br> Petition signees
@@ -139,32 +142,38 @@
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="bgimg-2 w3-display-container w3-opacity-min" id="preaction">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">ACTION</span>
         </div>
     </div>
 
     <!-- Container (Action Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="action">
-        <h3 class="w3-center">ACTION POINT</h3>
-        <p class="w3-center w3-hide"><em>We have one immeditate action point:</em></p><br>
-
-        <div class="w3-hide"><strong>Sign this online petition</strong> -- We want as many people to sign this petition to show the Tower Hamlets Council lots of people want the Liveable Streets programme to continue.</div>
-        <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-            <p><strong>Complete the Tower Hamlets Council survey by 31 July</strong></p>
-
-            <p>If you were sent a consultation pack this week make sure you use the code that was included in it.</p>
-            <p>You can send a response either via post or complete the survey
-                <a href="https://talk.towerhamlets.gov.uk/LSBethnalGreen">online</a> (there are two surveys, one for <a href="https://talk.towerhamlets.gov.uk/lsbethnalgreen/survey_tools/weavers-consultation1">Weavers</a> and one for <a href="https://talk.towerhamlets.gov.uk/lsbethnalgreen/survey_tools/obgr-consultation11">Old Bethnal Green Road</a>).</p>
+    <div class="w3-content w3-container w3-margin-top" id="action">
+        <div class="w3-row">
+            <h3 class="w3-center">ACTION POINT</h3>
         </div>
+        <div class="w3-row">
+            <div class="w3-col s1 m2 w3-container"></div>
 
-        <p class="w3-padding-large w3-large">The only way we are going to build a cleaner and safer environment in Bethnal Green is to show how many of us want this. Please take this one action!</p>
-        <p class="w3-padding-large w3-large">In addition, please consider <a href="mailto:mayor@towerhamlets.gov.uk?subject=Support for liveable Streets&body=Dear Lutfur Rahman, I am campaigning to keep and improve the Liveable Streets programme.">writing to the Tower Hamlets Mayor</a> and
-            your <a href="https://democracy.towerhamlets.gov.uk/mgMemberIndex.aspx?bcr=1" target="_blank">local councillors</a>. Also let your friends and neighbours know what is going on and if they don't want Liveable Streets to be reversed, ask them
-            to complete the consultation too.
-        </p>
+            <div class="w3-col s10 m8 w3-panel w3-pale-red">
+                <h3 class="w3-xlarge">Complete the Tower Hamlets Council survey by 31 July!</h3>
+                <p class="w3-large">If you were sent a consultation pack this week make sure you use the code that was included in it.</p>
+                <p class="w3-large">You can send a response either via post or complete the survey
+                    <a href="https://talk.towerhamlets.gov.uk/LSBethnalGreen">online</a> (there are two surveys, one for <a href="https://talk.towerhamlets.gov.uk/lsbethnalgreen/survey_tools/weavers-consultation1">Weavers</a> and one for <a href="https://talk.towerhamlets.gov.uk/lsbethnalgreen/survey_tools/obgr-consultation11">Old Bethnal Green Road</a>).</p>
+
+            </div>
+            <div class="w3-col s1 m2 w3-container"></div>
+        </div>
+        <div class="w3-row">
+            <p class="w3-large">The only way we are going to build a cleaner and safer environment in Bethnal Green is to show how many of us want this. Please take this one action!</p>
+            <p class="w3-large">In addition, please consider <a href="mailto:mayor@towerhamlets.gov.uk?subject=Support for liveable Streets&body=Dear Lutfur Rahman, I am campaigning to keep and improve the Liveable Streets programme.">writing to the Tower Hamlets Mayor</a>                and your
+                <a href="https://democracy.towerhamlets.gov.uk/mgMemberIndex.aspx?bcr=1" target="_blank">local councillors</a>. Also let your friends and neighbours know what is going on and if they don't want Liveable Streets to be reversed, ask them
+                to complete the consultation too.
+            </p>
+        </div>
     </div>
+
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -187,41 +196,14 @@
         <h3 class="w3-center">Contact <strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong></h3>
         <p class="w3-center w3-padding-large  w3-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please contact us via <a href="mailto:lovebethnalgreen@gmail" class="w3-hover-text-green">email</a> and/or join our <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook group</a>.</em>
         </p>
-
-        <div class="w3-hide w3-row w3-padding-32 w3-section">
-            <div class="w3-col m8 w3-panel">
-                <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-                </div>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-                </form>
-            </div>
-        </div>
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
-            <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-            <a href="mailto:lovebethnalgreen@gmail" class="w3-hover-text-green" target="_blank"><i class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
-            <i class="w3-hide fa fa-instagram w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-snapchat w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-twitter w3-hover-opacity"></i>
-            <i class="w3-hide fa fa-linkedin w3-hover-opacity"></i>
+            <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title="Facebook" target="_blank" class="w3-hover-text-green w3-margin-right"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
+            <a href="mailto:lovebethnalgreen@gmail" class="w3-hover-text-green" title="email" target="_blank"><i class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
         </div>
         <p>Powered by <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank" class="w3-hover-text-green">Tower Hamlet Residents</a></p>
     </footer>
