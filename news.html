@@ -62,6 +62,29 @@
         .w3-hover-opacity {
             cursor: pointer;
         }
+        
+        .sticker {
+            width: 150px;
+            height: 150px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            color: #fff;
+            line-height: 300px;
+            text-align: center;
+            background: black;
+            display: inline-block;
+            margin-top: -30%;
+            line-height: 32px;
+            font-size: 1.9rem;
+            font-weight: 700;
+            transform: rotate(20deg);
+        }
+        
+        .sticker:hover {
+            background: rgb(213, 23, 28);
+            transform: rotate(0deg);
+        }
         /* Turn off parallax scrolling for tablets and phones */
         
         @media only screen and (max-device-width: 1600px) {
@@ -116,15 +139,29 @@
 
         <h2 class="w3-text-black w3-margin-left">NEWS</h2>
 
+        <!-- Post #4 -->
+        <div class="w3-row w3-margin w3-padding-32" id="play">
+            <div class="w3-panel w3-container w3-card-2 w3-margin-bottom">
+                <div class="w3-col s12">
+                    <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
+                    <h3 class="w3-xlarge w3-text-black">Let's Play! - Sunday 17th</h3>
+                </div>
+                <div class="w3-col s12 w3-medium w3-center">
+                    <img src="media/lets_play.jpeg" alt="Let's play poster" class="w3-image w3-margin" style="width: 80%;">
+                    <p>We're running "Let's Play", a childen's event to enjoy the Middleton Pocket Park, on 11:15-12:00 Sunday 17th.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Post #3 -->
-        <div class="w3-row w3-margin w3-padding-32">
-            <div class="w3-container w3-card-2 w3-margin-bottom">
+        <div class="w3-row w3-margin w3-padding-32 w3-hide">
+            <div class="w3-panel w3-container w3-card-2 w3-margin-bottom">
                 <div class="w3-col s12">
                     <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
                     <h3 class="w3-xlarge w3-text-black">We need move forward as a community</h3>
                 </div>
                 <div class="w3-col s12 w3-medium">
-                    <img src="media/resident_02.jpeg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image w3-margin w3-hide-small" style="float: right; width: 50%">
+                    <img src="media/resident_02.jpeg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image w3-margin w3-padding-8 w3-hide-small" style="float: right; width: 50%">
                     <p>Mehraj Alam, 45, who lives on Teesdale Street and runs a local business, has come to appreciate the changes to Old Bethnal Green Road.</p>
                     <blockquote>"I was livid when they first introduced it,"" he says. "I drive for work, and it's made that less convenient for me. But I have two kids at schools along this road and it has made the school run a much more pleasurable experience.
                         It's great to walk along there and see other families on the way to school, it feels a lot safer without the morning rush of cars. </blockquote>
@@ -143,6 +180,7 @@
             </div>
         </div>
 
+        <!-- Post #2 -->
         <div class="w3-row w3-margin w3-padding-32">
             <div class="w3-container w3-card-2">
                 <div class="w3-row w3-margin">
@@ -177,7 +215,7 @@
             </div>
         </div>
 
-        <!-- Post #2 -->
+        <!-- Post #1 -->
         <div class="w3-row w3-margin w3-padding-32">
             <div class="w3-container w3-card-2">
                 <div class="w3-col s12">
@@ -197,8 +235,8 @@
             </div>
         </div>
 
-        <!-- Post #1 -->
-        <div class="w3-row w3-margin w3-padding-32">
+        <!-- Post # -->
+        <div class="w3-row w3-margin w3-padding-32 w3-hide">
             <div class="w3-container w3-card-2">
                 <div class="w3-col s12">
                     <p class="w3-small w3-margin-top">Wednesday, 12 July 2022</p>
@@ -219,7 +257,7 @@
 
     </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
+    <!-- Third Parallax Image with Contact Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
@@ -229,7 +267,7 @@
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
         <h3 class="w3-center">Contact <strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong></h3>
-        <p class="w3-center w3-padding-large  w3-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please contact us via <a href="mailto:lovebethnalgreen@gmail" class="w3-hover-text-green">email</a> and/or join our <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook group</a>.</em>
+        <p class="w3-center w3-padding-large  w3-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please contact us via <a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]" class="w3-hover-text-green">email</a> and join us on <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook</a> or <a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank" class="w3-hover-text-green">Twitter</a>.</em>
         </p>
     </div>
 
@@ -238,7 +276,9 @@
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
             <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title="Facebook" target="_blank" class="w3-hover-text-green w3-margin-right"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
-            <a href="mailto:lovebethnalgreen@gmail" class="w3-hover-text-green" title="email" target="_blank"><i class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank" class="w3-hover-text-green w3-margin-right"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]"
+                class="w3-hover-text-green" title="email" target="_blank"><i class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
         </div>
         <p>Powered by <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank" class="w3-hover-text-green">Tower Hamlet Residents</a></p>
     </footer>

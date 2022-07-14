@@ -69,6 +69,34 @@
         .w3-hover-opacity {
             cursor: pointer;
         }
+        
+        .circle {
+            height: 50px;
+            width: 50px;
+            background-color: #555;
+            border-radius: 50%;
+        }
+        
+        .sticker {
+            width: 200px;
+            height: 200px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            color: black;
+            text-align: center;
+            background: orange;
+            display: inline-block;
+            transform: rotate(20deg);
+            opacity: 80%;
+        }
+        
+        .sticker:hover {
+            color: white;
+            background: rgb(213, 23, 28);
+            transform: rotate(0deg);
+            opacity: 100%;
+        }
         /* Turn off parallax scrolling for tablets and phones */
         
         @media only screen and (max-device-width: 1600px) {
@@ -113,6 +141,16 @@
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+
+
+        <div aria-label="Button link" class="w3-right" style="margin:80px;">
+            <a style="display:block" href="news.html#play">
+                <div class="sticker">
+                    <div class="w3-large w3-display-middle"><strong>LET'S PLAY!</strong><br>Sunday 17th</div>
+                </div>
+            </a>
+        </div>
+        <div class="circle"></div>
         <div class="w3-display-middle w3-hide-small w3-animate-opacity">
             <div class="w3-opacity w3-margin-bottom" style="white-space:nowrap;">
                 <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">I <span class="w3-text-red">&hearts;</span> BETHNAL GREEN <i class="fa-solid fa-angle-right w3-text-green"></i></div>
@@ -137,13 +175,13 @@
 
         <div class="w3-display-bottommiddle w3-margin-bottom w3-small w3-black w3-opacity w3-hide-medium w3-hide-large w3-animate-opacity">
             <a href="#preaction" class="w3-bar-item w3-button">TAKE ME TO THE ACTION</a>
+
         </div>
 
     </div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-
         <h3 class="w3-center">About<br><b>I <span class="w3-text-red">&hearts;</span> BETHNAL GREEN</b></h3>
         <p class="w3-large"><strong>I <span class="w3-text-red">&hearts;</span> BETHNAL GREEN</strong> is the online home of <strong>SAVE OUR SAFER STREETS</strong>, a group of Bethnal Green residents who want to keep and improve the newly built pedestrian-friendly streets
             around Old Bethnal Green Road, Columbia Road and Arnold Circus.</p>
@@ -220,7 +258,7 @@
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
         <h3 class="w3-center">Contact <strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong></h3>
-        <p class="w3-center w3-padding-large  w3-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please contact us via <a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]" class="w3-hover-text-green">email</a> and join us on <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook</a> or <a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank" class="w3-hover-text-green w3-margin-right">Twitter</a>.</em>
+        <p class="w3-center w3-padding-large  w3-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please contact us via <a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]" class="w3-hover-text-green">email</a> and join us on <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook</a> or <a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank" class="w3-hover-text-green">Twitter</a>.</em>
         </p>
     </div>
 
