@@ -104,16 +104,16 @@
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
+        <div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99;">
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
             <a href="/index.html#home" class="w3-bar-item w3-button">HOME</a>
             <a href="/index.html#about" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
             <a href="/index.html#preaction" class="w3-bar-item w3-button w3-hide-small">ACTION</a>
-            <a href="/join-in.html" class="w3-bar-item w3-button w3-hide-small">JOIN-IN</a>
+            <a href="/news.html" class="w3-bar-item w3-button w3-gray w3-opacity-min w3-hide-small">NEWS</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide">
             </a>
         </div>
 
@@ -121,9 +121,9 @@
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
             <a href="/index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
-            <a href="#joinin" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN-IN</a>
+            <a href="#news" class="w3-bar-item w3-button" onclick="toggleFunction()">News</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
         </div>
     </div>
     </div>
@@ -148,6 +148,11 @@
                     <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
                     <h3 class="w3-xlarge w3-text-black">Let's Play! - Sunday 17th</h3>
                 </div>
+                <div>
+                    <p>
+                        <span class="w3-tag w3-black"><i class="fa-solid fa-thumbtack"></i> Pinned</span> <span class="w3-tag w3-blue">Event</span>
+                    </p>
+                </div>
                 <div class="w3-col s12 w3-medium w3-center">
                     <img src="media/lets_play.jpeg" alt="Let's play poster" class="w3-image w3-margin" style="width: 80%;">
                     <p>We're running "Let's Play", a childen's event to enjoy the Middleton Pocket Park, on 11:15-12:00 Sunday 17th.</p>
@@ -155,12 +160,38 @@
             </div>
         </div>
 
+        <!-- Post #5 -->
+        <div class="w3-row w3-margin w3-padding-32">
+            <div class="w3-panel w3-container w3-card-2 w3-margin-bottom">
+                <div class="w3-col s12">
+                    <p class="w3-small w3-margin-top">Saturday, 16 July 2022</p>
+                    <h3 class="w3-xlarge w3-text-black">No evidence that LTNs have changed fire engine response times</h3>
+                </div>
+                <div>
+                    <p>
+                        <span class="w3-tag w3-lime">Research</span>
+                    </p>
+                </div>
+                <div class="w3-col s12 w3-medium">
+                    <p>An <a href="https://doi.org/10.32866/001c.23568" target="_blank">academic article</a>, published in 2021, shows that fire engine response times are not being adversely effected by <em>Low Traffic Neighbourhoods</em> (LTNs).</p>
+                    <p>The article - by academics from Westminster, Imperial and the School of Hygiene and Tropical Medicine - presents a study of fire engine response times in and around LTNs in London. The work focuses specifically on LTNs introduced in 2020 including in our borough, Tower Hamlets. The findings from the research show that there is no evidence to suggest LTNs have increased overall response times. This result applies in central, inner and outer London and whether the LTN uses physical or camera enforced restrictions. Notably, the proportion of delayed 'first engines' fell across all areas after the introduction of LTNs. In addition, reported delays 'due to traffic calming' were "more than offset" by a fall in delays from traffic or roadworks.</p>
+                    <p>Research like this raises lots of questions for us in Tower Hamlets. It's still very early to know how low traffic neighbourhoods are impacting the emergency services in our borough but it's clear we really need to have free access to data, better understand the challenges and think collectively about ways forward.</p>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Post #3 -->
-        <div class="w3-row w3-margin w3-padding-32 w3-hide">
+        <div class="w3-row w3-margin w3-padding-32">
             <div class="w3-panel w3-container w3-card-2 w3-margin-bottom">
                 <div class="w3-col s12">
                     <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
                     <h3 class="w3-xlarge w3-text-black">We need move forward as a community</h3>
+                </div>
+                <div>
+                    <p>
+                        <span class="w3-tag w3-pink">Profile</span>
+                    </p>
                 </div>
                 <div class="w3-col s12 w3-medium">
                     <img src="media/resident_02.jpeg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image w3-margin w3-padding-8 w3-hide-small" style="float: right; width: 50%">
@@ -189,6 +220,11 @@
                     <div class="w3-col s12">
                         <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
                         <h3 class="w3-xlarge w3-text-black">Before and after</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="w3-tag w3-yellow">Comment</span>
+                        </p>
                     </div>
                     <div class="w3-col m12 w3-margin-right w3-large">
                         It's very hard to dispute the difference the changes the new green spaces and safer streets have made to our neighbourhoods. We've gone from streets often busy with cars to quieter and greener spaces; there is much less speeding, and walking and cycling
@@ -223,6 +259,11 @@
                 <div class="w3-col s12">
                     <p class="w3-small w3-margin-top">Thursday, 13 July 2022</p>
                     <h3 class="w3-xlarge w3-text-black">It's making a difference to people's lives</h3>
+                </div>
+                <div>
+                    <p>
+                        <span class="w3-tag w3-pink">Profile</span>
+                    </p>
                 </div>
                 <div class="w3-col s12 w3-medium">
                     <p>Derek Clifford, (81), who has lived on Old Bethnal Green Road for 46 years, says he has made “so many friends” by sitting on the chairs at the junction of Canrobert Street and Old Bethnal Green Road.</p>
