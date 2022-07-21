@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>I &hearts; Bethnal Green - News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+        /* Create a Parallax Effect */
+        
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* First image (Logo. Full height) */
+        
+        .bgimg-1 {
+            background-image: url('media/obg_01.jpg');
+            min-height: 100%;
+        }
+        /* Second image (Portfolio) */
+        
+        .bgimg-2 {
+            background-image: url("media/obg_02.jpg");
+            min-height: 400px;
+        }
+        /* Third image (Contact) */
+        
+        .bgimg-3 {
+            background-image: url("media/obg_03.jpg");
+            min-height: 400px;
+        }
+        
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+        
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+        
+        .sticker {
+            width: 150px;
+            height: 150px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            color: #fff;
+            line-height: 300px;
+            text-align: center;
+            background: black;
+            display: inline-block;
+            margin-top: -30%;
+            line-height: 32px;
+            font-size: 1.9rem;
+            font-weight: 700;
+            transform: rotate(20deg);
+            font-family: "Allerta Stencil", Sans-serif;
+        }
+        
+        .sticker:hover {
+            background: rgb(213, 23, 28);
+            transform: rotate(0deg);
+        }
+        /* Turn off parallax scrolling for tablets and phones */
+        
+        @media only screen and (max-device-width: 1600px) {
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99;">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="/index.html#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="/index.html#about" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
+            <a href="/index.html#preaction" class="w3-bar-item w3-button w3-hide-small">ACTION</a>
+            <a href="/news.html" class="w3-bar-item w3-button w3-gray w3-opacity-min w3-hide-small">NEWS</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide">
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="/index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
+            <a href="#news" class="w3-bar-item w3-button" onclick="toggleFunction()">News</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Top Parallax Image with SOSS Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min" id="joinin">
+        <div class="w3-display-middle">
+            <h1 class="w3-xxlarge w3-text-white w3-wide">Save our Safer Streets</h1>
+        </div>
+    </div>
+
+    <!-- Container -->
+
+    <div class="w3-content w3-container w3-padding-64">
+
+
+
+        <div class="w3-container">
+
+            <!-- TAGS:
+                <span class="w3-tag w3-purple w3-round-medium">Action</span>
+                <span class="w3-tag w3-red w3-round-medium"><i class="fa-solid fa-bullhorn"></i> Announcement</span>
+                <span class="w3-tag w3-yellow w3-round-medium">Comment</span>
+                <span class="w3-tag w3-blue w3-round-medium">Event</span>
+                <span class="w3-tag w3-black w3-hide w3-round-medium"><i class="fa-solid fa-thumbtack"></i> Pinned</span>
+                <span class="w3-tag w3-pink w3-round-medium">Profile</span>
+                <span class="w3-tag w3-lime w3-round-medium">Research</span>
+            -->
+
+            <!-- News posts -->
+            <div class="w3-col s12 m7">
+
+                <h2 class="w3-text-black w3-margin-left">NEWS</h2>
+
+                <!-- Post #8 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Tuesday, 19 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">800+ sign letter to keep pedestrian-friendly streets</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-black w3-round-medium"><i class="fa-solid fa-thumbtack"></i> Pinned</span> <span class="w3-tag w3-purple w3-round-medium">Action</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p>Today, we've sent <a href="https://i.heartbg.uk/open-letter-via-news-page" target="_blank">a letter to the mayor of Tower Hamlets</a> asking him to hold off from removing the improvements to our streets in Bethnal Green and
+                                the borough. We've asked for evidence to be openly shared, a longer consultation period, and full engagement with all the community.</p>
+                            <p>Over 800 people from around the neighbourhood, including schools, businesses and residents have signed the letter so far. <a href="https://i.heartbg.uk/open-letter-sign" target="_blank">Add your name</a> to the <a href="https://i.heartbg.uk/open-letter"
+                                    target="_blank">live version</a> of the letter.</p>
+                            <p>See our press release <a href="https://i.heartbg.uk/open-letter-press-release-via-news-page" target="_blank">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #11 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Thursday, 21 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Before and after</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-yellow w3-round-medium">Comment</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p>Helpful comparison from <a href="https://twitter.com/BethnalCleen" target="_blank">CleanBethnalGreen. Two versions of Old Bethnal Green Road. Go full screen for the full effect.</p>
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://t.co/7JdLeXiBWH">pic.twitter.com/7JdLeXiBWH</a></p>&mdash; CleanBethnalGreen 🇵🇸 (@BethnalCleen) <a href="https://twitter.com/BethnalCleen/status/1544438008090337280?ref_src=twsrc%5Etfw">July 5, 2022</a></blockquote>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Post #10 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Wednesday, 20 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Increased traffic is risking people's health</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-pink w3-round-medium">Profile</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <img src="media/resident_04.jpg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image w3-margin w3-padding-8 w3-hide-small" style="float: right; width: 50%">
+                            <p>Dr Burman lives in Bethnal Green with his family. He is a Consultant in Respiratory Medicine, having worked in East London throughout his career.</p>
+                            <div class="w3-margin w3-hide-medium w3-hide-large">
+                                <img src="media/resident_04.jpg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image">
+                            </div>
+                            <blockquote>"As a Respiratory Consultant and a father, I am very concerned about the impact of air pollution on the development of children’s lungs and the health of those with respiratory conditions. Any changes that increase traffic
+                                on residential streets are risking people’s health. I think the existing scheme has helped to protect the health of everyone in our community.</blockquote>
+                            <blockquote>"I want to live where the streets are safe for our children to play and where there are spaces for everyone in our community to socialise together. Again, I think the current scheme has been a positive step, but even more could
+                                be done to improve this!"</blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #9 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Tuesday, 19 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Question Luftur Rahman on BBC London</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-red w3-round-medium"><i class="fa-solid fa-bullhorn"></i> Announcement</span> <span class="w3-tag w3-purple w3-round-medium">Action</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p><i class="fa-solid fa-bullhorn"></i> UPDATE - PROGRAMME POSTPONED <i class="fa-solid fa-bullhorn"></i></p>
+                            <p>This programme has been postponed till August (see this Twitter <a href="https://twitter.com/laurencstanley/status/1550068535094923265?s=12&t=_4sPz44D6bq7UWlSW6ADdQ">post)</a>.</p>
+                            <p>We have an ace opportunity this Thursday to get Luftur Rahman to realise how many people care about safer streets. He’s appearing on BBC Radio London this Thursday and Eddie Nestor the presenter is taking questions from the
+                                public.
+                            </p>
+                            <p>Please send your question to <a href="mailto:eddie@bbc.co.uk" target="_blank">eddie@bbc.co.uk</a>.</p>
+                            <p>The more emails we send the more likely Luftur Rahman will have to respond to this issue.</p>
+                        </div>
+                        <div>
+                            <blockquote class="twitter-tweet">
+                                <p lang="en" dir="ltr">🚨Do you live in TOWER HAMLETS?<br>🚨Have you got a question for your leader?<br><br>Tower Hamlets&#39; Mayor joins Eddie THURSDAY @ 11am as part of our Meet the Leader series. <br><br>Send questions to:<br>📩Eddie@bbc.co.uk
+                                    <a href="https://twitter.com/EddieNestorMBE?ref_src=twsrc%5Etfw">@EddieNestorMBE</a> | <a href="https://twitter.com/LutfurRahmanTH?ref_src=twsrc%5Etfw">@LutfurRahmanTH</a> | <a href="https://twitter.com/TowerHamletsNow?ref_src=twsrc%5Etfw">@TowerHamletsNow</a></p>&mdash;
+                                BBC Radio London (@BBCRadioLondon) <a href="https://twitter.com/BBCRadioLondon/status/1547902024670318593?ref_src=twsrc%5Etfw">July 15, 2022</a>
+                            </blockquote>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #7 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container  w3-border w3-border-lime w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Monday, 18 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Fire brigade report - No noticeable impact</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-lime w3-round-medium">Research</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p>The most recent London Fire Brigade <a href="https://data.london.gov.uk/dataset/incident-response-times-fire-facts" target="_blank">Incident Response Times</a> report (2021) states:</p>
+                            <blockquote>"... we haven’t yet noticed any impact on our attendance times due to the LTN schemes established in 2020" (p. 2)</blockquote>
+                            <p>We've yet to see any of the emergency services in London provide evidence of slow-downs from low traffic neighbourhoods and street calming.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #6 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-blue w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Monday, 18 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Bow is up in arms!</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-blue w3-round-medium">Event</span> <span class="w3-tag w3-purple w3-round-medium">Action</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p>Our friends in Bow showed they want they want cleaner, safer streets!</p>
+                            <div class="w3-center">
+                                <blockquote class="twitter-tweet">
+                                    <p lang="en" dir="ltr">Over 100 local residents say <a href="https://twitter.com/hashtag/KeepAntillRoadfilter?src=hash&amp;ref_src=twsrc%5Etfw">#KeepAntillRoadfilter</a>. Are you listening <a href="https://twitter.com/LutfurRahmanTH?ref_src=twsrc%5Etfw">@LutfurRahmanTH</a>                                        ? <a href="https://twitter.com/CllrNathalieB?ref_src=twsrc%5Etfw">@CllrNathalieB</a> <a href="https://twitter.com/cllrasmabegum?ref_src=twsrc%5Etfw">@cllrasmabegum</a> <a href="https://twitter.com/MeotraE3?ref_src=twsrc%5Etfw">@MeotraE3</a>                                        <a href="https://twitter.com/thgreenparty?ref_src=twsrc%5Etfw">@thgreenparty</a> <a href="https://twitter.com/ELAdvertiser?ref_src=twsrc%5Etfw">@ELAdvertiser</a> <a href="https://twitter.com/BBCLondonNews?ref_src=twsrc%5Etfw">@BBCLondonNews</a>                                        <a href="https://twitter.com/EveningStandard?ref_src=twsrc%5Etfw">@EveningStandard</a> <a href="https://t.co/FKadebJExz">pic.twitter.com/FKadebJExz</a></p>&mdash; Alistair Polson (@AlistairPolson) <a href="https://twitter.com/AlistairPolson/status/1548943695415738368?ref_src=twsrc%5Etfw">July 18, 2022</a>
+                                </blockquote>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #5 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-lime w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Saturday, 16 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">No evidence that LTNs have changed fire engine response times</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-lime w3-round-medium">Research</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p>An <a href="https://doi.org/10.32866/001c.23568" target="_blank">academic article</a> (Goodman, Laverty, Thomas & Aldred 2021) shows that fire engine response times are not being adversely effected by <em>Low Traffic Neighbourhoods</em>                                (LTNs).</p>
+                            <p>The article - by academics from Westminster, Imperial and the School of Hygiene and Tropical Medicine - presents a study of fire engine response times in and around LTNs in London. The work focuses specifically on LTNs introduced
+                                in 2020 including in our borough, Tower Hamlets. The findings from the research show that there is no evidence to suggest LTNs have increased overall response times. This result applies in central, inner and outer London
+                                and whether the LTN uses physical or camera enforced restrictions. Notably, the proportion of delayed 'first engines' fell across all areas after the introduction of LTNs. In addition, reported delays 'due to traffic calming'
+                                were "more than offset" by a fall in delays from traffic or roadworks.</p>
+                            <p>Research like this raises lots of questions for us in Tower Hamlets. It's still very early to know how low traffic neighbourhoods are impacting the emergency services in our borough but it's clear we really need to have free
+                                access to data, better understand the challenges and think collectively about ways forward.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #4 -->
+                <div class="w3-row w3-margin w3-padding-8" id="play">
+                    <div class="w3-panel w3-container w3-border w3-border-blue w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Let's Play! - Sunday 17th</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-blue w3-round-medium">Event</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium w3-center">
+                            <img src="media/lets_play.jpeg" alt="Let's play poster" class="w3-image w3-margin" style="width: 80%;">
+                            <p>We're running "Let's Play", a children's event to enjoy the Middleton Pocket Park, on 11:15-12:00 Sunday 17th.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #3 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">We need to move forward as a community</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-pink w3-round-medium">Profile</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <img src="media/resident_02.jpeg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image w3-margin w3-padding-8 w3-hide-small" style="float: right; width: 50%">
+                            <p>Mehraj Alam, 45, who lives on Teesdale Street and runs a local business, has come to appreciate the changes to Old Bethnal Green Road.</p>
+                            <blockquote>"I was livid when they first introduced it,"" he says. "I drive for work, and it's made that less convenient for me. But I have two kids at schools along this road and it has made the school run a much more pleasurable experience.
+                                It's great to walk along there and see other families on the way to school, it feels a lot safer without the morning rush of cars. </blockquote>
+                            <blockquote>"We've bought our eldest a bike to get to school now and it's nice to know he's not breathing so many fumes. I think it's not just good for our kids, but for kids in future years."</blockquote>
+                            <p>Mehraj has some frustrations with the scheme, however, and some suggestions for improvements. He says what he really wants is for his voice to be heard.</p>
+                            <blockquote>"I think we need to calm down a little and talk this through... We have to find a middle ground and work together. Just as we're getting used to the new street, they want to change it back, but they need to talk to us properly
+                                first. It affects our daily lives, not theirs!</blockquote>
+                            <blockquote>“What we need to do now is move forward as a community.”</blockquote>
+                        </div>
+                        <div class="w3-col s12 m6 w3-medium w3-hide-medium w3-hide-large"><img src="media/resident_02.jpeg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image w3-margin-top"></div>
+                        <div class="w3-col s12 w3-medium">
+                            <p>Rob from Save our Safer Streets agrees.</p>
+                            <blockquote>"We're already starting to see the local community come together over this,"" he says. "We know we won't all agree on everything, but there are too many good things about this scheme to chuck it in the bin now. We just want
+                                the Council to slow down and listen to the whole community. Keep and improve rather than panic and remove!"</blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #2 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-orange w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Before and after</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-orange w3-round-medium">Comment</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            It's very hard to dispute the difference the changes the new green spaces and safer streets have made to our neighbourhoods. We've gone from streets often busy with cars to quieter and greener spaces; there is much less speeding, and walking and cycling
+                            are safer.
+                        </div>
+                        <div class="w3-col s12 w3-padding-8">
+                            <div class="w3-card-1 w3-margin-top">
+                                <img src="media/cars.jpg" style="width:100%">
+                                <div class="w3-container">
+                                    <p>Old Bethnal Green Road before</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col s12 w3-padding-8">
+                            <div class="w3-card-1 w3-margin-top">
+                                <img src="media/street-calming.jpg" style="width:100%">
+                                <div class="w3-container">
+                                    <p>Old Bethnal Green Road today</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #1 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Wednesday, 13 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">It's making a difference to people's lives</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-pink w3-round-medium">Profile</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p>Derek Clifford, (81), who has lived on Old Bethnal Green Road for 46 years, says he has made “so many friends” by sitting on the chairs at the junction of Canrobert Street and Old Bethnal Green Road.</p>
+                        </div>
+                        <div class="w3-col s12">
+                            <img src="media/resident_01.jpg" alt="Photo of resident in favour of new green spaces and safer streets" class="w3-image w3-margin-top">
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <blockquote>“It's a lovely spot!” Derek says. “I don't want it spoiled. People have got used to it now, we love it here. We don't want more changes! If they take away these red chairs, it would kill me. Where else am I going to meet people
+                                and talk to my friends? There's nowhere else for me to go.”</blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post #0 -->
+                <div class="w3-row w3-margin w3-padding-8">
+                    <div class="w3-panel w3-container w3-border w3-border-purple w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Wednesday, 12 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Collective action</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="w3-tag w3-purple w3-round-medium">Action</span>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 w3-medium">
+                            <p><strong>SAVE OUR SAFER STREETS</strong> believe the only way we can stop the reversal of the new green spaces and safer streets is to work together.</p>
+                            <p>We need to build a common voice to show we care about the high levels of pollution in Bethnal Green. Collectively, we need to take action to improve safety and the environment for all. What's really important is that this common
+                                voice is made up of as many people as possible from across the neighbourhood. We need to show Tower Hamlets Council that a significant majority of people want to build on the improvements that have been made to our streets.</p>
+                            <p>We believe that what we need is more experimentation with our streets; we need to allow our communities to find new ways to reduce pollution and to increase the number of green spaces where we can walk, talk and play.</p>
+                            <p>If you want to join us in this mission take <a href="index.html#preaction">action</a> and <a href="#contact">join us</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post # -->
+                <div class="w3-row w3-margin w3-padding-16 w3-hide">
+                    <div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+                        <div class="w3-col s12">
+                            <p class="w3-small w3-margin-top">Wednesday, 12 July 2022</p>
+                            <h3 class="w3-xlarge w3-text-black">Mandate for reversing the new green spaces and safer streets?</h3>
+                        </div>
+                        <div class="w3-col m7 ">
+                            <img src="media/may_2022_election_votes.png" alt="Pie chart of local election results" class="w3-image w3-margin-top">
+                            <p class="w3-padding-16 w3-margin">Results from 5th May 2022 Local Elections.<br>Source <a href="https://democracy.towerhamlets.gov.uk/mgElectionResults.aspx?ID=52&RPID=51500496" target="_blank">Tower Hamlets Council pages</a>.</p>
+                        </div>
+                        <div class="w3-col m5 w3-medium">
+                            <p>One of the first things to be aware of is that despite what many people are saying, the Tower Hamlets council do not have a mandate for reversing the new green spaces and safer streets. The new mayor and some new councillors
+                                from the Aspire Party did pledge to institute the reversal in the May local elections. However, the votes were not a full endorsement of this pledge. The Aspire party only won 36.95% of the total vote. Labour won 36.53%
+                                and the Green Party 9%, and both these parties supported Liveable Streets. It's also worth noting that only 41.84% of the borough voted in the elections.</p>
+                            <p>It's clear that there's a lot to fight for and that many people will want a say on our new green spaces and safer streets.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Live twitter -->
+            <div class="w3-col s12 w3-margin-top m4 w3-padding-large w3-hide-small">
+                <a class="twitter-timeline" data-height="1200" data-dnt="true" href="https://twitter.com/SaveOldBGR?ref_src=twsrc%5Etfw">Tweets by SaveOldBGR</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Contact <strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong></h3>
+        <p class="w3-center w3-padding-large  w3-large"><em>We're keen to engage with as many Bethnal Green residents as we can and if you have questions we'll reply where we can. Please contact us via <a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]" class="w3-hover-text-green">email</a> and join us on <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook</a> or <a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank" class="w3-hover-text-green">Twitter</a>.</em>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title="Facebook" target="_blank" class="w3-hover-text-green w3-margin-right"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank" class="w3-hover-text-green w3-margin-right"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]"
+                class="w3-hover-text-green" title="email" target="_blank"><i class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
+        </div>
+        <p>Powered by <a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank" class="w3-hover-text-green">Tower Hamlet Residents</a></p>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
