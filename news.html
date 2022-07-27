@@ -35,7 +35,7 @@
         .bgimg-2,
         .bgimg-3 {
             background-attachment: fixed;
-            background-position: center;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -53,8 +53,8 @@
         /* Second image (Portfolio) */
         
         .bgimg-2 {
-            background-image: url("media/obg_02.jpg");
-            min-height: 400px;
+            background-image: url("media/columbia_rd_01.jpg");
+            min-height: 60%;
         }
         /* Third image (Contact) */
         
@@ -93,6 +93,18 @@
         .sticker:hover {
             background: rgb(213, 23, 28);
             transform: rotate(0deg);
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .bgimg-2 {
+                background-image: url("media/large_media/columbia_rd_01_md.jpg");
+            }
+        }
+        
+        @media only screen and (min-width: 1608px) {
+            .bgimg-2 {
+                background-image: url("media/large_media/columbia_rd_01_lg.jpg");
+            }
         }
         /* Turn off parallax scrolling for tablets and phones */
         
@@ -139,7 +151,7 @@
     <!-- Top Parallax Image with SOSS Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min lazy" id="news">
         <div class="w3-display-middle">
-            <h1 class="w3-xxlarge w3-text-white w3-wide">Save our Safer Streets</h1>
+            <h1 class="w3-xxlarge w3-gray w3-text-white w3-wide w3-opacity-min">&nbsp;Save our Safer Streets&nbsp;</h1>
         </div>
     </div>
 
