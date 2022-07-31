@@ -86,8 +86,6 @@
 			}
 
 			.sticker {
-				width: 240px;
-				height: 240px;
 				-webkit-border-radius: 50%;
 				-moz-border-radius: 50%;
 				line-height: 200%;
@@ -100,8 +98,24 @@
 				opacity: 80%;
 				font-family: "Roboto", Sans-serif;
 				box-shadow: 2px 2px 5px black;
-				margin-top: 15%;
-				margin-left: 75%;
+			}
+
+			@media only screen and (min-width: 1600px) {
+				.sticker {
+					width: 240px;
+					height: 240px;
+					margin-top: 15%;
+					margin-left: 75%;
+				}
+			}
+
+			@media only screen and (max-width: 1599px) {
+				.sticker {
+					width: 200px;
+					height: 200px;
+					margin-top: 3%;
+					margin-left: 80%;
+				}
 			}
 
 			.sticker:hover {
@@ -207,17 +221,15 @@
 
 		<!-- First Parallax Image with Logo Text -->
 		<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-			<div aria-label="Button link" class="">
-				<a style="display: block" href="https://i.heartbg.uk/talk-th-ls-bg">
-					<div class="sticker w3-hide-small">
-						<div class="w3-xlarge w3-display-middle">
-							<span class="w3-margin-bottom">Have your</span><br /><b
-								><span class="w3-xxxlarge" style="line-height: 140%">SAY!</span></b
-							><br /><span class="w3-xlarge"></span>
-						</div>
+			<a style="display: block" href="https://i.heartbg.uk/talk-th-ls-bg">
+				<div class="sticker w3-hide-small w3-hide-medium">
+					<div class="w3-xlarge w3-display-middle">
+						<span class="w3-margin-bottom">Have your</span><br /><b
+							><span class="w3-xxxlarge" style="line-height: 140%">SAY!</span></b
+						><br /><span class="w3-xlarge"></span>
 					</div>
-				</a>
-			</div>
+				</div>
+			</a>
 			<div class="circle"></div>
 			<div class="w3-display-middle w3-hide-small w3-animate-opacity">
 				<div class="w3-opacity w3-margin-bottom" style="white-space: nowrap">
