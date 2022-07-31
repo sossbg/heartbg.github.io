@@ -54,10 +54,6 @@
 			}
 			/* First image  */
 
-			.bgimg-1 {
-				background-image: url("media/obg_01.jpg");
-				min-height: 100%;
-			}
 			/* Second image */
 
 			.bgimg-2 {
@@ -100,21 +96,37 @@
 				box-shadow: 2px 2px 5px black;
 			}
 
-			@media only screen and (min-width: 1600px) {
+			@media only screen and (min-width: 1601px) {
 				.sticker {
 					width: 240px;
 					height: 240px;
 					margin-top: 15%;
 					margin-left: 75%;
 				}
+				.bgimg-1 {
+					background-image: url("media/large_media/obg_01.jpg");
+					min-height: 100%;
+				}
 			}
 
-			@media only screen and (max-width: 1599px) {
+			@media only screen and (max-width: 1600px) {
 				.sticker {
 					width: 200px;
 					height: 200px;
 					margin-top: 3%;
 					margin-left: 80%;
+				}
+				.bgimg-1 {
+					background-image: url("media/large_media/obg_01.jpg");
+					min-height: 90%;
+				}
+			}
+
+			@media only screen and (max-width: 1024px) {
+				.bgimg-1 {
+					background-image: url("media/obg_01.jpg");
+					background-attachment: scroll;
+					min-height: 400px;
 				}
 			}
 
@@ -128,7 +140,6 @@
 			/* Turn off parallax scrolling for tablets and phones */
 
 			@media only screen and (max-width: 1600px) {
-				.bgimg-1,
 				.bgimg-2,
 				.bgimg-3,
 				.bgimg-4 {
