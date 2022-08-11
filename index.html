@@ -121,7 +121,7 @@
 				}
 			}
 
-			@media only screen and (max-width: 1024px) {
+			@media only screen and (max-width: 992px) {
 				.bgimg-1 {
 					background-image: url("media/obg_01.jpg");
 					background-attachment: scroll;
@@ -231,6 +231,8 @@
 
 		<!-- First Parallax Image with Logo Text -->
 		<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+			
+			<!-- Sticker -->
 			<a
 				class="w3-hide"
 				style="display: block"
@@ -244,7 +246,9 @@
 					</div>
 				</div>
 			</a>
-			<div class="w3-display-middle w3-hide-small w3-animate-opacity">
+			
+			<!-- Title for large screens -->
+			<div class="w3-display-middle w3-hide-small w3-hide-medium w3-animate-opacity">
 				<div class="w3-opacity w3-margin-bottom" style="white-space: nowrap">
 					<h1 class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">
 						I <span class="w3-text-red">&hearts;</span> BETHNAL GREEN
@@ -257,23 +261,6 @@
 					</div>
 					<i class="fa-solid fa-hand-back-point-down w3-text-white"></i>
 				</div>
-			</div>
-
-			<div
-				class="
-					w3-display-bottommiddle
-					w3-orange
-					w3-margin-bottom
-					w3-xxlarge
-					w3-opacity
-					w3-hide
-					w3-animate-opacity
-				"
-			>
-				<a href="#preaction" class="w3-bar-item w3-button"
-					><i class="fa-solid fa-arrow-down-long"></i> &nbsp; &nbsp; ACT NOW! &nbsp;
-					&nbsp;<i class="fa-solid fa-arrow-down-long"></i
-				></a>
 			</div>
 
 			<div
@@ -306,9 +293,9 @@
 				class="
 					w3-red
 					w3-display-bottommiddle
-					w3-margin-bottom
 					w3-hide-large
 					w3-hide-small
+					w3-margin
 					w3-animate-opacity
 				"
 			>
@@ -317,8 +304,8 @@
 					class="w3-button w3-display-topright"
 					>&times;
 				</span>
-				<p class="w3-large w3-center w3-padding" style="white-space: nowrap">
-					Petition Tower Hamlets Council to <br><span class="w3-xlarge"><b>STOP</b>, <b>LISTEN</b> and <b>IMPROVE</b></span><br /><a
+				<p class="w3-medium w3-center w3-padding-small" style="white-space: nowrap">
+					Petition Tower Hamlets Council to <br><span class="w3-large"><b>STOP</b>, <b>LISTEN</b> and <b>IMPROVE</b></span><br /><a
 						href="#preaction"
 						><b>Act now</b></a
 					>
@@ -328,33 +315,7 @@
 				</p>
 			</div>
 
-			<div
-				class="
-					w3-red
-					w3-display-bottommiddle
-					w3-margin-bottom
-					w3-hide-large
-					w3-hide-medium
-					w3-hide-small
-					w3-animate-opacity
-				"
-			>
-				<span
-					onclick="this.parentElement.style.display='none'"
-					class="w3-button w3-display-topright"
-					>&times;</span
-				>
-				<p class="w3-center w3-padding-small">
-					Petition Tower Hamlets Council to <br><span  class="w3-large"><b>STOP</b>, <b>LISTEN</b> and <b>IMPROVE</b></span><br /><a
-						href="#preaction"
-						><b>Act now</b></a
-					>
-					to
-					<em>"oppose"</em>
-					the removal of our safer streets.
-				</p>
-			</div>
-
+			<!-- Call for action on small screens -->
 			<div
 				class="
 					w3-display-bottommiddle
@@ -372,8 +333,8 @@
 			</div>
 		</div>
 
-		<!-- Only show on mobile -->
-		<div class="w3-center w3-hide-medium w3-hide-large">
+		<!-- Title for small and medium screens -->
+		<div class="w3-center w3-hide-large">
 			<div
 				class="w3-center w3-padding-large w3-black w3-medium w3-wide"
 				style="white-space: nowrap"
@@ -443,15 +404,15 @@
 					</h3>
 					<p class="w3-large">
 						If you live, work or study in Tower Hamlets, please read and sign our <a href="https://i.heartbg.uk/petition" target="_blank">petition</a> to Tower Hamlets Council.
-					</p> 
+					</p>
 					<p class="w3-large">
 						We are asking the Council to:
 					</p>
-						<ul class="w3-large">
-							<li><b>STOP</b> plans to scrap the new street layouts</li>
-							<li><b>LISTEN</b> to the diverse communities and stakeholders in our borough</li>
-							<li><b>IMPROVE</b> the new street layouts to keep what is working and improve where needed</li>
-						</ul>
+					<ul class="w3-large">
+						<li><b>STOP</b> plans to scrap the new street layouts</li>
+						<li><b>LISTEN</b> to the diverse communities and stakeholders in our borough</li>
+						<li><b>IMPROVE</b> the new street layouts to keep what is working and improve where needed</li>
+					</ul>
 					<p class="w3-large">
 						We want our streets to be improved so that everyone’s health, wellbeing and safety gets better.
 					</p>
