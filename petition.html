@@ -59,35 +59,16 @@
 				padding: 1em;
 				z-index: 99;
 				overflow: hidden;
+				opacity: 80%;
 			}
 			.sticker p {
 				text-align: center;
 				vertical-align: middle;
 				color: white;
 			}
-			.sticker .fold {
-			  content: "";
-			  display: block;
-			  width: 10.5em;
-			  height: 10.5em;
-			  position: absolute;
-			  right: -5.3em;
-			  top: -5.3em;
-			  border-radius: 100%;
-			  background: -webkit-linear-gradient(-135deg, transparent 11.3em, #feeba7 10em, #feeba7 10em, #feeba7 85%);
-			}
-			.sticker.yellow {
-			  background: rgb(255,215,7);
-			  background: -webkit-linear-gradient(-135deg, transparent 2.82em, rgb(255,215,7) 0, rgb(255,215,7));
-			}
-			.sticker p:hover {
-				color: black;
-			}
 			.sticker:hover {
-				background: white;
 				transform: rotate(0deg);
 				opacity: 100%;
-				box-shadow: 0 0 0;
 			}
 			
 			@media only screen and (min-width: 1600px) {
@@ -100,11 +81,27 @@
 					-moz-border-radius: 14em;
 					width: 14em;
 					height: 14em;
-					margin-left: 35%
+					margin-left: 35%;
+					margin-top: -30px;
 				}
 				.sticker p {
 					font-size: 16pt;
 					margin-top:1.2em;
+				}
+				.sticker .fold {
+				  content: "";
+				  display: block;
+				  width: 10.5em;
+				  height: 10.5em;
+				  position: absolute;
+				  right: -5.3em;
+				  top: -5.3em;
+				  border-radius: 100%;
+				  background: -webkit-linear-gradient(-135deg, transparent 11.3em, #ffacac 10em, #ffacac 10em, #ffacac 85%);
+				}
+				.sticker.red {
+				  background: rgb(255,215,7);
+				  background: -webkit-linear-gradient(-135deg, transparent 3.8em, red 0, red);
 				}
 			}
 			
@@ -118,11 +115,27 @@
 					-moz-border-radius: 12em;
 					width: 12em;
 					height: 12em;
-					margin-left: 40%
+					margin-left: 40%;
+					margin-top: -30px;
 				}
 				.sticker p {
 					font-size: 15pt;
 					margin-top:0.8em;
+				}
+				.sticker .fold {
+				  content: "";
+				  display: block;
+				  width: 10.5em;
+				  height: 10.5em;
+				  position: absolute;
+				  right: -5.3em;
+				  top: -5.3em;
+				  border-radius: 100%;
+				  background: -webkit-linear-gradient(-135deg, transparent 11.3em, #ffacac 10em, #ffacac 10em, #ffacac 85%);
+				}
+				.sticker.red {
+				  background: red;
+				  background: -webkit-linear-gradient(-135deg, transparent 3.8em, red 0, red);
 				}
 			}
 			
@@ -131,12 +144,52 @@
 					font-size: 64pt;
 					margin-left: -5px;
 				}
+				.sticker {
+					-webkit-border-radius: 10em;
+					-moz-border-radius: 10em;
+					width: 10em;
+					height: 10em;
+					margin-left: 45%;
+					margin-top: -40px;
+				}
+				.sticker p {
+					font-size: 13pt;
+					margin-top:0.3em;
+					line-height: 1.8rem;
+				}
+				.sticker .fold {
+				  content: "";
+				  display: none;
+				}
+				.sticker.red {
+				  background: red;
+				}
 			}
 			
 			@media only screen and (max-width: 600px) {
 				.bigtext {
 					font-size: 32pt;
 					margin-left: -4px;
+				}
+				.sticker {
+					-webkit-border-radius: 8em;
+					-moz-border-radius: 8em;
+					width: 8em;
+					height: 8em;
+					margin-left: 45%;
+					margin-top: -55px;
+				}
+				.sticker p {
+					font-size: 11pt;
+					margin-top:0.2em;
+					line-height: 1.5rem;
+				}
+				.sticker .fold {
+				  content: "";
+				  display: none;
+				}
+				.sticker.red {
+				  background: red;
 				}
 			}
 		</style>
@@ -250,12 +303,11 @@
 					<div class="w3-col m2 w3-hide-small">&nbsp;</div>
 					<div class="w3-col s12 m8 w3-padding-64">
 						<a
-							style="display: block"
 							href="https://i.heartbg.uk/petition"
 						>
-							<aside class="sticker yellow w3-hide-small w3-hide-medium">
+							<aside class="sticker red">
 								<p>
-									<b>Sign</b><br /><span class="w3-xxxlarge" style="line-height: 140%"><b>NOW!</b></span><br />
+									<b>Sign</b><br /><span class="w3-xxxlarge w3-hide-small" style="line-height: 140%"><b>NOW!</b></span><span class="w3-xxlarge w3-hide-medium w3-hide-large" style="line-height: 140%"><b>NOW!</b></span><br />
 								</p>
 								<span class="fold"></span>
 							</aside>
