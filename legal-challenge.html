@@ -35,7 +35,25 @@
 			}
 
 			#title {
-				min-height: 180px;
+				min-height: 220px;
+			}
+
+			@media only screen and (min-width: 1601px) {
+				#title {
+					min-height: 220px;
+				}
+			}
+
+			@media only screen and (max-width: 1600px) {
+				#title {
+					min-height: 280px;
+				}
+			}
+
+			@media only screen and (max-width: 992px) {
+				#title {
+					min-height: 400px;
+				}
 			}
 		</style>
 	</head>
@@ -133,9 +151,13 @@
 		<!-- Title Text -->
 		<div class="w3-display-container w3-margin-top" id="title">
 			<div class="w3-display-bottommiddle">
-				<h1 class="w3-xxlarge w3-wide w3-text-black w3-margin-top">
-					<b>We need your help with a potential legal challenge</b>
-				</h1>
+				<div class="w3-col m1 w3-hide-small">&nbsp;</div>
+				<div class="w3-col s12 m10">
+					<h1 class="w3-xxlarge w3-wide w3-text-black w3-margin-top w3-center">
+						<b>We need your help with a potential legal challenge</b>
+					</h1>
+				</div>
+				<div class="w3-col m1 w3-hide-small">&nbsp;</div>
 			</div>
 		</div>
 
