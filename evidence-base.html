@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Save Our Safer Streets - data challenge</title>
+		<meta
+			name="description"
+			content="I &hearts; BETHNAL GREEN is the online home of SAVE OUR SAFER STREETS. We are campaigning to eep and improve the new road layouts across Tower Hamlets. This page presents the data and evidence we are gathering to support our campaign."
+		/>
+		<meta name="”robots”" content="index, follow" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<style>
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: "Lato", sans-serif;
+			}
+
+			body,
+			html {
+				height: 100%;
+				color: #777;
+				line-height: 1.8;
+			}
+
+			#title {
+				min-height: 220px;
+			}
+
+			@media only screen and (min-width: 1601px) {
+				#title {
+					min-height: 220px;
+				}
+			}
+
+			@media only screen and (max-width: 1600px) {
+				#title {
+					min-height: 280px;
+				}
+			}
+
+			@media only screen and (max-width: 992px) {
+				#title {
+					min-height: 400px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+			<div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99">
+				<a
+					class="
+						w3-bar-item
+						w3-button
+						w3-white
+						w3-opacity
+						w3-hover-black
+						w3-hide-medium
+						w3-hide-large
+						w3-right
+					"
+					href="javascript:void(0);"
+					onclick="toggleFunction()"
+					title="Toggle Navigation Menu"
+				>
+					<i class="fa fa-bars"></i>
+				</a>
+				<a
+					href="index.html#home"
+					class="w3-bar-item w3-button w3-gray w3-opacity-min w3-text-white w3-hide-small"
+					>HOME</a
+				>
+				<a
+					href="index.html#about"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>ABOUT</a
+				>
+				<a
+					href="index.html#preaction"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>ACTION</a
+				>
+				<a
+					href="news.html"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>NEWS</a
+				>
+				<a
+					href="stories.html"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					><b>STORIES</b></a
+				>
+				<a
+					href="#contact"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>CONTACT</a
+				>
+				<a
+					href="#"
+					class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide"
+				>
+				</a>
+			</div>
+
+			<!-- Navbar on small screens -->
+			<div
+				id="navDemo"
+				class="
+					w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min
+				"
+			>
+				<a
+					href="index.html#about"
+					class="w3-bar-item w3-button"
+					onclick="toggleFunction()"
+					>ABOUT</a
+				>
+				<a
+					href="index.html#preaction"
+					class="w3-bar-item w3-button"
+					onclick="toggleFunction()"
+					>ACTION</a
+				>
+				<a href="news.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
+					>NEWS</a
+				>
+				<a href="stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
+					>STORIES</a
+				>
+				<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"
+					>CONTACT</a
+				>
+				<a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
+			</div>
+		</div>
+
+		<!-- Title Text -->
+		<div class="w3-display-container w3-margin-top" id="title">
+			<div class="w3-display-bottommiddle">
+				<div class="w3-col m1 w3-hide-small">&nbsp;</div>
+				<div class="w3-col s12 m10">
+					<h1 class="w3-xxlarge w3-wide w3-text-black w3-margin-top w3-center">
+						<b>We're building an evidence base</b>
+					</h1>
+				</div>
+				<div class="w3-col m1 w3-hide-small">&nbsp;</div>
+			</div>
+		</div>
+
+		<!-- Container -->
+
+		<div class="w3-container w3-section w3-padding-bottom">
+			<div class="w3-content">
+				<!-- Container -->
+				<div class="w3-col m1 w3-hide-small">&nbsp;</div>
+				<div class="w3-col s12 m10">
+					<div class="w3-row">
+						<div class="w3-container w3-text-black">
+							<p class="w3-large">
+								<b>
+									We at Save our Safer Streets are challenging Tower Hamlet's new mayor and
+									council to publish local data on emergency service response times, air quality
+									and traffic congestion.
+								</b>
+							</p>
+							<p class="w3-large">
+								<b
+									>Not just waiting for the council, we're building an evidence base that shows
+									the new street designs across the borough haven’t had the negative impacts the
+									Mayor and others have claimed, and that their removal isn’t justified.
+								</b>
+							</p>
+							<p class="w3-large"><b>So far, our key findings show:</b></p>
+							<ul class="w3-large">
+								<li>
+									<b>NO increase in ambulance response times</b> attributable to the Low Traffic
+									Neighbourhood (LTN) schemes in Bethnal Green, and some neighbourhoods within
+									Bethnal Green’s LTN areas seeing improvements in response times.
+								</li>
+								<li>
+									<b>No increase in fire service response times</b> since the installation of the
+									LTNs and other new road layouts. This is for all five wards in Tower Hamlets
+									where LTNs have been installed.
+								</li>
+								<li>
+									<b>NO increase in journey times on boundary roads</b> attributable to the LTNs -
+									journey times have increased on all roads at a similar rate. Eastbound journeys
+									on Hackney Road have increased by 30 seconds at most, but this is likely to be
+									for several reasons such as roadworks and LTNs in neighbouring Hackney.
+								</li>
+								<li>
+									<b>Air quality is now dramatically better than it was in 2019</b>, across all of
+									Tower Hamlets, and the LTNs are not going to change this trend.
+								</li>
+							</ul>
+							<p class="w3-large">
+								Tower Hamlets Council will make a decision on 28 September about whether to
+								“re-open the roads”, based on the result of a public consultation. The
+								consultation document included several statements about the new layouts,
+								including claims of significant delays to emergency service vehicles, increased
+								congestion, significant bus delays, higher levels of pollution and worsening air
+								quality.
+							</p>
+							<p class="w3-large">
+								When the consultation launched, we were concerned that it didn’t mention any of
+								the benefits of the street schemes, and didn’t provide evidence of any negative
+								impacts. We began our own research using Freedom of Information requests (FoIs)
+								and data already in the public domain.
+							</p>
+							<p class="w3-large">
+								Through our FoI requests we have gathered data from organisations including
+								London Fire Brigade, London Ambulance Service, Transport for London and Hackney
+								Council. Unfortunately Tower Hamlets Council has not yet responded, despite
+								repeated requests and missed deadlines.
+							</p>
+							<p class="w3-large">
+								Today we are challenging the council to publish data that backs up its
+								consultation statements. The evidence we’ve compiled suggests those statements
+								are inaccurate, and they shouldn’t be used to justify the full re-opening of all
+								roads in Tower Hamlets.
+							</p>
+							<p class="w3-large">Our research has found:</p>
+						</div>
+					</div>
+
+					<div class="w3-row">
+						<div class="w3-container w3-text-black" id="emergency">
+							<h2><b>Emergency service response times</b></h2>
+							<p class="w3-large">
+								The mayor’s consultation claimed without evidence that there have been “numerous
+								reported incidents where emergency service responses have been hindered by
+								physical road closures.”
+							</p>
+							<p class="w3-large">
+								The mayor’s consultation claimed without evidence that there have been “numerous
+								reported incidents where emergency service responses have been hindered by
+								physical road closures.” We’ve found this isn’t the case. Analysis of the
+								Emergency Service response times for the first set of road closures to go in, in
+								Bethnal Green, has shown there has been no overall increase in emergency
+								response times for either London Fire Brigade or the London Ambulance Service
+								when compared to other areas of Tower Hamlets.
+							</p>
+							<p class="w3-large">
+								For ambulance response times, the data shows <b>no measurable worsening</b> that
+								can be attributed to the LTN. For Category 1 response times (the highest
+								category of emergencies) there are no significant differences before and after
+								the LTNs were put in place. And, in fact, although Category 2 (less critical)
+								ambulance response times in Tower Hamlets and reportedly across the UK have
+								become slower since December 2020, the slow downs have been LESS in the areas
+								surrounding Bethnal Green’s LTNs.
+								<b>This suggests the LTNs might actually be helping ambulances.</b>
+							</p>
+							<p class="w3-large">
+								Our data from the fire services is much more comprehensive. We’ve analysed data
+								for response times across all of Tower Hamlets and focused in particular for the
+								five wards with new road layouts: Bow West, Spitalfields and Banglatown, St
+								Katherine's and Wapping, St Peter's and Weavers. [option 1:] In all but one
+								ward, average response times have fallen since the new road layouts. In St
+								Peter’s there has been just a one second increase in average response times.
+								This, however, is not statistically significant. In all cases, having run
+								statistical tests, we can say average response times for the Fire Services have
+								stayed stable. [option 2:] Having run statistical tests, we’ve discovered in all
+								wars <b>average response times for the Fire Services have stayed stable</b>. In
+								other words, the LTNs have had no difference to fire engine response times.
+							</p>
+							<p class="w3-large">
+								The data on fire service response times shows that for Tower Hamlets overall,
+								and for the E2 postcode, Weavers and St Peter’s wards, there is very little
+								change in response times before and after the LTN schemes were put in place (Jan
+								2019 – May 2021). The biggest delay recorded was in St Peter’s ward of just 15
+								seconds, and several areas actually showed improved response times.
+							</p>
+							<p class="w3-large">
+								<b
+									>The claim that there have been numerous reported incidents is not backed up by
+									the data either.</b
+								>
+							</p>
+							<p class="w3-large">
+								Out of the 14,756 Cat 1 and 2 (life-threatening / emergency) ambulance calls
+								that have been made to the postcodes covered by the Bethnal Green LTN since
+								2019, only nine have had delays attributed in any way to the Liveable Streets
+								scheme – <b>0.06% of all calls</b>.
+							</p>
+							<p class="w3-large">
+								While any delay is less than ideal, this information shows it is a small problem
+								with less than 6 in 10,000 calls experiencing any kind of recorded delay that
+								can be attributed to the LTNs. There is also no evidence that these delays are
+								an ongoing problem to the London Ambulance Service as they have not identified
+								the cause of any delays.
+							</p>
+							<p class="w3-large">
+								We know that in the early days of the LTNs, there were some issues around parts
+								of the scheme as well as problems with ambulance crews not knowing the new
+								layout. Tower Hamlets council amended the scheme soon after it was put in, in
+								response to feedback from the emergency services. Further evidence would be
+								needed to support claims that delays have persisted.
+							</p>
+							<p class="w3-large">
+								See detailed analysis of
+								<a href="https://i.heartbg.uk/LFB-response-time-analysis" target="_blank"
+									>fire service</a
+								>
+								and
+								<a href="https://i.heartbg.uk/LAS-response-time-analysis" target="_blank"
+									>ambulance</a
+								>
+								response times.
+							</p>
+						</div>
+					</div>
+
+					<div class="w3-row">
+						<div class="w3-container w3-text-black" id="traffic">
+							<h2>
+								<b>Traffic and congestion</b>
+							</h2>
+							<p class="w3-large">
+								Another claim in the consultation document is that “congestion on Hackney Road
+								and Bethnal Green Road (has) increased.” Congestion is best and most easily
+								measured using TFL bus journey times. Our analysis of bus journey times and
+								other data provided by TFL shows that on almost all boundary roads near the
+								LTNS, changes in journey times are in line with the general trend on similar
+								roads (without LTNs) in Tower Hamlets.
+							</p>
+							<p class="w3-large">
+								Congestion is best and most easily measured using TFL bus journey times. Our
+								analysis of bus journey times and other data provided by TFL shows that on
+								almost all boundary roads near the LTNS, changes in journey times are in line
+								with the general trend on similar roads (without LTNs) in Tower Hamlets.
+							</p>
+							<p class="w3-large">
+								There has been slight slowing in the Eastbound stretch of Hackney Road, but the
+								data shows that
+								<b>at most bus journey times have increased by an average of 30 seconds.</b>
+							</p>
+							<p class="w3-large">
+								This road receives a lot of traffic from bordering Hackney, which has also
+								brought in changes to traffic management in recent years. It is not possible or
+								credible to attribute the slight slowing of traffic to the Tower Hamlets LTN.
+							</p>
+							<p class="w3-large">
+								Hackney Road and Bethnal Green Road have always been two of the slower roads in
+								the borough for bus journeys. Since the LTNs were installed,
+								<b
+									>Hackney Road eastbound has slowed by less than 1mph and Bethnal Green Road has
+									seen no change</b
+								>
+								– while Whitechapel Road, far from the LTN zone, has become slower than either
+								of them.
+							</p>
+							<p class="w3-large">
+								Another trend is that
+								<b>journey times, having slowed in 2021 / 22, are now improving again</b>. This
+								may indicate that things are settling down after the introduction of the LTNs
+								and motorists are adapting. At the very least, it shows that the picture is more
+								nuanced than this particular LTN = busier boundary roads.
+							</p>
+							<p class="w3-large">
+								Traffic patterns in Tower Hamlets have shifted around a great deal in the last
+								couple of years for many reasons. Besides the installations of LTNs in Tower
+								Hamlets we have seen several lockdowns, new ULEZ rules, and more cars on the
+								roads across the borough than in 2019.
+								<b
+									>None of the evidence we have seen supports the claim that congestion has
+									increased enough to justify reversing the LTNs – especially when you look at air
+									quality.</b
+								>
+							</p>
+							<p class="w3-large">
+								<b
+									>A letter released to us through an FOI request to TFL also points out that
+									reversing the changes on the Old Bethnal Green Road scheme, will potentially
+									also have an impact on bus journey times and congestion on Hackney Road. In an
+									official letter to Lutfur Rahman, dated 28 July this year, Will Norman from TFL
+									stated:</b
+								>
+							</p>
+							<blockquote>
+								“...Removing the Old Bethnal Road scheme would prevent TfL introducing a bus
+								priority scheme on Hackney Road as cyclists who currently benefit from the
+								scheme would be forced back to use that road.”
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="w3-row">
+						<div class="w3-container w3-text-black" id="air">
+							<h2>
+								<b>Air quality</b>
+							</h2>
+							<p class="w3-large">
+								The bottom line on air quality in Tower Hamlets is that it is
+								<b>dramatically better now that it was a few years ago</b> – according to the
+								council’s own data.
+							</p>
+							<p class="w3-large">
+								<b>Everywhere in the borough now has lower pollution levels than in 2019</b> and
+								is within air quality objectives. Only Roman Road / Globe Road and Whitechapel
+								High St have seen any increase in pollution since 2020, and both are still far
+								below 2019 levels.
+							</p>
+							<p class="w3-large">
+								It’s too early for accurate data for 2022, but up until the end of 2021 there
+								was <b>no negative impact on air quality on boundary roads</b> from the Old
+								Bethnal Green Road LTN.
+							</p>
+						</div>
+					</div>
+
+					<div class="w3-row">
+						<div class="w3-container w3-text-black" id="conclusion">
+							<h2>
+								<b>Conclusion</b>
+							</h2>
+							<p class="w3-large">
+								<b
+									>In the absence of evidence that the changes to road layouts have had negative
+									impacts on emergency service response times, congestion and air quality, the
+									question of whether to reverse the new road layouts becomes a matter of personal
+									preference and personal convenience for motorists. This needs to be weighed
+									carefully against improved safety, the needs of the whole community and the
+									wider climate crisis.</b
+								>
+							</p>
+							<p class="w3-large">
+								<b
+									>It always takes time to get used to change. There may be improvements that can
+									be made to the street schemes which address residents’ concerns, but ripping out
+									the entire scheme without evidence that it’s not working would be hugel wasteful
+									and unnecessarily extreme.</b
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-col m1 w3-hide-small">&nbsp;</div>
+			</div>
+		</div>
+
+		<!-- Third Parallax Image with Contact Text -->
+		<div class="bgimg-2 w3-display-container w3-light-gray w3-opacity-min">
+			<div class="w3-display-middle"></div>
+			<!-- Container (Contact Section) -->
+			<div class="w3-content w3-container w3-padding-64" id="contact">
+				<h2 class="w3-center">
+					Contact
+					<strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong>
+				</h2>
+				<p class="w3-center w3-padding-large w3-large">
+					<em
+						>We're keen to engage with as many Bethnal Green residents as we can and if you
+						have questions we'll reply where we can. Please contact us via
+						<a
+							class="w3-hover-text-green"
+							href="mailto:info@heartbg.uk?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]."
+							>email</a
+						>
+						and join us on
+						<a
+							href="https://www.facebook.com/groups/3166302756926054/?ref=share"
+							target="_blank"
+							>Facebook</a
+						>
+						or
+						<a
+							href="https://twitter.com/SaveOldBGR"
+							title="Twitter"
+							target="_blank"
+							class="w3-hover-text-green"
+							>Twitter</a
+						>.</em
+					>
+				</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer
+			class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+		>
+			<a href="#title" class="w3-button w3-light-grey"
+				><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+			>
+			<div class="w3-xlarge w3-section">
+				<a
+					href="https://www.facebook.com/groups/3166302756926054/?ref=share"
+					title="Facebook"
+					target="_blank"
+					class="w3-hover-text-green"
+					><i class="fa-brands fa-facebook-square w3-hover-opacity"></i
+				></a>
+				<a
+					href="https://www.instagram.com/sossbethnalgreen/"
+					title="Instagram"
+					target="_blank"
+					class="w3-hover-text-green w3-margin-left"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+				<a
+					href="https://twitter.com/SaveOldBGR"
+					title="Twitter"
+					target="_blank"
+					class="w3-hover-text-green w3-margin"
+					><i class="fa-brands fa-twitter"></i
+				></a>
+				<a
+					href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]"
+					class="w3-hover-text-green"
+					title="email"
+					target="_blank"
+					><i class="fa-solid fa-paper-plane w3-hover-opacity"></i
+				></a>
+			</div>
+			<p>
+				Powered by
+				<a
+					href="https://www.facebook.com/groups/3166302756926054/?ref=share"
+					title=" "
+					target="_blank"
+					class="w3-hover-text-green"
+					>Tower Hamlets Residents</a
+				>
+			</p>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+
+		<script>
+			var lazyLoadInstance = new LazyLoad({
+				// Your custom settings go here
+			});
+
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
+			}
+
+			// Change style of navbar on scroll
+			window.onscroll = function () {
+				myFunction();
+			};
+
+			function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+				} else {
+					navbar.className = navbar.className.replace(
+						" w3-card w3-animate-top w3-white",
+						""
+					);
+				}
+			}
+
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
+	</body>
+</html>
