@@ -74,29 +74,18 @@
 				cursor: pointer;
 			}
 
-			.sticker {
-				width: 150px;
-				height: 150px;
-				-webkit-border-radius: 50%;
-				-moz-border-radius: 50%;
-				border-radius: 50%;
-				color: #fff;
-				line-height: 300px;
-				text-align: center;
-				background: black;
-				display: inline-block;
-				margin-top: -30%;
-				line-height: 32px;
-				font-size: 1.9rem;
-				font-weight: 700;
-				transform: rotate(20deg);
-				font-family: "Allerta Stencil", Sans-serif;
+			.box {
+				display: none;
+				width: 100%;
 			}
 
-			.sticker:hover {
-				background: rgb(213, 23, 28);
-				transform: rotate(0deg);
+			a:hover + .box,
+			.box:hover {
+				display: block;
+				position: relative;
+				z-index: 100;
 			}
+
 			/* Turn off parallax scrolling for tablets and phones */
 			@media only screen and (max-width: 1600px) {
 				.bgimg-1,
@@ -156,13 +145,26 @@
 				>
 				<a
 					href="stories.html"
-					class="w3-bar-item w3-button w3-gray w3-opacity-min w3-text-white w3-hide-small"
-					><b>STORIES</b></a
+					class="w3-bar-item w3-button w3-white w3-opacity-min w3-hide-small"
+					>STORIES</a
 				>
 				<a
 					href="you-asked.html"
 					class="w3-bar-item w3-button w3-white w3-opacity-min w3-hide-small"
 					>YOU ASKED</a
+				>
+				<a
+					href="press.html"
+					class="
+						w3-bar-item
+						w3-button
+						w3-gray
+						w3-opacity-min
+						w3-text-white
+						w3-hide-small
+						w3-hide-medium
+					"
+					><b>PRESS</b></a
 				>
 				<a
 					href="#contact"
@@ -237,41 +239,15 @@
 							<p class="w3-text-black">
 								<b>
 									<a
-										href="https://www.mylondon.news/news/west-london-news/local-outrage-east-london-council-24465639"
-										>Local outrage as East London council plans to reopen roads closed for
-										pedestrians</a
+										href="https://drive.google.com/file/d/1y5h-XeaxxqaDOELw-vaGa_I9QRqx3xAQ/view?usp=sharing"
+										>Letter - A bit twee maybe, but it's how millions want to live</a
 									>
+									<div class="box">
+										<iframe src="https://www.jquery.com/" width="500px" height="500px"> </iframe>
+									</div>
 								</b>
 							</p>
-							<p class="w3-monospace w3-small">MyLondon 12.06.22<br />Hannah Neary</p>
-						</div>
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a href="/news.html#post_16">TV One News</a>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">29.07.22<br />Abdul Woahid</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a href="/media/BBC_Radio_London_2022-08-04_09-00-05.mp3"
-										>Phone-in with Lutfur Rahman</a
-									>
-								</b>
-								(29min 29sec)
-							</p>
-							<p class="w3-monospace w3-small">BBC Radio London 04.08.22<br />Eddie Nestor</p>
+							<p class="w3-monospace w3-small">Financial Times 15.10.22<br />Juliette Tuke</p>
 						</div>
 
 						<div
@@ -282,146 +258,13 @@
 							<p class="w3-text-black">
 								<b>
 									<a
-										href="https://drive.google.com/file/d/1y-c_otBIWe0T9n8v-gjkIxwhikBr24qZ/view?usp=sharing"
-										>Worried that our mayor is going backwards</a
+										href="https://www.bbc.co.uk/iplayer/episode/m001d208/politics-london-09102022"
+										>BBC Politics London</a
 									>
 								</b>
+								(18min 20sec)
 							</p>
-							<p class="w3-monospace w3-small">
-								East London Advertiser 25.08.22<br />Shaheena Parvin
-							</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a
-										href="https://romanroadlondon.com/save-our-safer-streets-tower-hamlets-legal-challenge-crowdfunder/"
-										>Liveable Streets campaign group launch crowd funder for legal challenge to
-										Tower Hamlets Council</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">RomanRoad 07.09.22<br />Polly Nash</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a
-										href="https://romanroadlondon.com/liveable-streets-case-for-reversal-tower-hamlets/"
-										>Liveable Streets: the case for reversal</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">RomanRoad 23.09.22<br />Polly Nash</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a
-										href="https://www.standard.co.uk/news/london/lutfur-rahman-tower-hamlets-traffic-calming-bethnal-green-safer-streets-b1028120.html"
-										>Tower Hamlets: Lutfur Rahman’s bid to end traffic calming hits the buffers</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">Evening Standard 26.09.22<br />Ross Lydall</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a
-										href="https://www.mylondon.news/news/east-london-news/tower-hamlets-rip-up-traffic-25138364"
-										>Tower Hamlets to rip up traffic blocks as 3,000 residents rush to defend
-										them</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">MyLondon 29.09.22<br />Ruby Gregory</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a href="https://romanroadlondon.com/liveable-streets-bow-foi-antill-road/"
-										>Consultation receiving six objections led to removal of Antill Road traffic
-										filter</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">RomanRoad 30.09.22<br />Polly Nash</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a
-										href="https://www.standard.co.uk/news/transport/mayor-lutfur-rahman-ltn-enforcement-camera-tower-hamlets-london-b1029336.html"
-										>Tower Hamlets Mayor Lutfur Rahman ‘ripped out LTN enforcement camera after six
-										people complained’</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">Evening Standard 03.10.22<br />Ross Lydall</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a
-										href="https://www.mylondon.news/news/east-london-news/families-furious-tower-hamlets-mayor-25176820"
-										>Families furious with Tower Hamlets Mayor over plans to rip up road blocks</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">MyLondon 04.10.22<br />Ruby Gregory</p>
-						</div>
-
-						<div
-							class="
-								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
-							"
-						>
-							<p class="w3-text-black">
-								<b>
-									<a
-										href="https://romanroadlondon.com/save-our-safer-streets-petition-rejected-tower-hamlets/"
-										>Petition to reinstate Liveable Streets Scheme rejected by Tower Hamlets
-										Council</a
-									>
-								</b>
-							</p>
-							<p class="w3-monospace w3-small">RomanRoad 07.10.22<br />Polly Nash</p>
+							<p class="w3-monospace w3-small">09.10.22<br />Ruby Gregory</p>
 						</div>
 
 						<div
@@ -450,13 +293,13 @@
 							<p class="w3-text-black">
 								<b>
 									<a
-										href="https://www.bbc.co.uk/iplayer/episode/m001d208/politics-london-09102022"
-										>BBC Politics London</a
+										href="https://romanroadlondon.com/save-our-safer-streets-petition-rejected-tower-hamlets/"
+										>Petition to reinstate Liveable Streets Scheme rejected by Tower Hamlets
+										Council</a
 									>
 								</b>
-								(18min 20sec)
 							</p>
-							<p class="w3-monospace w3-small">09.10.22<br />Ruby Gregory</p>
+							<p class="w3-monospace w3-small">RomanRoad 07.10.22<br />Polly Nash</p>
 						</div>
 
 						<div
@@ -467,12 +310,175 @@
 							<p class="w3-text-black">
 								<b>
 									<a
-										href="https://drive.google.com/file/d/1y5h-XeaxxqaDOELw-vaGa_I9QRqx3xAQ/view?usp=sharing"
-										>Letter - A bit twee maybe, but it's how millions want to live</a
+										href="https://www.mylondon.news/news/east-london-news/families-furious-tower-hamlets-mayor-25176820"
+										>Families furious with Tower Hamlets Mayor over plans to rip up road blocks</a
 									>
 								</b>
 							</p>
-							<p class="w3-monospace w3-small">Financial Times 15.10.22<br />Juliette Tuke</p>
+							<p class="w3-monospace w3-small">MyLondon 04.10.22<br />Ruby Gregory</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a
+										href="https://www.standard.co.uk/news/transport/mayor-lutfur-rahman-ltn-enforcement-camera-tower-hamlets-london-b1029336.html"
+										>Tower Hamlets Mayor Lutfur Rahman ‘ripped out LTN enforcement camera after six
+										people complained’</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">Evening Standard 03.10.22<br />Ross Lydall</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a href="https://romanroadlondon.com/liveable-streets-bow-foi-antill-road/"
+										>Consultation receiving six objections led to removal of Antill Road traffic
+										filter</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">RomanRoad 30.09.22<br />Polly Nash</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a
+										href="https://www.mylondon.news/news/east-london-news/tower-hamlets-rip-up-traffic-25138364"
+										>Tower Hamlets to rip up traffic blocks as 3,000 residents rush to defend
+										them</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">MyLondon 29.09.22<br />Ruby Gregory</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a
+										href="https://www.standard.co.uk/news/london/lutfur-rahman-tower-hamlets-traffic-calming-bethnal-green-safer-streets-b1028120.html"
+										>Tower Hamlets: Lutfur Rahman’s bid to end traffic calming hits the buffers</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">Evening Standard 26.09.22<br />Ross Lydall</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a
+										href="https://romanroadlondon.com/liveable-streets-case-for-reversal-tower-hamlets/"
+										>Liveable Streets: the case for reversal</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">RomanRoad 23.09.22<br />Polly Nash</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a
+										href="https://romanroadlondon.com/save-our-safer-streets-tower-hamlets-legal-challenge-crowdfunder/"
+										>Liveable Streets campaign group launch crowd funder for legal challenge to
+										Tower Hamlets Council</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">RomanRoad 07.09.22<br />Polly Nash</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a
+										href="https://drive.google.com/file/d/1y-c_otBIWe0T9n8v-gjkIxwhikBr24qZ/view?usp=sharing"
+										>Worried that our mayor is going backwards</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">
+								East London Advertiser 25.08.22<br />Shaheena Parvin
+							</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a href="/media/BBC_Radio_London_2022-08-04_09-00-05.mp3"
+										>Phone-in with Lutfur Rahman</a
+									>
+								</b>
+								(29min 29sec)
+							</p>
+							<p class="w3-monospace w3-small">BBC Radio London 04.08.22<br />Eddie Nestor</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a href="/news.html#post_16">TV One News</a>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">29.07.22<br />Abdul Woahid</p>
+						</div>
+
+						<div
+							class="
+								w3-panel w3-border w3-hover-pale-red w3-border-light-grey w3-hover-border-red
+							"
+						>
+							<p class="w3-text-black">
+								<b>
+									<a
+										href="https://www.mylondon.news/news/west-london-news/local-outrage-east-london-council-24465639"
+										>Local outrage as East London council plans to reopen roads closed for
+										pedestrians</a
+									>
+								</b>
+							</p>
+							<p class="w3-monospace w3-small">MyLondon 12.06.22<br />Hannah Neary</p>
 						</div>
 					</div>
 					<div class="w3-col w3-hide-small m2">&nbsp;</div>
