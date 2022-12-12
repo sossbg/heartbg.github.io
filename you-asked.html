@@ -1,114 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Save Our Safer Streets - You asked</title>
-		<meta
-			name="description"
-			content="I &hearts; BETHNAL GREEN is the online home of SAVE OUR SAFER STREETS. We are a grassroots community group seeking to retain and improve the changes to the streets in Bethnal Green implemented in 2020. This is our stories of local people page."
-		/>
-		<meta name="”robots”" content="index, follow" />
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		/>
-		<style>
-			body,
-			h1,
-			h2,
-			h3,
-			h4,
-			h5,
-			h6 {
-				font-family: "Lato", sans-serif;
-			}
 
-			body,
-			html {
-				height: 100%;
-				color: #777;
-				line-height: 1.8;
-			}
-			/* Create a Parallax Effect */
+<head>
+	<title>Save Our Safer Streets - You asked</title>
+	<meta name="description"
+		content="I &hearts; BETHNAL GREEN is the online home of SAVE OUR SAFER STREETS. We are a grassroots community group seeking to retain and improve the changes to the streets in Bethnal Green implemented in 2020. This is our stories of local people page." />
+	<meta name="”robots”" content="index, follow" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<style>
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Lato", sans-serif;
+		}
+
+		body,
+		html {
+			height: 100%;
+			color: #777;
+			line-height: 1.8;
+		}
+
+		/* Create a Parallax Effect */
+
+		.bgimg-1,
+		.bgimg-2,
+		.bgimg-3 {
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		/* First image (Logo. Full height) */
+
+		.bgimg-1 {
+			background-image: url("media/obg_01.jpg");
+			min-height: 100%;
+		}
+
+		/* Second image (Portfolio) */
+
+		.bgimg-2 {
+			background-image: url("media/obg_02.jpg");
+			min-height: 60%;
+		}
+
+		/* Third image (Contact) */
+
+		.bgimg-3 {
+			background-image: url("media/obg_03.jpg");
+			min-height: 45%;
+		}
+
+		.w3-wide {
+			letter-spacing: 10px;
+		}
+
+		.w3-hover-opacity {
+			cursor: pointer;
+		}
+
+		.coming {
+			left: 0;
+			content: "Coming Soon";
+			background: rgba(255, 255, 255, 0.59);
+			color: #000;
+			width: 100%;
+			height: 100%;
+			line-height: 2.5;
+			font-weight: 600;
+			position: absolute;
+		}
+
+		/* Turn off parallax scrolling for tablets and phones */
+		@media only screen and (max-width: 1600px) {
 
 			.bgimg-1,
 			.bgimg-2,
 			.bgimg-3 {
-				background-attachment: fixed;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
+				background-attachment: scroll;
+				min-height: 400px;
 			}
-			/* First image (Logo. Full height) */
+		}
 
-			.bgimg-1 {
-				background-image: url("media/obg_01.jpg");
-				min-height: 100%;
-			}
-			/* Second image (Portfolio) */
-
-			.bgimg-2 {
-				background-image: url("media/obg_02.jpg");
-				min-height: 60%;
-			}
-			/* Third image (Contact) */
-
+		@media only screen and (min-width: 768px) {
 			.bgimg-3 {
-				background-image: url("media/obg_03.jpg");
-				min-height: 45%;
+				background-image: url("media/large_media/obg_03.jpg");
 			}
+		}
+	</style>
+</head>
 
-			.w3-wide {
-				letter-spacing: 10px;
-			}
-
-			.w3-hover-opacity {
-				cursor: pointer;
-			}
-
-			.coming {
-				left: 0;
-				content: "Coming Soon";
-				background: rgba(255, 255, 255, 0.59);
-				color: #000;
-				width: 100%;
-				height: 100%;
-				line-height: 2.5;
-				font-weight: 600;
-				position: absolute;
-			}
-			/* Turn off parallax scrolling for tablets and phones */
-			@media only screen and (max-width: 1600px) {
-				.bgimg-1,
-				.bgimg-2,
-				.bgimg-3 {
-					background-attachment: scroll;
-					min-height: 400px;
-				}
-			}
-
-			@media only screen and (min-width: 768px) {
-				.bgimg-3 {
-					background-image: url("media/large_media/obg_03.jpg");
-				}
-			}
-		</style>
-	</head>
-
-	<body>
-		<!-- Navbar (sit on top) -->
-		<div class="w3-top">
-			<div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99">
-				<a
-					class="
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99">
+			<a class="
 						w3-bar-item
 						w3-button
 						w3-white
@@ -117,884 +115,883 @@
 						w3-hide-medium
 						w3-hide-large
 						w3-right
-					"
-					href="javascript:void(0);"
-					onclick="toggleFunction()"
-					title="Toggle Navigation Menu"
-				>
-					<i class="fa fa-bars"></i>
-				</a>
-				<a href="index.html#home" class="w3-bar-item w3-button w3-white w3-opacity"
-					>HOME</a
-				>
-				<a
-					href="index.html#about"
-					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
-					>ABOUT</a
-				>
-				<a
-					href="index.html#preaction"
-					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
-					>ACTION</a
-				>
-				<a
-					href="news.html"
-					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
-					>NEWS</a
-				>
-				<a
-					href="stories.html"
-					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
-					>STORIES</a
-				>
-				<a
-					href="you-asked.html"
-					class="w3-bar-item w3-button w3-gray w3-text-white w3-opacity-min w3-hide-small"
-					><b>YOU ASKED</b></a
-				>
-				<a
-					href="press.html"
-					class="w3-bar-item w3-button w3-opacity w3-hide-small w3-hide-medium w3-white"
-					>PRESS</a
-				>
-				<a
-					href="#contact"
-					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
-					>CONTACT</a
-				>
-				<a
-					href="#"
-					class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide"
-				>
-				</a>
-			</div>
+					" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href="index.html#home" class="w3-bar-item w3-button w3-white w3-opacity">HOME</a>
+			<a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ABOUT</a>
+			<a href="index.html#preaction" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ACTION</a>
+			<a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">NEWS</a>
+			<a href="stories.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">STORIES</a>
+			<a href="you-asked.html"
+				class="w3-bar-item w3-button w3-gray w3-text-white w3-opacity-min w3-hide-small"><b>YOU ASKED</b></a>
+			<a href="press.html"
+				class="w3-bar-item w3-button w3-opacity w3-hide-small w3-hide-medium w3-white">PRESS</a>
+			<a href="who-we-are.html" class="w3-bar-item w3-button w3-opacity w3-hide-small w3-hide-medium w3-white">WHO
+				WE ARE</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">CONTACT</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide">
+			</a>
+		</div>
 
-			<!-- Navbar on small screens -->
-			<div
-				id="navDemo"
-				class="
+		<!-- Navbar on small screens -->
+		<div id="navDemo" class="
 					w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min
-				"
-			>
-				<a
-					href="index.html#about"
-					class="w3-bar-item w3-button"
-					onclick="toggleFunction()"
-					>ABOUT</a
-				>
-				<a
-					href="index.html#preaction"
-					class="w3-bar-item w3-button"
-					onclick="toggleFunction()"
-					>ACTION</a
-				>
-				<a href="news.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
-					>NEWS</a
-				>
-				<a href="stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
-					>STORIES</a
-				>
-				<a href="you-asked.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
-					>YOU ASKED</a
-				>
-				<a href="press.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
-					>PRESS</a
-				>
-				<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"
-					>CONTACT</a
-				>
-				<a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
-			</div>
+				">
+			<a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+			<a href="index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
+			<a href="news.html" class="w3-bar-item w3-button" onclick="toggleFunction()">NEWS</a>
+			<a href="stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STORIES</a>
+			<a href="you-asked.html" class="w3-bar-item w3-button" onclick="toggleFunction()">YOU ASKED</a>
+			<a href="press.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PRESS</a>
+			<a href="#who-we-are.html" class="w3-bar-item w3-button" onclick="toggleFunction()">WHO WE ARE</a>
+			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
 		</div>
+	</div>
 
-		<!-- Top Parallax Image with SOSS Text -->
-		<div class="bgimg-3 w3-display-container w3-opacity-min" id="title">
-			<div class="w3-display-bottommiddle w3-margin-bottom">
-				<h1 class="w3-xxlarge w3-text-white w3-pink w3-wide w3-opacity-min w3-center">
-					&nbsp;YOU ASKED&nbsp;<br />&nbsp;WE ANSWERED&nbsp;
-				</h1>
-			</div>
+	<!-- Top Parallax Image with SOSS Text -->
+	<div class="bgimg-3 w3-display-container w3-opacity-min" id="title">
+		<div class="w3-display-bottommiddle w3-margin-bottom">
+			<h1 class="w3-xxlarge w3-text-white w3-pink w3-wide w3-opacity-min w3-center">
+				&nbsp;YOU ASKED&nbsp;<br />&nbsp;WE ANSWERED&nbsp;
+			</h1>
 		</div>
+	</div>
 
-		<!-- Container -->
-		<div class="w3-container w3-padding w3-margin-top">
-			<div class="w3-content">
-				<div class="w3-row">
-					<div class="w3-col w3-hide-small m2">&nbsp;</div>
-					<div class="w3-col s12 m8">
-						<p class="w3-large">
-							We've been researching, putting in Freedom of Information requests, speaking to
-							experts and generally digging around for answers for some of the most pressing
-							questions you've been asking us about the new street layouts in Tower Hamlets.
-							We'll be presenting our findings below. If you have a question you'd like us to
-							look into, please email us on
-							<a href="mailto:SOSSBGResearch@gmail.com">SOSSBGResearch@gmail.com</a>.
-						</p>
-					</div>
-					<div class="w3-col w3-hide-small m2">&nbsp;</div>
+	<!-- Container -->
+	<div class="w3-container w3-padding w3-margin-top">
+		<div class="w3-content">
+			<div class="w3-row">
+				<div class="w3-col w3-hide-small m2">&nbsp;</div>
+				<div class="w3-col s12 m8">
+					<p class="w3-large">
+						We've been researching, putting in Freedom of Information requests, speaking to
+						experts and generally digging around for answers for some of the most pressing
+						questions you've been asking us about the new street layouts in Tower Hamlets.
+						We'll be presenting our findings below. If you have a question you'd like us to
+						look into, please email us on
+						<a href="mailto:SOSSBGResearch@gmail.com">SOSSBGResearch@gmail.com</a>.
+					</p>
 				</div>
+				<div class="w3-col w3-hide-small m2">&nbsp;</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="w3-container w3-padding-8">
-			<div class="w3-content">
-				<div class="w3-col w3-hide-small m1">&nbsp;</div>
-				<div class="w3-col s12 m10">
-					
-					<!-- post 1 -->
-					<div class="w3-margin w3-padding" id="fire">
-						<div
-							class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Fire Brigade response times</h2>
+	<div class="w3-container w3-padding-8">
+		<div class="w3-content">
+			<div class="w3-col w3-hide-small m1">&nbsp;</div>
+			<div class="w3-col s12 m10">
+
+				<!-- post 1 -->
+				<div class="w3-margin w3-padding" id="fire">
+					<div class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Fire Brigade response times</h2>
+						</div>
+						<div class="w3-large w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>Have the new road layouts impacted fire appliance response times?</b>
 							</div>
-							<div class="w3-large w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b>Have the new road layouts impacted fire appliance response times?</b>
-								</div>
-								<div class="w3-margin-bottom">
-									<em>The short answer:</em><br />
-									<b
-										>No, the new layouts have not had any impact on response times for fire
-										appliances.</b
-									>
-								</div>
+							<div class="w3-margin-bottom">
+								<em>The short answer:</em><br />
+								<b>No, the new layouts have not had any impact on response times for fire
+									appliances.</b>
 							</div>
-							<div class="w3-col m7 s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<em>How we did the sums:</em><br />
-									We looked at fire appliance response times across Tower Hamlets, and for wards with
-									the new road layouts: <em>Bow West</em>, <em>St Katherine’s and Wapping</em>,
-									<em>Spitalfields & Banglatown</em>, <em>St Peter’s</em> and <em>Weavers</em>.
-									<p>
-										For each ward, we compared response times for like-for-like periods before and
-										after the new road layouts, comparing the first six months in 2019 and the first
-										six months in 2022.
-									</p>
-									<p>
-										Using a statistical test known as a <em>t-Test</em>, we found no significant
-										differences between before and after times for any of the wards. In other words,
-										fire appliance response times were statistically the same before and after the new
-										road layouts.
-									</p>
-									<p>
-										<em
-											>For a detailed breakdown of our analysis and to view the results for individual
-											wards visit
-											<a href="https://i.heartbg.uk/LFB-response-time-analysis" target="_blank"
-												>this page</a
-											>.</em
-										>
-									</p>
-								</div>
+						</div>
+						<div class="w3-col m7 s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<em>How we did the sums:</em><br />
+								We looked at fire appliance response times across Tower Hamlets, and for wards with
+								the new road layouts: <em>Bow West</em>, <em>St Katherine’s and Wapping</em>,
+								<em>Spitalfields & Banglatown</em>, <em>St Peter’s</em> and <em>Weavers</em>.
+								<p>
+									For each ward, we compared response times for like-for-like periods before and
+									after the new road layouts, comparing the first six months in 2019 and the first
+									six months in 2022.
+								</p>
+								<p>
+									Using a statistical test known as a <em>t-Test</em>, we found no significant
+									differences between before and after times for any of the wards. In other words,
+									fire appliance response times were statistically the same before and after the new
+									road layouts.
+								</p>
+								<p>
+									<em>For a detailed breakdown of our analysis and to view the results for individual
+										wards visit
+										<a href="https://i.heartbg.uk/LFB-response-time-analysis" target="_blank">this
+											page</a>.</em>
+								</p>
 							</div>
-							<div class="w3-col m5 s12 w3-margin-top">
-								<div>
-									<iframe
-										width="100%"
-										height="316"
-										frameborder="0"
-										src="https://observablehq.com/embed/@soss/research-snippets?cells=beforeAfterResponseTimes"
-									></iframe>
-								</div>
-								<div class="w3-small w3-padding">
-									Average fire appliance response times before and after new road layouts.
-								</div>
+						</div>
+						<div class="w3-col m5 s12 w3-margin-top">
+							<div>
+								<iframe width="100%" height="316" frameborder="0"
+									src="https://observablehq.com/embed/@soss/research-snippets?cells=beforeAfterResponseTimes"></iframe>
+							</div>
+							<div class="w3-small w3-padding">
+								Average fire appliance response times before and after new road layouts.
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- post 2 -->
-					<div class="w3-margin w3-padding" id="ambulance">
-						<div
-							class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Ambulance Service response times</h2>
+				<!-- post 2 -->
+				<div class="w3-margin w3-padding" id="ambulance">
+					<div class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Ambulance Service response times</h2>
+						</div>
+						<div class="w3-large w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>Have the new road layouts impacted ambulance response times?</b>
 							</div>
-							<div class="w3-large w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b>Have the new road layouts impacted ambulance response times?</b>
-								</div>
-								<div class="w3-margin-bottom">
-									<em>The short answer:</em><br />
-									<b
-										>In the postcode district where many of the new road layouts have been installed
-										(E2), no, they have not had any impact on ambulance response times.</b
-									>
-								</div>
+							<div class="w3-margin-bottom">
+								<em>The short answer:</em><br />
+								<b>In the postcode district where many of the new road layouts have been installed
+									(E2), no, they have not had any impact on ambulance response times.</b>
 							</div>
-							<div class="w3-col m7 s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<em>How we did the sums:</em><br />
-									We looked at ambulance response times across Tower Hamlets and compared these to
-									response times in the parts of the E2 postcode district which are covered by the new LTNs (including E2 0, E2 6, E2 7, E2 8 and E2 9).
-									<p>
-										For each area, we compared response times for like-for-like periods before and
-										after the new road layouts, comparing December 2019-May 2020 and December
-										2021-May 2022.
-									</p>
-									<p>
-										We looked at ambulance responses to both category 1 (life-threatening) and
-										category 2 (emergency) calls.
-									</p>
-									<p>
-										For category 1 response times before and after the new road layouts the average
-										response times fell by 38 seconds (compared to a fall of 37 seconds for Tower Hamlets as a whole). In other words, ambulance response times for
-										category 1 (life-threatening) calls were, on average, lower after the new road layouts. The reductions were also comparable to the those across the borough as whole. 
-									</p>
-								</div>
+						</div>
+						<div class="w3-col m7 s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<em>How we did the sums:</em><br />
+								We looked at ambulance response times across Tower Hamlets and compared these to
+								response times in the parts of the E2 postcode district which are covered by the new
+								LTNs (including E2 0, E2 6, E2 7, E2 8 and E2 9).
+								<p>
+									For each area, we compared response times for like-for-like periods before and
+									after the new road layouts, comparing December 2019-May 2020 and December
+									2021-May 2022.
+								</p>
+								<p>
+									We looked at ambulance responses to both category 1 (life-threatening) and
+									category 2 (emergency) calls.
+								</p>
+								<p>
+									For category 1 response times before and after the new road layouts the average
+									response times fell by 38 seconds (compared to a fall of 37 seconds for Tower
+									Hamlets as a whole). In other words, ambulance response times for
+									category 1 (life-threatening) calls were, on average, lower after the new road
+									layouts. The reductions were also comparable to the those across the borough as
+									whole.
+								</p>
 							</div>
-							<div class="w3-col m5 s12 w3-margin-top">
-								<div>
-									<iframe
-										width="100%"
-										height="316"
-										frameborder="0"
-										src="https://observablehq.com/embed/@soss/research-snippets?cells=viewof+areaSelect3%2CambulancePlot"
-									></iframe>
-								</div>
-								<div class="w3-small w3-padding">
-									Average Category 1 ambulance response times before and after new road layouts.
-								</div>
+						</div>
+						<div class="w3-col m5 s12 w3-margin-top">
+							<div>
+								<iframe width="100%" height="316" frameborder="0"
+									src="https://observablehq.com/embed/@soss/research-snippets?cells=viewof+areaSelect3%2CambulancePlot"></iframe>
 							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<p>
-										For category 2 response times, there were increases for Tower Hamlets as a whole
-										and for the E2 postcode areas. However, response times in the postcode areas with the new road layouts were not
-										as badly impacted as Tower Hamlets as a whole.
-									</p>
+							<div class="w3-small w3-padding">
+								Average Category 1 ambulance response times before and after new road layouts.
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<p>
+									For category 2 response times, there were increases for Tower Hamlets as a whole
+									and for the E2 postcode areas. However, response times in the postcode areas with
+									the new road layouts were not
+									as badly impacted as Tower Hamlets as a whole.
+								</p>
 
-									<p>
-										Overall, with very small differences in response times between the before and
-										after periods, it in unlikely that the new road layouts adversely impacted
-										ambulance response times.
-									</p>
-									<p>
-										<em
-											>For a detailed breakdown of our analysis and to view the results visit
-											<a href="https://i.heartbg.uk/LAS-response-time-analysis" target="_blank"
-												>this page</a
-											>.</em
-										>
-									</p>
-									<p class="w3-small w3-text-gray">
-										Small print: The data we used for this analysis was supplied by the London Ambulance Service in response to a freedom of information request. The data presents average response times per month rather than response times to individual callouts. Thus, the analysis we've conducted must be seen as partial and conclusions provisional. However, the data available suggests the LTNs are not impacting ambulance response times. We'd welcome further detailed analysis from Tower Hamlets.
-									</p>
-								</div>
+								<p>
+									Overall, with very small differences in response times between the before and
+									after periods, it in unlikely that the new road layouts adversely impacted
+									ambulance response times.
+								</p>
+								<p>
+									<em>For a detailed breakdown of our analysis and to view the results visit
+										<a href="https://i.heartbg.uk/LAS-response-time-analysis" target="_blank">this
+											page</a>.</em>
+								</p>
+								<p class="w3-small w3-text-gray">
+									Small print: The data we used for this analysis was supplied by the London Ambulance
+									Service in response to a freedom of information request. The data presents average
+									response times per month rather than response times to individual callouts. Thus,
+									the analysis we've conducted must be seen as partial and conclusions provisional.
+									However, the data available suggests the LTNs are not impacting ambulance response
+									times. We'd welcome further detailed analysis from Tower Hamlets.
+								</p>
 							</div>
 						</div>
 					</div>
-					
-					<!-- post 9 -->
-					<div class="w3-hide w3-margin w3-padding" id="emergency-services">
-						<div
-							class="
+				</div>
+
+				<!-- post 9 -->
+				<div class="w3-hide w3-margin w3-padding" id="emergency-services">
+					<div class="
 								w3-panel
 								w3-container
 								w3-border
 								w3-border-gray
 								w3-hover-border-pink
-							"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Public Transport</h2>
-							</div>
-					
-							<div class="w3-col s12 w3-large w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b
-										>Haven't the new road layouts slowed down some emergency service vehicles?</b
-									>
-								</div>
-								<div class="w3-margin-bottom">
-									
-										<div class="w3-margin-bottom w3-text-black">
-												<p><em>The short answer:</em><br />
-												<b>Yes, the London Ambulance Service has logged 9 incidents associated with the "Liveable Streets" scheme in Tower Hamlets and communicated this to the borough's council. The Fire Brigade has also expressed concerns about the use of bollards on one road, Barnet Grove.</b></p>
-												<p><b>What we see evidence of in the communications between the emergency services and Tower Hamlets council, however, is how the borough can act to remedy and improve the new road designs.</b></p>
-												<p><b>In the case of the London Ambulance Service, there is also a clear statement of support for road layouts the prioritise pedestrians and cyclists "to promote active travel, while helping to achieve the aim of providing a lasting legacy of
-greener, safer transport."</b></p>
-										</div>
-									</div>
-									<div class="w3-col s12 w3-medium w3-text-black">
-										<div class="w3-margin-bottom">
-											<p>
-												From freedom of information (FoI) requests, we have records of correspondence between the emergency services and Tower Hamlets council.
-											</p>
-											
-											<p>In a <a href="media/research/LAS_Trust_Letter_to_Tower%20Hamlets%20_Redacted.pdf">letter to Tower Hamlets council</a>, dated 5 July 2020, the London Ambulance Service (LAS) NHS Trust states clear support for road layouts that prioritise pedestrians and cyclists.</p>
-											
-											<p>In a <a href="media/research/LAS_Trust_Letter_to_Tower%20Hamlets%20_Redacted.pdf">letter responding to our FoI request</a> the London Ambulance Service (LAS) NHS Trust write:</p>
-													
-													<blockquote><p>"... a total of 9 incidents related to Liveable Streets Programme between 2019 and 2022  (hard physical closures/bollards) have been reported via DATIX (the Trusts incident reporting system).</p>
-														
-													<p>"Each of these incidents have been feedback [sic] to Tower Hamlets Council through meetings between the council and emergency services."</p>
-													
-													<p>Additionally as with all councils the London Ambulance Service NHS Trust formally wrote to Tower Hamlets in July 2020 to highlight concerns regarding around hard closures and the need for emergency vehicle ingress/egress to be properly considered. We have attached the letter for your assistance.</p>
-												</blockquote>
-													
-												
-													
-													<blockquote>"... the removal of some of these schemes will have a negative impact on bus services and quality of life.... [T]he bus gate you intend to remove at Wapping ... allows for faster and more reliable journeys on the route 100. Furthermore, removing the Old Bethnal Road scheme would prevent TfL introducing a bus priority scheme on Hackney Road as cyclists who currently benefit from the scheme would be forced back to use that road."</blockquote>
-													
-												<p>The letter below is written in response to the consultation Tower Hamlets ran in the summer of 2022.</p>
-												
-												<div class="w3-center">
-													<a href="media/TfL_Letter_28_07_22.pdf"><img class="w3-border w3-hover-border-color lazy" src="media/TfL_Letter_28_07_22.jpg" /></a>
-												</div>
-													
-										</div>
-								</div>
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<p></p>
-								</div>
-							</div>
+							">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Public Transport</h2>
 						</div>
-					</div>
 
-					<!-- post 3 -->
-					<div class="w3-margin w3-padding" id="air">
-						<div
-							class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Air Quality</h2>
+						<div class="w3-col s12 w3-large w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>Haven't the new road layouts slowed down some emergency service vehicles?</b>
 							</div>
+							<div class="w3-margin-bottom">
 
-							<div class="w3-large w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b>Have the new road layouts impacted air quality?</b>
-								</div>
-								<div class="w3-margin-bottom">
-									<em>The short answer:</em><br />
-									<b
-										>No, pollution levels have fallen across all of Tower Hamlets and, for locations
-										near to the new road layouts, the falls have been greater than Tower Hamlets as
-										a whole.</b
-									>
-								</div>
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<p>
-									<em>How we did the sums:</em><br />
-										Using air quality collected by Tower Hamlets council, we compared air quality before and after the new road layouts were installed in
-										Tower Hamlets. The results show a fall in the average pollution levels in these
-										areas. This fall was greater than the fall for Tower Hamlets as a whole.
-									</p>
-								</div>
-							</div>
-							<div class="w3-col s12 w3-small w3-margin-bottom">
-								<table class="w3-panel w3-pale-blue w3-table w3-bordered w3-hoverable">
-								<thead>
-								  <tr>
-									<th class=""></th>
-									<th class="w3-center">Jan-Jul 2019<br>average</th>
-									<th class="w3-center"><span style="font-style:normal">Jan-Jul 2022</span><br><span style="font-style:normal">average</span></th>
-									<th class="w3-center">Change</th>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									<td class="">New road layout areas</td>
-									<td class="w3-center">48.32</td>
-									<td class="w3-center">33.74</td>
-									<td class="w3-center">&#8595 14.58</td>
-								  </tr>
-								  <tr>
-									<td class="">Tower Hamlets</td>
-									<td class="w3-center">48.31</td>
-									<td class="w3-center">37.17</td>
-									<td class="w3-center">&#8595 11.13</td>
-								  </tr>
-								</tbody>
-								</table>
-							</div>
-							<div class="w3-small w3-padding w3-center w3-margin-top">
-								Average Nitrogen Dioxide levels in areas with new road layouts and for Tower Hamlets as a whole.
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<p>
-										<em
-											>For a detailed breakdown of our analysis and to view the results visit
-											<a href="https://i.heartbg.uk/air-quality-analysis" target="_blank"
-												>this page</a
-											>.</em
-										>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<!-- post 4 -->
-					<div class="w3-margin w3-padding" id="boundary">
-						<div
-							class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Pollution on boundary roads</h2>
-							</div>
-					
-							<div class="w3-large w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b>Have the new road layouts increased pollution levels on boundary roads?</b>
-								</div>
-								<div class="w3-margin-bottom">
-									<em>The short answer:</em><br />
-									<b
-										>No, average pollution levels on Bethnal Green Road and Hackney Road have fallen since the new road layouts and the falls are greater than the fall for Tower Hamlets as a whole.</b
-									>
-								</div>
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<p>
-									<em>How we did the sums:</em><br />
-										We compared pollution levels before and after the new road layouts at locations along Bethnal Green Road and Hackney Road. The results show a fall in the average pollution levels at each of these
-										locations. The falls were greater than the fall for Tower Hamlets as a whole.
-									</p>
-								</div>
-							</div>
-							<div class=" w3-col s12 w3-small w3-margin-bottom">
-								<table class="w3-panel w3-pale-green w3-table w3-bordered w3-hoverable">
-								<thead>
-								  <tr>
-									<th class=""></th>
-									<th class="w3-center">Jan-Jul 2019<br>average</th>
-									<th class="w3-center"><span style="font-style:normal">Jan-Jul 2022</span><br><span style="font-style:normal">average</span></th>
-									<th class="w3-center">Change</th>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									<td class="">Bethnal Green Road/ Brick Lane</td>
-									<td class="w3-center">47.47</td>
-									<td class="w3-center">30.66</td>
-									<td class="w3-center">&#8595 16.81</td>
-								  </tr>
-								  <tr>
-									<td class="">Paradise Row/ Bethnal Green Road</td>
-									<td class="w3-center">47.24</td>
-									<td class="w3-center">31.33</td>
-									<td class="w3-center">&#8595 13.93</td>
-								  </tr>
-								  <tr>
-									<td class="">Queensbridge/ Hackney Road</td>
-									<td class="w3-center">45.97</td>
-									<td class="w3-center">32.04</td>
-									<td class="w3-center">&#8595 15.91</td>
-								  </tr>
-								  <tr>
-									<td class="">Warner Place/ Hackney Road</td>
-									<td class="w3-center">43.97</td>
-									<td class="w3-center">32.01</td>
-									<td class="w3-center">&#8595 11.4</td>
-								  </tr>
-								  <tr>
-									<td class="">Tower Hamlets<br>(excluding LTN areas)</td>
-									<td class="w3-center">48.31</td>
-									<td class="w3-center">37.17</td>
-									<td class="w3-center">&#8595 11.13</td>
-								  </tr>
-								</tbody>
-								</table>
-							</div>
-							<div class="w3-small w3-padding w3-center w3-margin-top">
-								Average Nitrogen Dioxide levels at locations on Bethnal Green Road and Hackney Road, and for Tower Hamlets as a whole.
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom">
-									<p>
-										<em
-											>For a detailed breakdown of our analysis and to view the results visit
-											<a href="https://i.heartbg.uk/air-quality-analysis" target="_blank"
-												>this page</a
-											>.</em
-										>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- post 5 -->
-					<div class="w3-margin w3-padding" id="congestion">
-						<div
-							class="
-								w3-panel
-								w3-container
-								w3-border
-								w3-border-gray
-								w3-hover-border-pink
-							"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Traffic and congestion</h2>
-							</div>
-
-							<div class="w3-col s12 w3-large w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b
-										>Have the new road layouts impacted levels of traffic on nearby boundary roads?</b
-									>
-								</div>
-								<div class="w3-margin-bottom">
-									<p><em>The short answer:</em><br />
-									<b>No, increases in journey times on boundary roads in Bethnal Green cannot be attributed to the new road layouts.</b>
-									</p>
-									<div class="w3-col s12 w3-medium w3-text-black">
-										<div class="w3-margin-bottom">
-											<p>
-												To get a picture of congestion in Tower Hamlets and near to the borough’s new road layouts we used data from Transport of London’s (TFL’s) bus journey times. Our analysis of bus journey times and other data provided by TfL shows that on Hackney Road and Bethnal Green Road, changes in journey times are in line with general trends. In other words, they don’t look different to other areas in Tower Hamlets.
-											</p>
-											<p>
-												There is no evidence of any impact on journey times on Bethnal Green Road or Hackney Road Westbound from the LTNs. At the same time some other roads in the borough, such as Whitechapel Road, far from the LTN zone, have become slower than either of them.
-											</p>
-											<p>
-												Between 2019 and 2022, there has been a slightly greater slowing in the speed of traffic on the Eastbound stretch of Hackney Road compared to other similar roads in Tower Hamlets. Even here, the data shows that <b>at most the journey time to cover the entire stretch of road has increased by an average of 30 seconds.</b> 
-											</p>
-											<p>
-												For several reasons, it is not possible or credible to attribute this slight slowing of traffic to the Tower Hamlets LTN.  In particular, this Eastbound stretch of Hackney Road receives a lot of traffic from bordering Hackney, which has also brought in changes to traffic management in the same time period. Any analysis of changes in traffic flow would need to analyse the impact of those changes as well.
-											</p>
-											<p>
-												Traffic patterns in Tower Hamlets have shifted around a great deal in the last couple of years for many reasons. Besides the installations of LTNs in Tower Hamlets we have seen several lockdowns, new ULEZ rules, and more cars on the roads across the borough than in 2019. None of the evidence we have seen supports the claim that congestion and delays in journey times have increased enough to justify reversing the LTNs – especially given the improvements in air quality across the borough.
-											</p>
-											<p>
-												A <a href="https://tfl.gov.uk/corporate/transparency/freedom-of-information/foi-request-detail?referenceId=FOI-1142-2223" target="_blank">letter</a> released to us through an FOI request to TfL also points out that reversing the changes on the Old Bethnal Green Road scheme, will potentially also have an impact on bus journey times and congestion on Hackney Road. In an official letter to Lutfur Rahman, dated 28 July this year, Will Norman from TFL stated:
-											</p>
-											<blockquote>“...Removing the Old Bethnal Road scheme would prevent TfL introducing a bus priority scheme on Hackney Road as cyclists who currently benefit from the scheme would be forced back to use that road.”</blockquote>
-											<p><b>In summary, there has been NO increase in journey times and delays on boundary roads attributable to the Tower Hamlets LTNs and the potential impact of removing the LTNs on bus travel and congestion could be a worsening of traffic conditions on those roads.</b></p>
-											<p>
-												<em>We're aiming to provide detailed analysis on congestion in Bethnal Green as soon as we can.</em>
-											</p>
-													
-										</div>
-									</div>
-									
-								</div>
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<!-- post 6 -->
-					<div class="w3-margin w3-padding" id="health">
-						<div
-							class="
-								w3-panel
-								w3-container
-								w3-border
-								w3-border-gray
-								w3-hover-border-pink
-							"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Health Services</h2>
-							</div>
-					
-							<div class="w3-col s12 w3-large w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b
-										>How do health services feel about the new road layouts?</b
-									>
-								</div>
 								<div class="w3-margin-bottom w3-text-black">
-										<em>The short answer:</em><br />
-										<b>Senior Executives working for the health service "are concerned by the proposals to reverse elements of the Bethnal Green, Bow, Wapping, and Brick Lane [Liveable Streets] schemes". They're calling on Tower Hamlets and its mayor to gather more evidence before it removes the new road layouts. They state support for the objectives of the new road layouts that promote healthier living and reduced traffic.</b>
+									<p><em>The short answer:</em><br />
+										<b>Yes, the London Ambulance Service has logged 9 incidents associated with the
+											"Liveable Streets" scheme in Tower Hamlets and communicated this to the
+											borough's council. The Fire Brigade has also expressed concerns about the
+											use of bollards on one road, Barnet Grove.</b>
+									</p>
+									<p><b>What we see evidence of in the communications between the emergency services
+											and Tower Hamlets council, however, is how the borough can act to remedy and
+											improve the new road designs.</b></p>
+									<p><b>In the case of the London Ambulance Service, there is also a clear statement
+											of support for road layouts the prioritise pedestrians and cyclists "to
+											promote active travel, while helping to achieve the aim of providing a
+											lasting legacy of
+											greener, safer transport."</b></p>
 								</div>
 							</div>
 							<div class="w3-col s12 w3-medium w3-text-black">
 								<div class="w3-margin-bottom">
 									<p>
-										Leaders at Bart's NHS Trust, the Tower Hamlets Local Medical Committee and North East London NHS Foundation Trust have written a letter to Tower Hamlets' mayor (dated 2 August 2022).</p>
-										
-										<p>They write:</p>
-											
-											<blockquote>"Prioritising walking, cycling and public transport while reducing through traffic in neighbourhoods are now recognised as necessary measures in our response to both climate change and health inequalities. We call on Tower Hamlets to maintain its commitment to enabling more sustainable journeys, improving air quality and road safety."</blockquote>
-											
-										<p>The letter below is written as a formal response to the consultation Tower Hamlets ran in the summer of 2022.</p>
-										
-										<div class="w3-center">
-											<a href="media/Barts_NHS_letter_02_22_2022.pdf"><img class="w3-border w3-hover-border-color lazy" src="media/bartsNHS_letter_02_08_2022.jpg" /></a>
-										</div>
-											
-								</div>
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<!-- post 7 -->
-					<div class="w3-margin w3-padding" id="tfl">
-						<div
-							class="
-								w3-panel
-								w3-container
-								w3-border
-								w3-border-gray
-								w3-hover-border-pink
-							"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Public Transport</h2>
-							</div>
-					
-							<div class="w3-col s12 w3-large w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b
-										>What does London's public transport body (TfL) think of the new road layouts?</b
-									>
-								</div>
-								<div class="w3-margin-bottom">
-									
-										<div class="w3-margin-bottom w3-text-black">
-												<em>The short answer:</em><br />
-												<b>London’s Walking & Cycling Commissioner from Transport for London (TfL), has written to the mayor of Tower Hamlets expressing concern for the borough's planned removal of the new road layouts. TfL views the new road layouts as integral to its objectives to promote active transport. In addition, the new roads were part funded by TfL and their removal, without full consultation, is against TFL's policies. If Tower Hamlets does remove the new road layouts it puts any future investment from TfL at risk.</b>
-										</div>
+										From freedom of information (FoI) requests, we have records of correspondence
+										between the emergency services and Tower Hamlets council.
+									</p>
+
+									<p>In a <a
+											href="media/research/LAS_Trust_Letter_to_Tower%20Hamlets%20_Redacted.pdf">letter
+											to Tower Hamlets council</a>, dated 5 July 2020, the London Ambulance
+										Service (LAS) NHS Trust states clear support for road layouts that prioritise
+										pedestrians and cyclists.</p>
+
+									<p>In a <a
+											href="media/research/LAS_Trust_Letter_to_Tower%20Hamlets%20_Redacted.pdf">letter
+											responding to our FoI request</a> the London Ambulance Service (LAS) NHS
+										Trust write:</p>
+
+									<blockquote>
+										<p>"... a total of 9 incidents related to Liveable Streets Programme between
+											2019 and 2022 (hard physical closures/bollards) have been reported via DATIX
+											(the Trusts incident reporting system).</p>
+
+										<p>"Each of these incidents have been feedback [sic] to Tower Hamlets Council
+											through meetings between the council and emergency services."</p>
+
+										<p>Additionally as with all councils the London Ambulance Service NHS Trust
+											formally wrote to Tower Hamlets in July 2020 to highlight concerns regarding
+											around hard closures and the need for emergency vehicle ingress/egress to be
+											properly considered. We have attached the letter for your assistance.</p>
+									</blockquote>
+
+
+
+									<blockquote>"... the removal of some of these schemes will have a negative impact on
+										bus services and quality of life.... [T]he bus gate you intend to remove at
+										Wapping ... allows for faster and more reliable journeys on the route 100.
+										Furthermore, removing the Old Bethnal Road scheme would prevent TfL introducing
+										a bus priority scheme on Hackney Road as cyclists who currently benefit from the
+										scheme would be forced back to use that road."</blockquote>
+
+									<p>The letter below is written in response to the consultation Tower Hamlets ran in
+										the summer of 2022.</p>
+
+									<div class="w3-center">
+										<a href="media/TfL_Letter_28_07_22.pdf"><img
+												class="w3-border w3-hover-border-color lazy"
+												src="media/TfL_Letter_28_07_22.jpg" /></a>
 									</div>
-									<div class="w3-col s12 w3-medium w3-text-black">
-										<div class="w3-margin-bottom">
-											<p>
-												London’s Walking & Cycling Commissioner, Will Norman, from Transport for London (TfL) has written a letter to Tower Hamlets' mayor (dated 28 July 2022).</p>
-												
-												<p>He writes:</p>
-													
-													<blockquote>"I am concerned about the removal of [the "Liveable Streets"] schemes without that decision being supported by a full set of evidence, including how you are meeting your public sector equality duty. If these issues are not satisfied it may impact TfL’s decision on future funding for any schemes in Tower Hamlets."</blockquote>
-													
-												<p>He goes on to write:</p>
-													
-													<blockquote>"... the removal of some of these schemes will have a negative impact on bus services and quality of life.... [T]he bus gate you intend to remove at Wapping ... allows for faster and more reliable journeys on the route 100. Furthermore, removing the Old Bethnal Road scheme would prevent TfL introducing a bus priority scheme on Hackney Road as cyclists who currently benefit from the scheme would be forced back to use that road."</blockquote>
-													
-												<p>The letter below is written in response to the consultation Tower Hamlets ran in the summer of 2022.</p>
-												
-												<div class="w3-center">
-													<a href="media/TfL_Letter_28_07_22.pdf"><img class="w3-border w3-hover-border-color lazy" src="media/TfL_Letter_28_07_22.jpg" /></a>
-												</div>
-													
-										</div>
-								</div>
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<p></p>
+
 								</div>
 							</div>
 						</div>
-					</div>
-					
-					<!-- post 8 -->
-					<div class="w3-margin w3-padding" id="fair">
-						<div
-							class="
-								w3-panel
-								w3-container
-								w3-border
-								w3-border-gray
-								w3-hover-border-pink
-							"
-						>
-							<div class="w3-col s12">
-								<h2 class="w3-xlarge w3-text-black">Fair for all</h2>
-							</div>
-					
-							<div class="w3-col s12 w3-large w3-text-black">
-								<div class="w3-margin-bottom">
-									<em>You asked:</em><br />
-									<b
-										>Are Tower Hamlets' new road layouts fair for all residents?</b
-									>
-								</div>
-								<div class="w3-margin-bottom">
-									
-										<div class="w3-margin-bottom w3-text-black">
-												<p><em>The short answer:</em><br />
-												<b>Tower Hamlets' new road layouts are located in neighbourhoods with high social deprivation indicators.</b></p>
-													
-												<p><b>In the letters above, TfL and Bart's NHS Trust say they believe the removal of the new layouts could risk the "public sector equality duty". Executives from Bart's NHS Trust, for example, write that the "different and interconnected impacts" of the newly implemented schemes have been largely positive. They note that Tower Hamlets has very low car ownership and that pollution from cars has a disproportionate affect on the most vulnerable in our society. This would mean the removal of the new road layouts would impact those without cars and the vulnerable the most.</b></p>
-										</div>
-									</div>
-									<div class="w3-col s12 w3-medium w3-text-black">
-										<div class="w3-margin-bottom">
-											<p>The recent introduction of traffic calming, green spaces, and seating areas in Bethnal Green alone, has cost £1.834 million of the Tower Hamlets Council's money (this doesn't include any project-wide costs spent across the borough). Almost all this money is Tower Hamlet's capital funding money that they get from developers specifically for <em>community infrastructure projects</em> (for a breakdown of figures, see freedom of information request <a href="https://towerhamletsportal.icasework.com/resource?id=D27360713&db=LKIVPdkPTgixWsHCc7lCNQ%3D%3D" target="_blank">Ref. 27521573</a>).</p>
-											
-											
-											<p>This funding has benefitted the wider Tower Hamlets community. A published academic article (<a href="https://www.sciencedirect.com/science/article/pii/S0966692321002477" target="_blank">Aldred et al 2021</a>), surveying the relationship between Low Traffic Neighbourhoods and deprivation, shows that the mean deprivation inside Low Traffic Neighbourhoods in Tower Hamlets is 82%. This compares to the mean deprivation outside LTNs in the borough, which is 68%. Of the 21 boroughs surveyed, only Croydon and Westminster have greater disparities than this.</p>
-											<p>Thus, the immediate benefits of the new road layouts in Tower Hamlets are for areas where deprivation levels are high. In other words, those with less are likely to feel the most immediate benefits of LTNs, such as less local pollution, more green spaces, and more areas to socialise and play.</p>
-											<p>Attempts to reverse the new road layouts and ease car travel are likely to benefit the few in Tower Hamlets. The <a href="https://www.centreforlondon.org/reader/parking-kerbside-mangement/appendix-1/" target="_blank">Centre for London report</a> says only 32% of households in Tower Hamlets have a car at all, based on data from 2015 to 2017 (London Transport Demand Survey). That is the lowest of any London Borough.</p>
-											<p>
-												<em>We're aiming to provide detailed analysis on deprivation and its connection to the new road layouts as soon as we can.</em>
-											</p>
-													
-										</div>
-								</div>
-							</div>
-							<div class="w3-col s12 w3-medium w3-text-black">
-								<div class="w3-margin-bottom w3-margin-right">
-									<p></p>
-								</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<p></p>
 							</div>
 						</div>
 					</div>
-					
 				</div>
-				<div class="w3-col w3-hide-small m1">&nbsp;</div>
+
+				<!-- post 3 -->
+				<div class="w3-margin w3-padding" id="air">
+					<div class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Air Quality</h2>
+						</div>
+
+						<div class="w3-large w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>Have the new road layouts impacted air quality?</b>
+							</div>
+							<div class="w3-margin-bottom">
+								<em>The short answer:</em><br />
+								<b>No, pollution levels have fallen across all of Tower Hamlets and, for locations
+									near to the new road layouts, the falls have been greater than Tower Hamlets as
+									a whole.</b>
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<p>
+									<em>How we did the sums:</em><br />
+									Using air quality collected by Tower Hamlets council, we compared air quality before
+									and after the new road layouts were installed in
+									Tower Hamlets. The results show a fall in the average pollution levels in these
+									areas. This fall was greater than the fall for Tower Hamlets as a whole.
+								</p>
+							</div>
+						</div>
+						<div class="w3-col s12 w3-small w3-margin-bottom">
+							<table class="w3-panel w3-pale-blue w3-table w3-bordered w3-hoverable">
+								<thead>
+									<tr>
+										<th class=""></th>
+										<th class="w3-center">Jan-Jul 2019<br>average</th>
+										<th class="w3-center"><span style="font-style:normal">Jan-Jul
+												2022</span><br><span style="font-style:normal">average</span></th>
+										<th class="w3-center">Change</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="">New road layout areas</td>
+										<td class="w3-center">48.32</td>
+										<td class="w3-center">33.74</td>
+										<td class="w3-center">&#8595 14.58</td>
+									</tr>
+									<tr>
+										<td class="">Tower Hamlets</td>
+										<td class="w3-center">48.31</td>
+										<td class="w3-center">37.17</td>
+										<td class="w3-center">&#8595 11.13</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="w3-small w3-padding w3-center w3-margin-top">
+							Average Nitrogen Dioxide levels in areas with new road layouts and for Tower Hamlets as a
+							whole.
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<p>
+									<em>For a detailed breakdown of our analysis and to view the results visit
+										<a href="https://i.heartbg.uk/air-quality-analysis" target="_blank">this
+											page</a>.</em>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- post 4 -->
+				<div class="w3-margin w3-padding" id="boundary">
+					<div class="w3-panel w3-container w3-border w3-border-gray w3-hover-border-pink">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Pollution on boundary roads</h2>
+						</div>
+
+						<div class="w3-large w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>Have the new road layouts increased pollution levels on boundary roads?</b>
+							</div>
+							<div class="w3-margin-bottom">
+								<em>The short answer:</em><br />
+								<b>No, average pollution levels on Bethnal Green Road and Hackney Road have fallen since
+									the new road layouts and the falls are greater than the fall for Tower Hamlets as a
+									whole.</b>
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<p>
+									<em>How we did the sums:</em><br />
+									We compared pollution levels before and after the new road layouts at locations
+									along Bethnal Green Road and Hackney Road. The results show a fall in the average
+									pollution levels at each of these
+									locations. The falls were greater than the fall for Tower Hamlets as a whole.
+								</p>
+							</div>
+						</div>
+						<div class=" w3-col s12 w3-small w3-margin-bottom">
+							<table class="w3-panel w3-pale-green w3-table w3-bordered w3-hoverable">
+								<thead>
+									<tr>
+										<th class=""></th>
+										<th class="w3-center">Jan-Jul 2019<br>average</th>
+										<th class="w3-center"><span style="font-style:normal">Jan-Jul
+												2022</span><br><span style="font-style:normal">average</span></th>
+										<th class="w3-center">Change</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="">Bethnal Green Road/ Brick Lane</td>
+										<td class="w3-center">47.47</td>
+										<td class="w3-center">30.66</td>
+										<td class="w3-center">&#8595 16.81</td>
+									</tr>
+									<tr>
+										<td class="">Paradise Row/ Bethnal Green Road</td>
+										<td class="w3-center">47.24</td>
+										<td class="w3-center">31.33</td>
+										<td class="w3-center">&#8595 13.93</td>
+									</tr>
+									<tr>
+										<td class="">Queensbridge/ Hackney Road</td>
+										<td class="w3-center">45.97</td>
+										<td class="w3-center">32.04</td>
+										<td class="w3-center">&#8595 15.91</td>
+									</tr>
+									<tr>
+										<td class="">Warner Place/ Hackney Road</td>
+										<td class="w3-center">43.97</td>
+										<td class="w3-center">32.01</td>
+										<td class="w3-center">&#8595 11.4</td>
+									</tr>
+									<tr>
+										<td class="">Tower Hamlets<br>(excluding LTN areas)</td>
+										<td class="w3-center">48.31</td>
+										<td class="w3-center">37.17</td>
+										<td class="w3-center">&#8595 11.13</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="w3-small w3-padding w3-center w3-margin-top">
+							Average Nitrogen Dioxide levels at locations on Bethnal Green Road and Hackney Road, and for
+							Tower Hamlets as a whole.
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<p>
+									<em>For a detailed breakdown of our analysis and to view the results visit
+										<a href="https://i.heartbg.uk/air-quality-analysis" target="_blank">this
+											page</a>.</em>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- post 5 -->
+				<div class="w3-margin w3-padding" id="congestion">
+					<div class="
+								w3-panel
+								w3-container
+								w3-border
+								w3-border-gray
+								w3-hover-border-pink
+							">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Traffic and congestion</h2>
+						</div>
+
+						<div class="w3-col s12 w3-large w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>Have the new road layouts impacted levels of traffic on nearby boundary roads?</b>
+							</div>
+							<div class="w3-margin-bottom">
+								<p><em>The short answer:</em><br />
+									<b>No, increases in journey times on boundary roads in Bethnal Green cannot be
+										attributed to the new road layouts.</b>
+								</p>
+								<div class="w3-col s12 w3-medium w3-text-black">
+									<div class="w3-margin-bottom">
+										<p>
+											To get a picture of congestion in Tower Hamlets and near to the borough’s
+											new road layouts we used data from Transport of London’s (TFL’s) bus journey
+											times. Our analysis of bus journey times and other data provided by TfL
+											shows that on Hackney Road and Bethnal Green Road, changes in journey times
+											are in line with general trends. In other words, they don’t look different
+											to other areas in Tower Hamlets.
+										</p>
+										<p>
+											There is no evidence of any impact on journey times on Bethnal Green Road or
+											Hackney Road Westbound from the LTNs. At the same time some other roads in
+											the borough, such as Whitechapel Road, far from the LTN zone, have become
+											slower than either of them.
+										</p>
+										<p>
+											Between 2019 and 2022, there has been a slightly greater slowing in the
+											speed of traffic on the Eastbound stretch of Hackney Road compared to other
+											similar roads in Tower Hamlets. Even here, the data shows that <b>at most
+												the journey time to cover the entire stretch of road has increased by an
+												average of 30 seconds.</b>
+										</p>
+										<p>
+											For several reasons, it is not possible or credible to attribute this slight
+											slowing of traffic to the Tower Hamlets LTN. In particular, this Eastbound
+											stretch of Hackney Road receives a lot of traffic from bordering Hackney,
+											which has also brought in changes to traffic management in the same time
+											period. Any analysis of changes in traffic flow would need to analyse the
+											impact of those changes as well.
+										</p>
+										<p>
+											Traffic patterns in Tower Hamlets have shifted around a great deal in the
+											last couple of years for many reasons. Besides the installations of LTNs in
+											Tower Hamlets we have seen several lockdowns, new ULEZ rules, and more cars
+											on the roads across the borough than in 2019. None of the evidence we have
+											seen supports the claim that congestion and delays in journey times have
+											increased enough to justify reversing the LTNs – especially given the
+											improvements in air quality across the borough.
+										</p>
+										<p>
+											A <a href="https://tfl.gov.uk/corporate/transparency/freedom-of-information/foi-request-detail?referenceId=FOI-1142-2223"
+												target="_blank">letter</a> released to us through an FOI request to TfL
+											also points out that reversing the changes on the Old Bethnal Green Road
+											scheme, will potentially also have an impact on bus journey times and
+											congestion on Hackney Road. In an official letter to Lutfur Rahman, dated 28
+											July this year, Will Norman from TFL stated:
+										</p>
+										<blockquote>“...Removing the Old Bethnal Road scheme would prevent TfL
+											introducing a bus priority scheme on Hackney Road as cyclists who currently
+											benefit from the scheme would be forced back to use that road.”</blockquote>
+										<p><b>In summary, there has been NO increase in journey times and delays on
+												boundary roads attributable to the Tower Hamlets LTNs and the potential
+												impact of removing the LTNs on bus travel and congestion could be a
+												worsening of traffic conditions on those roads.</b></p>
+										<p>
+											<em>We're aiming to provide detailed analysis on congestion in Bethnal Green
+												as soon as we can.</em>
+										</p>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- post 6 -->
+				<div class="w3-margin w3-padding" id="health">
+					<div class="
+								w3-panel
+								w3-container
+								w3-border
+								w3-border-gray
+								w3-hover-border-pink
+							">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Health Services</h2>
+						</div>
+
+						<div class="w3-col s12 w3-large w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>How do health services feel about the new road layouts?</b>
+							</div>
+							<div class="w3-margin-bottom w3-text-black">
+								<em>The short answer:</em><br />
+								<b>Senior Executives working for the health service "are concerned by the proposals to
+									reverse elements of the Bethnal Green, Bow, Wapping, and Brick Lane [Liveable
+									Streets] schemes". They're calling on Tower Hamlets and its mayor to gather more
+									evidence before it removes the new road layouts. They state support for the
+									objectives of the new road layouts that promote healthier living and reduced
+									traffic.</b>
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom">
+								<p>
+									Leaders at Bart's NHS Trust, the Tower Hamlets Local Medical Committee and North
+									East London NHS Foundation Trust have written a letter to Tower Hamlets' mayor
+									(dated 2 August 2022).</p>
+
+								<p>They write:</p>
+
+								<blockquote>"Prioritising walking, cycling and public transport while reducing through
+									traffic in neighbourhoods are now recognised as necessary measures in our response
+									to both climate change and health inequalities. We call on Tower Hamlets to maintain
+									its commitment to enabling more sustainable journeys, improving air quality and road
+									safety."</blockquote>
+
+								<p>The letter below is written as a formal response to the consultation Tower Hamlets
+									ran in the summer of 2022.</p>
+
+								<div class="w3-center">
+									<a href="media/Barts_NHS_letter_02_22_2022.pdf"><img
+											class="w3-border w3-hover-border-color lazy"
+											src="media/bartsNHS_letter_02_08_2022.jpg" /></a>
+								</div>
+
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- post 7 -->
+				<div class="w3-margin w3-padding" id="tfl">
+					<div class="
+								w3-panel
+								w3-container
+								w3-border
+								w3-border-gray
+								w3-hover-border-pink
+							">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Public Transport</h2>
+						</div>
+
+						<div class="w3-col s12 w3-large w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>What does London's public transport body (TfL) think of the new road layouts?</b>
+							</div>
+							<div class="w3-margin-bottom">
+
+								<div class="w3-margin-bottom w3-text-black">
+									<em>The short answer:</em><br />
+									<b>London’s Walking & Cycling Commissioner from Transport for London (TfL), has
+										written to the mayor of Tower Hamlets expressing concern for the borough's
+										planned removal of the new road layouts. TfL views the new road layouts as
+										integral to its objectives to promote active transport. In addition, the new
+										roads were part funded by TfL and their removal, without full consultation, is
+										against TFL's policies. If Tower Hamlets does remove the new road layouts it
+										puts any future investment from TfL at risk.</b>
+								</div>
+							</div>
+							<div class="w3-col s12 w3-medium w3-text-black">
+								<div class="w3-margin-bottom">
+									<p>
+										London’s Walking & Cycling Commissioner, Will Norman, from Transport for London
+										(TfL) has written a letter to Tower Hamlets' mayor (dated 28 July 2022).</p>
+
+									<p>He writes:</p>
+
+									<blockquote>"I am concerned about the removal of [the "Liveable Streets"] schemes
+										without that decision being supported by a full set of evidence, including how
+										you are meeting your public sector equality duty. If these issues are not
+										satisfied it may impact TfL’s decision on future funding for any schemes in
+										Tower Hamlets."</blockquote>
+
+									<p>He goes on to write:</p>
+
+									<blockquote>"... the removal of some of these schemes will have a negative impact on
+										bus services and quality of life.... [T]he bus gate you intend to remove at
+										Wapping ... allows for faster and more reliable journeys on the route 100.
+										Furthermore, removing the Old Bethnal Road scheme would prevent TfL introducing
+										a bus priority scheme on Hackney Road as cyclists who currently benefit from the
+										scheme would be forced back to use that road."</blockquote>
+
+									<p>The letter below is written in response to the consultation Tower Hamlets ran in
+										the summer of 2022.</p>
+
+									<div class="w3-center">
+										<a href="media/TfL_Letter_28_07_22.pdf"><img
+												class="w3-border w3-hover-border-color lazy"
+												src="media/TfL_Letter_28_07_22.jpg" /></a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- post 8 -->
+				<div class="w3-margin w3-padding" id="fair">
+					<div class="
+								w3-panel
+								w3-container
+								w3-border
+								w3-border-gray
+								w3-hover-border-pink
+							">
+						<div class="w3-col s12">
+							<h2 class="w3-xlarge w3-text-black">Fair for all</h2>
+						</div>
+
+						<div class="w3-col s12 w3-large w3-text-black">
+							<div class="w3-margin-bottom">
+								<em>You asked:</em><br />
+								<b>Are Tower Hamlets' new road layouts fair for all residents?</b>
+							</div>
+							<div class="w3-margin-bottom">
+
+								<div class="w3-margin-bottom w3-text-black">
+									<p><em>The short answer:</em><br />
+										<b>Tower Hamlets' new road layouts are located in neighbourhoods with high
+											social deprivation indicators.</b>
+									</p>
+
+									<p><b>In the letters above, TfL and Bart's NHS Trust say they believe the removal of
+											the new layouts could risk the "public sector equality duty". Executives
+											from Bart's NHS Trust, for example, write that the "different and
+											interconnected impacts" of the newly implemented schemes have been largely
+											positive. They note that Tower Hamlets has very low car ownership and that
+											pollution from cars has a disproportionate affect on the most vulnerable in
+											our society. This would mean the removal of the new road layouts would
+											impact those without cars and the vulnerable the most.</b></p>
+								</div>
+							</div>
+							<div class="w3-col s12 w3-medium w3-text-black">
+								<div class="w3-margin-bottom">
+									<p>The recent introduction of traffic calming, green spaces, and seating areas in
+										Bethnal Green alone, has cost £1.834 million of the Tower Hamlets Council's
+										money (this doesn't include any project-wide costs spent across the borough).
+										Almost all this money is Tower Hamlet's capital funding money that they get from
+										developers specifically for <em>community infrastructure projects</em> (for a
+										breakdown of figures, see freedom of information request <a
+											href="https://towerhamletsportal.icasework.com/resource?id=D27360713&db=LKIVPdkPTgixWsHCc7lCNQ%3D%3D"
+											target="_blank">Ref. 27521573</a>).</p>
+
+
+									<p>This funding has benefitted the wider Tower Hamlets community. A published
+										academic article (<a
+											href="https://www.sciencedirect.com/science/article/pii/S0966692321002477"
+											target="_blank">Aldred et al 2021</a>), surveying the relationship between
+										Low Traffic Neighbourhoods and deprivation, shows that the mean deprivation
+										inside Low Traffic Neighbourhoods in Tower Hamlets is 82%. This compares to the
+										mean deprivation outside LTNs in the borough, which is 68%. Of the 21 boroughs
+										surveyed, only Croydon and Westminster have greater disparities than this.</p>
+									<p>Thus, the immediate benefits of the new road layouts in Tower Hamlets are for
+										areas where deprivation levels are high. In other words, those with less are
+										likely to feel the most immediate benefits of LTNs, such as less local
+										pollution, more green spaces, and more areas to socialise and play.</p>
+									<p>Attempts to reverse the new road layouts and ease car travel are likely to
+										benefit the few in Tower Hamlets. The <a
+											href="https://www.centreforlondon.org/reader/parking-kerbside-mangement/appendix-1/"
+											target="_blank">Centre for London report</a> says only 32% of households in
+										Tower Hamlets have a car at all, based on data from 2015 to 2017 (London
+										Transport Demand Survey). That is the lowest of any London Borough.</p>
+									<p>
+										<em>We're aiming to provide detailed analysis on deprivation and its connection
+											to the new road layouts as soon as we can.</em>
+									</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="w3-col s12 w3-medium w3-text-black">
+							<div class="w3-margin-bottom w3-margin-right">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
+			<div class="w3-col w3-hide-small m1">&nbsp;</div>
 		</div>
+	</div>
 
-		<div class="w3-container w3-padding-8">
-			<div class="w3-content">
-				<div class="w3-col w3-hide-small m1">&nbsp;</div>
-				<div class="w3-col s12 m10"></div>
-				<div class="w3-col w3-hide-small m1">&nbsp;</div>
-			</div>
+	<div class="w3-container w3-padding-8">
+		<div class="w3-content">
+			<div class="w3-col w3-hide-small m1">&nbsp;</div>
+			<div class="w3-col s12 m10"></div>
+			<div class="w3-col w3-hide-small m1">&nbsp;</div>
 		</div>
+	</div>
 
-		<!-- Container (Contact Section) -->
-		<div class="w3-content w3-container w3-padding-64" id="contact">
-			<h2 class="w3-center">
-				Contact
-				<strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong>
-			</h2>
-			<p class="w3-center w3-padding-large w3-large">
-				<em
-					>We're keen to engage with as many Bethnal Green residents as we can and if you
-					have questions we'll reply where we can. Please contact us via
-					<a
-						class="w3-hover-text-green"
-						href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]."
-						>email</a
-					>
-					and join us on
-					<a
-						href="https://www.facebook.com/groups/3166302756926054/?ref=share"
-						target="_blank"
-						>Facebook</a
-					>
-					or
-					<a
-						href="https://twitter.com/SaveOldBGR"
-						title="Twitter"
-						target="_blank"
-						class="w3-hover-text-green"
-						>Twitter</a
-					>.</em
-				>
-			</p>
+	<!-- Container (Contact Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="contact">
+		<h2 class="w3-center">
+			Contact
+			<strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong>
+		</h2>
+		<p class="w3-center w3-padding-large w3-large">
+			<em>We're keen to engage with as many Bethnal Green residents as we can and if you
+				have questions we'll reply where we can. Please contact us via
+				<a class="w3-hover-text-green"
+					href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone].">email</a>
+				and join us on
+				<a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook</a>
+				or
+				<a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank"
+					class="w3-hover-text-green">Twitter</a>.</em>
+		</p>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+		<a href="#title" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+		<div class="w3-xlarge w3-section">
+			<a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title="Facebook" target="_blank"
+				class="w3-hover-text-green"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
+			<a href="https://www.instagram.com/sossbethnalgreen/" title="Instagram" target="_blank"
+				class="w3-hover-text-green w3-margin-left"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank"
+				class="w3-hover-text-green w3-margin"><i class="fa-brands fa-twitter"></i></a>
+			<a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]"
+				class="w3-hover-text-green" title="email" target="_blank"><i
+					class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
 		</div>
+		<p>
+			Powered by
+			<a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank"
+				class="w3-hover-text-green">Tower Hamlets Residents</a>
+		</p>
+	</footer>
 
-		<!-- Footer -->
-		<footer
-			class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
-		>
-			<a href="#title" class="w3-button w3-light-grey"
-				><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
-			>
-			<div class="w3-xlarge w3-section">
-				<a
-					href="https://www.facebook.com/groups/3166302756926054/?ref=share"
-					title="Facebook"
-					target="_blank"
-					class="w3-hover-text-green"
-					><i class="fa-brands fa-facebook-square w3-hover-opacity"></i
-				></a>
-				<a
-					href="https://www.instagram.com/sossbethnalgreen/"
-					title="Instagram"
-					target="_blank"
-					class="w3-hover-text-green w3-margin-left"
-					><i class="fa-brands fa-instagram"></i
-				></a>
-				<a
-					href="https://twitter.com/SaveOldBGR"
-					title="Twitter"
-					target="_blank"
-					class="w3-hover-text-green w3-margin"
-					><i class="fa-brands fa-twitter"></i
-				></a>
-				<a
-					href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]"
-					class="w3-hover-text-green"
-					title="email"
-					target="_blank"
-					><i class="fa-solid fa-paper-plane w3-hover-opacity"></i
-				></a>
-			</div>
-			<p>
-				Powered by
-				<a
-					href="https://www.facebook.com/groups/3166302756926054/?ref=share"
-					title=" "
-					target="_blank"
-					class="w3-hover-text-green"
-					>Tower Hamlets Residents</a
-				>
-			</p>
-		</footer>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
 
-		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+	<script>
+		var lazyLoadInstance = new LazyLoad({
+			// Your custom settings go here
+		});
 
-		<script>
-			var lazyLoadInstance = new LazyLoad({
-				// Your custom settings go here
-			});
+		// Modal Image Gallery
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+			var captionText = document.getElementById("caption");
+			captionText.innerHTML = element.alt;
+		}
 
-			// Modal Image Gallery
-			function onClick(element) {
-				document.getElementById("img01").src = element.src;
-				document.getElementById("modal01").style.display = "block";
-				var captionText = document.getElementById("caption");
-				captionText.innerHTML = element.alt;
+		// Change style of navbar on scroll
+		window.onscroll = function () {
+			myFunction();
+		};
+
+		function myFunction() {
+			var navbar = document.getElementById("myNavbar");
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+			} else {
+				navbar.className = navbar.className.replace(
+					" w3-card w3-animate-top w3-white",
+					""
+				);
 			}
+		}
 
-			// Change style of navbar on scroll
-			window.onscroll = function () {
-				myFunction();
-			};
-
-			function myFunction() {
-				var navbar = document.getElementById("myNavbar");
-				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-					navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-				} else {
-					navbar.className = navbar.className.replace(
-						" w3-card w3-animate-top w3-white",
-						""
-					);
-				}
+		// Used to toggle the menu on small screens when clicking on the menu button
+		function toggleFunction() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
 			}
+		}
+	</script>
+</body>
 
-			// Used to toggle the menu on small screens when clicking on the menu button
-			function toggleFunction() {
-				var x = document.getElementById("navDemo");
-				if (x.className.indexOf("w3-show") == -1) {
-					x.className += " w3-show";
-				} else {
-					x.className = x.className.replace(" w3-show", "");
-				}
-			}
-		</script>
-	</body>
 </html>
