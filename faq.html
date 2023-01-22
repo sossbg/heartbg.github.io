@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Save Our Safer Streets - FAQ</title>
+		<meta
+			name="description"
+			content="I &hearts; BETHNAL GREEN is the online home of SAVE OUR SAFER STREETS. We are a grassroots community group seeking to retain and improve the changes to the streets in Bethnal Green implemented in 2020. This is our stories of local people page."
+		/>
+		<meta name="”robots”" content="index, follow" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<style>
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: "Lato", sans-serif;
+			}
+
+			body,
+			html {
+				height: 100%;
+				color: #777;
+				line-height: 1.8;
+			}
+
+			/* Create a Parallax Effect */
+
+			.bgimg-1,
+			.bgimg-2,
+			.bgimg-3 {
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			/* First image (Logo. Full height) */
+
+			.bgimg-1 {
+				background-image: url("media/obg_01.jpg");
+				min-height: 100%;
+			}
+
+			/* Second image (Portfolio) */
+
+			.bgimg-2 {
+				background-image: url("media/obg_02.jpg");
+				min-height: 60%;
+			}
+
+			/* Third image (Contact) */
+
+			.bgimg-3 {
+				background-image: url("media/obg_03.jpg");
+				min-height: 45%;
+			}
+
+			.w3-wide {
+				letter-spacing: 10px;
+			}
+
+			.w3-hover-opacity {
+				cursor: pointer;
+			}
+
+			.coming {
+				left: 0;
+				content: "Coming Soon";
+				background: rgba(255, 255, 255, 0.59);
+				color: #000;
+				width: 100%;
+				height: 100%;
+				line-height: 2.5;
+				font-weight: 600;
+				position: absolute;
+			}
+
+			/* Turn off parallax scrolling for tablets and phones */
+			@media only screen and (max-width: 1600px) {
+				.bgimg-1,
+				.bgimg-2,
+				.bgimg-3 {
+					background-attachment: scroll;
+					min-height: 400px;
+				}
+			}
+
+			@media only screen and (min-width: 768px) {
+				.bgimg-3 {
+					background-image: url("media/large_media/obg_03.jpg");
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+			<div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99">
+				<a
+					class="
+						w3-bar-item
+						w3-button
+						w3-white
+						w3-opacity
+						w3-hover-black
+						w3-hide-medium
+						w3-hide-large
+						w3-right
+					"
+					href="javascript:void(0);"
+					onclick="toggleFunction()"
+					title="Toggle Navigation Menu"
+				>
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="index.html#home" class="w3-bar-item w3-button w3-white w3-opacity"
+					>HOME</a
+				>
+				<a
+					href="index.html#about"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>ABOUT</a
+				>
+				<a
+					href="index.html#preaction"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>ACTION</a
+				>
+				<a
+					href="news.html"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>NEWS</a
+				>
+				<a
+					href="stories.html"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>STORIES</a
+				>
+				<a
+					href="you-asked.html"
+					class="w3-bar-item w3-button w3-gray w3-text-white w3-opacity-min w3-hide-small"
+					><b>YOU ASKED</b></a
+				>
+				<a
+					href="press.html"
+					class="w3-bar-item w3-button w3-opacity w3-hide-small w3-hide-medium w3-white"
+					>PRESS</a
+				>
+				<a
+					href="#contact"
+					class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity"
+					>CONTACT</a
+				>
+				<a
+					href="#"
+					class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide"
+				>
+				</a>
+			</div>
+
+			<!-- Navbar on small screens -->
+			<div
+				id="navDemo"
+				class="
+					w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min
+				"
+			>
+				<a
+					href="index.html#about"
+					class="w3-bar-item w3-button"
+					onclick="toggleFunction()"
+					>ABOUT</a
+				>
+				<a
+					href="index.html#preaction"
+					class="w3-bar-item w3-button"
+					onclick="toggleFunction()"
+					>ACTION</a
+				>
+				<a href="news.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
+					>NEWS</a
+				>
+				<a href="stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
+					>STORIES</a
+				>
+				<a
+					href="you-asked.html"
+					class="w3-bar-item w3-button"
+					onclick="toggleFunction()"
+					>YOU ASKED</a
+				>
+				<a href="press.html" class="w3-bar-item w3-button" onclick="toggleFunction()"
+					>PRESS</a
+				>
+				<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"
+					>CONTACT</a
+				>
+				<a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
+			</div>
+		</div>
+
+		<!-- Top Parallax Image with SOSS Text -->
+		<div class="bgimg-3 w3-display-container w3-opacity-min" id="title">
+			<div class="w3-display-bottommiddle w3-margin-bottom">
+				<h1 class="w3-xxlarge w3-text-white w3-pink w3-wide w3-opacity-min w3-center">
+					&nbsp;Frequently Asked Questions&nbsp;
+				</h1>
+			</div>
+		</div>
+
+		<!-- Container -->
+		<div class="w3-container w3-padding w3-margin-top">
+			<div class="w3-content">
+				<div class="w3-row">
+					<div class="w3-col w3-hide-small m2">&nbsp;</div>
+
+					<div class="w3-col s12 m8 w3-text-black">
+						<p class="w3-large">
+							Tower Hamlets Council has announced a
+							<a href="https://talk.towerhamlets.gov.uk/lsbethnalgreen" target="_blank"
+								>second consultation</a
+							>
+							to collect views on recently introduced traffic-calming, street layouts in
+							Bethnal Green.
+						</p>
+						<p>
+							This new consultation is really disappointing. It ignores results from the
+							first, very similar consultation the council ran last year.
+						</p>
+						<p>
+							Residents and businesses were clear in their support of the new layouts but the
+							new consultation:
+						</p>
+						<ul>
+							<li>
+								Is very one-sided, using misleading information to promote the removal of the
+								new street layouts;
+							</li>
+							<li>
+								Only offers additional improvements if residents choose the option to remove the
+								new street layouts; and
+							</li>
+							<li>Puts forward ideas that are going to be unsafe and cost millions.</li>
+						</ul>
+						<p>
+							To help break down the new consultation and explain what options are, we've
+							tried to answer a few common questions. Some of the answers below are based on
+							research we have published <a href="https://heartbg.uk/you-asked.html">here</a>.
+							If you have any further questions, please email us at
+							<a href="mailto:SOSSBGResearch@gmail.com">SOSSBGResearch@gmail.com</a>.
+						</p>
+					</div>
+
+					<div class="w3-col w3-hide-small m2">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-container w3-padding-8 w3-text-black">
+			<div class="w3-content">
+				<div class="w3-col w3-hide-small m1">&nbsp;</div>
+				<div class="w3-col s12 m10">
+					<!-- faq-Q1 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">What is this consultation about?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										This is the second of two consultations run by Tower Hamlets Council since the
+										May 2022 elections. The council is asking residents and local businesses to
+										choose one of two options.
+									</p>
+
+									<blockquote>
+										“Option 1” is a proposal to reintroduce thousands more vehicle journeys per day
+										through neighbourhood streets in Bethnal Green (including Old Bethnal Green
+										Road, Columbia Road, Arnold Circus, Brick Lane and streets connecting them).
+									</blockquote>
+
+									<blockquote>
+										“<strong>Option 2</strong>” is to retain the current street layouts in these
+										areas, which have been proven to reduce through-traffic while making it safer
+										for walking and cycling.
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-Q2 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									What if I like some (but not all) things about the new street layouts?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										<strong>Option 2</strong> is the best option if you want less traffic on local
+										streets and improved air quality, and more areas that are safer and friendlier
+										for all. The other option, Option 1, will cost millions and will mean going back
+										to square one when it comes to traffic, air quality, and safety.
+									</p>
+
+									<p>
+										If there are things you’d like to change about the new street layouts, choose
+										Option 2 and add your thoughts and suggestions in the comments.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-Q3 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									What if I like some things being proposed by the council?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The council have suggested some good ideas in the option they are promoting. For
+										example, they’ve said they're considering an “accessible network of streets”
+										which include level crossings, dropped curbs for wheelchair access and planting.
+										However, there’s no reason why these ideas can’t be introduced now. We can have
+										reduced traffic, better air quality and safer streets, and also make our
+										pavements and crossings more accessible.
+									</p>
+
+									<p>
+										Again, if you see ideas you like in the proposals, choose option 2 and use the
+										comments section to tell the council what you want.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-Q4 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">Why is there another consultation anyway?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The first consultation showed that the majority of respondents (both within the
+										schemes and more broadly in Tower Hamlets) wanted to keep or improve the new
+										street layouts. However, Tower Hamlets council still want to remove the scheme
+										and have presented partial and misleading information in the consultation
+										materials to get their way.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-Q5 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">Why is there another consultation anyway?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The first consultation showed that the majority of respondents (both within the
+										schemes and more broadly in Tower Hamlets) wanted to keep or improve the new
+										street layouts. However, Tower Hamlets council still want to remove the scheme
+										and have presented partial and misleading information in the consultation
+										materials to get their way.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-06 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">When is the consultation?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The consultation begins on Monday 23 January in Weavers and Old Bethnal Green
+										Road areas. All submissions must be made by Sunday 12 February 2023. And in
+										Brick Lane the consultation runs 29 January until 19 February.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-07 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">Who can participate in the consultation?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>Anyone can respond to the consultation.</p>
+									<p>
+										Responses from people who live or work in the consultation area will be given
+										the most weight, provided they have used the survey reference number which was
+										sent in the post. Check to see if you live in the consultation area
+										<a
+											href="https://talk.towerhamlets.gov.uk/4093/widgets/12671/documents/29386"
+											target="_blank"
+											>here</a
+										>.
+									</p>
+									<p>
+										Each resident can answer individually, including children. They just need an
+										email address. People who are working in the area can get the survey reference
+										number from their employer, as businesses in the consultation area have also
+										been sent a paper pack.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-08 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">How do I complete the consultation?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The consultation documents (with a survey reference number which is unique per
+										household) should be delivered to you by postal mail if you are located in the
+										<a
+											href="https://talk.towerhamlets.gov.uk/4093/widgets/12671/documents/29386"
+											target="_blank"
+											>consultation area</a
+										>. The consultation documents and a form to complete are also online, accessible
+										via this
+										<a href="https://talk.towerhamlets.gov.uk/lsbethnalgreen" target="_blank"
+											>page</a
+										>
+										on the Tower Hamlets council website. Responding online or by hard copy should
+										be treated the same by the council, but if you are in the consultation area,
+										It’s important to use the reference code sent via postal mail on all responses
+										from the same household. This will add weight to the responses.
+									</p>
+
+									<p>
+										Make sure you choose Option 2 to keep the current street layouts and reject
+										Option 1 to remove them.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-09 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">Where is my survey reference number?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										Your unique survey reference number (e.g. W2xxx) should have been sent to you
+										via postal mail, along with the consultation documents if you are located in the
+										<a
+											href="https://talk.towerhamlets.gov.uk/4093/widgets/12671/documents/29386"
+											target="_blank"
+											>consultation area</a
+										>. The number is on the top of first page of the survey.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-10 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">How popular is the street-calming scheme?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										In the first consultation held last year, more people opted to keep the new
+										street layouts than remove them. If you only look at the most affected people
+										from within the areas, then it was 52% versus 48%, but if you look at all
+										responses, then it was a much bigger majority for “keeping the current layouts”,
+										more like three quarters versus one quarter.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-11 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">How much is this all costing?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										We don’t know how much it will cost to remove the street-calming scheme.
+										However, based on similar projects (and its original installation) it will be in
+										the millions of pounds. We do know that it costs around £70,000 to run
+										consultations like this and while many people are finding it hard because of the
+										cost of living crisis, Tower Hamlets have decided to spend this money not just
+										on one consultation but two. That’s at least £140,000, equivalent to 4 times a
+										<a
+											href="https://www.nurses.co.uk/blog/a-quick-overview-of-nurses--salaries-in-the-uk/"
+											target="_blank"
+											>nurse’s yearly salary</a
+										>.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-12 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									Have the new layouts affected ambulance response times?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The biggest cause of delays to ambulances is road congestion. There is no
+										significant difference in ambulance response times because of the new street
+										layouts. The Royal London and Barts Hospital have said they want the layouts to
+										stay because they know people are healthier with these kinds of streets and they
+										reduce accidents. The ambulance and fire service have asked for some small
+										changes like the removal of hard closures, which could be addressed by the use
+										of ANPR cameras rather than the removal of the closures in their entirety.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-13 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									Is congestion on Hackney Road worse because of the new street layouts?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										Congestion on Hackney Road has been worse since the pandemic. However, it’s
+										wrong to assert as the council does that the Bethnal Green scheme has caused the
+										congestion on Hackney Road. Neighbouring Hackney council has made lots of
+										changes on the North side of Hackney road that have likely contributed to
+										current levels of congestion. Adding thousands more vehicle journeys per day
+										through neighbourhood streets in Bethnal Green will not resolve Hackney Road’s
+										problems. Unfortunately, congestion is also getting worse across Tower Hamlets
+										so the congestion problem is something that needs to be addressed across the
+										borough.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-14 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									Is there anything we can do to improve traffic levels on Hackney Road?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The best solution would be to put in a bus lane. Transport for London (TFL) have
+										said they can only do this if Tower Hamlets council keeps the Bethnal Green
+										street layouts. TFL believe this will offer cyclists an alternative, safer route
+										(see <a href="https://heartbg.uk/news.html#post_24">this report</a> of a letter
+										from TFL).
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-15 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									Have the new street layouts led to an increase in crime?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										No, there is less anti-social behaviour. The
+										<a href="https://heartbg.uk/you-asked.html#police">police have asked</a> for the
+										current layouts to stay because of this. Arnold Circus in particular has much
+										less anti-social behaviour and feels much safer and quieter. The millions it
+										would cost to rip out these layouts could be spent on really preventing
+										anti-social behaviour, e.g. with more Safer Neighbourhood Teams, better support
+										for mental health problems and social care.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-16 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									Are the new street layouts accessible for older people and people with
+									disabilities?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										Many disabled and older people tell us they feel safer with these layouts in
+										place as there is less traffic. If there are problems for some, we could solve
+										them with changes to crossings and camera installations. Tower Hamlets council
+										has proposed changes like this as part of removing the street-calming scheme.
+										However, we don’t need to spend millions ripping out the whole scheme to improve
+										on what we have.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-17 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">
+									Didn’t the Mayor win the election promising to remove the new street layouts?
+								</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The Mayor’s manifesto made one pledge about the street layouts. He also made
+										three promises in his manifesto to listen to residents and involve us all in
+										decision-making. Most residents said last year they want to keep these schemes -
+										Lutfur Rahman needs to show now he really is a listening Mayor [[link to
+										tweet?]]. We don’t know if he will listen but he legally has to consult people
+										properly before making a final decision.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-18 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">Who is benefitting from the new street layouts?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The new street layouts are benefiting everyone, providing cleaner air, safer
+										streets and places to meet and talk with neighbours. The benefits for people
+										from diverse backgrounds and who fall low in deprivation measures are an
+										important part of the case for the new layouts. Census results show that Old
+										Bethnal Green Road has some of the most deprived social housing estates in Tower
+										Hamlets. Children at the four schools on this road are also overwhelmingly from
+										nearby parts of Bethnal Green and are benefiting from cleaner air, less noise
+										and safer streets to get to and from school. Most poorer people don’t own cars
+										because it’s so expensive. Only ⅓ of households have access to a car in the
+										borough.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- faq-19 -->
+					<div class="w3-margin w3-padding">
+						<div class="w3-panel w3-container w3-border w3-border-white">
+							<div class="w3-col s12">
+								<h3 class="w3-xlarge">What if I need to use my car?</h3>
+								<div class="w3-margin-bottom w3-large">
+									<p>
+										The current layouts let everyone use cars when they need to. It also gives
+										people safe, quiet routes to walk and cycle. This keeps the roads less congested
+										and the air healthier. If there are specific problems, we need to persuade the
+										council to solve these. The answer is solutions like cameras, controlled access
+										roads and resident permits, not spending millions ripping out what is good.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col w3-hide-small m1">&nbsp;</div>
+			</div>
+		</div>
+
+		<div class="w3-container w3-padding-8">
+			<div class="w3-content">
+				<div class="w3-col w3-hide-small m1">&nbsp;</div>
+				<div class="w3-col s12 m10"></div>
+				<div class="w3-col w3-hide-small m1">&nbsp;</div>
+			</div>
+		</div>
+
+		<!-- Container (Contact Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="contact">
+			<h2 class="w3-center">
+				Contact
+				<strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong>
+			</h2>
+			<p class="w3-center w3-padding-large w3-large">
+				<em
+					>We're keen to engage with as many Bethnal Green residents as we can and if you
+					have questions we'll reply where we can. Please contact us via
+					<a
+						class="w3-hover-text-green"
+						href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]."
+						>email</a
+					>
+					and join us on
+					<a
+						href="https://www.facebook.com/groups/3166302756926054/?ref=share"
+						target="_blank"
+						>Facebook</a
+					>
+					or
+					<a
+						href="https://twitter.com/SaveOldBGR"
+						title="Twitter"
+						target="_blank"
+						class="w3-hover-text-green"
+						>Twitter</a
+					>.</em
+				>
+			</p>
+		</div>
+
+		<!-- Footer -->
+		<footer
+			class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+		>
+			<a href="#title" class="w3-button w3-light-grey"
+				><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+			>
+			<div class="w3-xlarge w3-section">
+				<a
+					href="https://www.facebook.com/groups/3166302756926054/?ref=share"
+					title="Facebook"
+					target="_blank"
+					class="w3-hover-text-green"
+					><i class="fa-brands fa-facebook-square w3-hover-opacity"></i
+				></a>
+				<a
+					href="https://www.instagram.com/sossbethnalgreen/"
+					title="Instagram"
+					target="_blank"
+					class="w3-hover-text-green w3-margin-left"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+				<a
+					href="https://twitter.com/SaveOldBGR"
+					title="Twitter"
+					target="_blank"
+					class="w3-hover-text-green w3-margin"
+					><i class="fa-brands fa-twitter"></i
+				></a>
+				<a
+					href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]"
+					class="w3-hover-text-green"
+					title="email"
+					target="_blank"
+					><i class="fa-solid fa-paper-plane w3-hover-opacity"></i
+				></a>
+			</div>
+			<p>
+				Powered by
+				<a
+					href="https://www.facebook.com/groups/3166302756926054/?ref=share"
+					title=" "
+					target="_blank"
+					class="w3-hover-text-green"
+					>Tower Hamlets Residents</a
+				>
+			</p>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+
+		<script>
+			var lazyLoadInstance = new LazyLoad({
+				// Your custom settings go here
+			});
+
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
+			}
+
+			// Change style of navbar on scroll
+			window.onscroll = function () {
+				myFunction();
+			};
+
+			function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+				} else {
+					navbar.className = navbar.className.replace(
+						" w3-card w3-animate-top w3-white",
+						""
+					);
+				}
+			}
+
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
+	</body>
+</html>
