@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>I Heart Bethnal Green - Save Our Safer Streets Open Letter</title>
+	<meta name="description"
+		content="I &hearts; BETHNAL GREEN is the online home of SAVE OUR SAFER STREETS. We have sent an open letter to Tower Hamlets mayor asking to stop the removal of our safer streets Join us in the fight. <em>keep and improve, not panic and remove</em>." />
+	<meta name="”robots”" content="index, follow" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<style>
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Lato", sans-serif;
+		}
+
+		body,
+		html {
+			height: 100%;
+			color: #777;
+			line-height: 1.8;
+		}
+
+		/* Create a Parallax Effect */
+
+		.bgimg-1,
+		.bgimg-2,
+		.bgimg-3 {
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		/* First image (Logo. Full height) */
+
+		.bgimg-1 {
+			background-image: url("media/obg_01.jpg");
+			min-height: 100%;
+		}
+
+		/* Second image (Portfolio) */
+
+		.bgimg-2 {
+			background-image: url("media/obg_02.jpg");
+			min-height: 400px;
+		}
+
+		/* Third image (Contact) */
+
+		.bgimg-3 {
+			background-image: url("media/obg_03.jpg");
+			min-height: 400px;
+		}
+
+		.w3-wide {
+			letter-spacing: 10px;
+		}
+
+		.w3-hover-opacity {
+			cursor: pointer;
+		}
+
+		.sticker {
+			width: 150px;
+			height: 150px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			color: #fff;
+			line-height: 300px;
+			text-align: center;
+			background: black;
+			display: inline-block;
+			margin-top: -30%;
+			line-height: 32px;
+			font-size: 1.9rem;
+			font-weight: 700;
+			transform: rotate(20deg);
+			font-family: "Allerta Stencil", Sans-serif;
+		}
+
+		.sticker:hover {
+			background: rgb(213, 23, 28);
+			transform: rotate(0deg);
+		}
+
+		/* Turn off parallax scrolling for tablets and phones */
+
+		@media only screen and (max-width: 1600px) {
+
+			.bgimg-1,
+			.bgimg-2,
+			.bgimg-3 {
+				background-attachment: scroll;
+				min-height: 400px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99">
+			<a class="
+						w3-bar-item
+						w3-button
+						w3-white
+						w3-opacity
+						w3-hover-black
+						w3-hide-medium
+						w3-hide-large
+						w3-right
+					" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href="index.html#home" class="w3-bar-item w3-button w3-white w3-opacity">HOME</a>
+			<a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ABOUT</a>
+			<a href="index.html#preaction" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ACTION</a>
+			<a href="news.html"
+				class="w3-bar-item w3-button w3-gray w3-opacity-min w3-text-white w3-hide-small"><b>NEWS</b></a>
+			<a href="stories.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">STORIES</a>
+			<a href="you-asked.html" class="w3-bar-item w3-button w3-white w3-opacity-min w3-hide-small">YOU ASKED</a>
+			<a href="press.html"
+				class="w3-bar-item w3-button w3-opacity w3-hide-small w3-hide-medium w3-white">PRESS</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">CONTACT</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide">
+			</a>
+		</div>
+
+		<!-- Navbar on small screens -->
+		<div id="navDemo" class="
+					w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min
+				">
+			<a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+			<a href="index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
+			<a href="#news" class="w3-bar-item w3-button" onclick="toggleFunction()">NEWS</a>
+			<a href="stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STORIES</a>
+			<a href="you-asked.html" class="w3-bar-item w3-button" onclick="toggleFunction()">YOU ASKED</a>
+			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
+		</div>
+	</div>
+
+	<div class="w3-container w3-padding-32">
+		<!-- Title -->
+		<div class="w3-row w3-margin w3-padding-32">
+			<div class="w3-container w3-center w3-padding-32">
+				<h1 class="w3-xxlarge w3-text-black w3-wide">Save our Safer Streets</h1>
+			</div>
+		</div>
+
+		<!-- Container -->
+		<div class="w3-container">
+			<div class="w3-row w3-padding">
+				<div class="w3-col s12">
+					<h2 class="w3-xlarge w3-text-black">
+						Nearly 1,000 locals and businesses sign our
+						<a href="media/SOSS_open_letter_february_2023.pdf" target="_blank">open letter</a>
+						demanding “sensible” way forward for Bethnal Green’s streets
+					</h2>
+				</div>
+			</div>
+
+			<div class="w3-row w3-padding">
+				<div class="w3-col s12">
+					<p class="w3-medium w3-text-black">
+						Our open letter to the Mayor of Tower Hamlets asking him to “keep and improve” new street
+						layouts in Bethnal Green and Brick Lane has been signed by 934 local residents, businesses and
+						stakeholders in just seven days.
+					</p>
+					<p class="w3-medium w3-text-black">
+						As our stakeholder response to the second consultation, the letter highlights strong evidence
+						for the benefits of the schemes and points out the financial and human costs of removing them.
+					</p>
+					<p class="w3-medium w3-text-black">
+						Signatories to the letter include nearly 60 business owners and managers, five headteachers and
+						32 teachers from local schools, 18 medical staff and GPs (including the Chair of Tower Hamlets
+						Local Medical Committee), Respiratory Doctors and Paediatricians from the Royal London Hospital
+						and Bart’s Health and one social care provider - many of the most important stakeholders for the
+						health, wellbeing and economy of the area.
+					</p>
+					<p class="w3-medium w3-text-black">
+						The fact that nearly 1,000 people have signed our letter within a week shows that local people
+						are crying out for a sensible way forward that makes good use of the council’s money. If the
+						Mayor genuinely wants to make Tower Hamlets a healthy, happy and prosperous borough, then he
+						should listen to what we have been saying since last summer; stop his race to reopen the roads,
+						and work with the community on ways to improve the street layouts for all.
+					</p>
+				</div>
+			</div>
+
+			<section class="w3-container w3-center w3-padding-32">
+				<h3 class="w3-large w3-text-black">The open letter sent to Mayor Rahman</h3>
+				<iframe src="media/SOSS_open_letter_february_2023.pdf#view=fitH" width="70%" height="1200px">
+				</iframe>
+			</section>
+
+			<div class="w3-row w3-padding">
+				<div class="w3-col s12">
+					<p class="w3-medium w3-text-gray w3-center">
+						Download a PDF version of the open letter
+						<a href="media/SOSS_open_letter_february_2023.pdf" target="_blank">here</a>
+						(pdf 253kb).
+					</p>
+					<p class="w3-medium w3-text-gray w3-center">
+						<a href="https://i.heartbg.uk/sign-up">Sign up to our mailing list</a> to get updates about our
+						campaign. We don't email frequently and you
+						can unsubscribe at any time. Check out our privacy policy <a
+							href="https://heartbg.uk/privacy-policy.html">here</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+		<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+		<div class="w3-xlarge w3-section">
+			<a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title="Facebook" target="_blank"
+				class="w3-hover-text-green"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
+			<a href="https://www.instagram.com/sossbethnalgreen/" title="Instagram" target="_blank"
+				class="w3-hover-text-green w3-margin-left"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://twitter.com/SaveOldBGR" title="Twitter" target="_blank"
+				class="w3-hover-text-green w3-margin"><i class="fa-brands fa-twitter"></i></a>
+			<a href="mailto:lovebethnalgreen@gmail.com?subject=Regarding Save our Safer Streets campaign&body=Hello,%0D%0A%0D%0AI'm emailing about the Save our Safer Streets campaign.%0D%0A %0D%0A[Add your content here, and include your name with address if you live in consultation zone]"
+				class="w3-hover-text-green" title="email" target="_blank"><i
+					class="fa-solid fa-paper-plane w3-hover-opacity"></i></a>
+		</div>
+		<p>
+			Powered by
+			<a href="https://www.facebook.com/groups/3166302756926054/?ref=share" title=" " target="_blank"
+				class="w3-hover-text-green">Tower Hamlets Residents</a>
+		</p>
+	</footer>
+
+	<script>
+		// Modal Image Gallery
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+			var captionText = document.getElementById("caption");
+			captionText.innerHTML = element.alt;
+		}
+
+		// Change style of navbar on scroll
+		window.onscroll = function () {
+			myFunction();
+		};
+
+		function myFunction() {
+			var navbar = document.getElementById("myNavbar");
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+			} else {
+				navbar.className = navbar.className.replace(
+					" w3-card w3-animate-top w3-white",
+					""
+				);
+			}
+		}
+
+		// Used to toggle the menu on small screens when clicking on the menu button
+		function toggleFunction() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+	</script>
+</body>
+
+</html>
