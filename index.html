@@ -145,6 +145,19 @@
 			}
 		}
 	</style>
+	<!-- MailerLite Universal -->
+	<script>
+		(function (w, d, e, u, f, l, n) {
+			w[f] = w[f] || function () {
+				(w[f].q = w[f].q || [])
+				.push(arguments);
+			}, l = d.createElement(e), l.async = 1, l.src = u,
+			n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+		})
+			(window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+		ml('account', '340590');
+	</script>
+	<!-- End MailerLite Universal -->
 </head>
 
 <body>
@@ -374,10 +387,10 @@
 
 	<!-- Container (Contact Section) -->
 	<div class="w3-content w3-container w3-padding-64" id="contact">
-		<h3 class="w3-center">
+		<!-- <h3 class="w3-center">
 			Contact
 			<strong>I <span class="w3-text-red">&hearts;</span> Bethnal Green</strong>
-		</h3>
+		</h3> -->
 		<p class="w3-center w3-padding-large w3-large">
 			<em>We're keen to engage with as many Bethnal Green residents as we can and if you
 				have questions we'll reply where we can. Please contact us via
@@ -387,8 +400,11 @@
 				<a href="https://www.facebook.com/groups/3166302756926054/?ref=share" target="_blank">Facebook</a>
 				or
 				<a href="https://twitter.com/SaveBGstreets" title="Twitter" target="_blank"
-					class="w3-hover-text-green">Twitter</a>.</em>
+					class="w3-hover-text-green">Twitter</a>. You can also subscribe to our mailing list
+				using the form below:</em>
 		</p>
+		<div class="ml-embedded" data-form="fHaHgf"></div>
+
 	</div>
 
 	<!-- Footer -->
