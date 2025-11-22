@@ -33,14 +33,73 @@
 			font-family: "Lato", sans-serif;
 		}
 
-		body,
-		html {
-			height: 100%;
-			color: #777;
-			line-height: 1.8;
-		}
+	body,
+	html {
+		height: 100%;
+		color: #777;
+		line-height: 1.8;
+		overflow-x: hidden;
+	}
 
-		/* Create a Parallax Effect */
+	/* Dropdown styles */
+	.w3-dropdown-hover {
+		position: relative;
+		display: inline-block;
+	}
+
+	.w3-dropdown-hover:hover .w3-dropdown-content {
+		display: block;
+	}
+
+	.w3-dropdown-content {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #f1f1f1;
+		min-width: 200px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 999;
+		opacity: 0.95;
+		margin-left: 0;
+	}
+
+	.w3-dropdown-content a {
+		color: #777;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		font-size: 15px;
+	}
+
+	.w3-dropdown-content a:hover {
+		background-color: #ddd;
+		opacity: 1;
+		color: #000;
+	}
+
+	.w3-top {
+		z-index: 99 !important;
+	}
+
+	/* Ensure parallax sections don't overlap navbar dropdown */
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+		position: relative;
+		z-index: 1;
+	}
+
+	/* Scroll offset for fixed navbar */
+	#youasked, #contact {
+		scroll-margin-top: 350px;
+	}
+
+	@media only screen and (min-width: 993px) {
+		#youasked, #contact {
+			scroll-margin-top: 400px;
+		}
+	}
+
+	/* Create a Parallax Effect */
 
 		.bgimg-1,
 		.bgimg-2,
@@ -127,9 +186,15 @@
 					" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 				<i class="fa fa-bars"></i>
 			</a>
-			<a href="index.html#home" class="w3-bar-item w3-button w3-white w3-opacity">HOME</a>
-			<a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ABOUT</a>
-			<a href="index.html#preaction" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ACTION</a>
+		<a href="index.html#home" class="w3-bar-item w3-button w3-white w3-opacity">HOME</a>
+		<div class="w3-dropdown-hover w3-hide-small">
+			<button class="w3-bar-item w3-button w3-white w3-opacity" style="border: none; outline: none;">ABOUT</button>
+			<div class="w3-dropdown-content">
+				<a href="about.html#about">About us</a>
+				<a href="about.html#ltns">Low traffic neighbourhoods</a>
+			</div>
+		</div>
+		<a href="index.html#preaction" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ACTION</a>
 			<a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">NEWS</a>
 			<a href="stories.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">STORIES</a>
 			<a href="you-asked.html"
@@ -142,11 +207,13 @@
 		</div>
 
 		<!-- Navbar on small screens -->
-		<div id="navDemo" class="
-					w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min
-				">
-			<a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-			<a href="index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
+	<div id="navDemo" class="
+				w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min
+			">
+		<a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+		<a href="about.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()" style="padding-left: 32px;">About us</a>
+		<a href="about.html#ltns" class="w3-bar-item w3-button" onclick="toggleFunction()" style="padding-left: 32px;">Low traffic neighbourhoods</a>
+		<a href="index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
 			<a href="news.html" class="w3-bar-item w3-button" onclick="toggleFunction()">NEWS</a>
 			<a href="stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STORIES</a>
 			<a href="you-asked.html" class="w3-bar-item w3-button" onclick="toggleFunction()">YOU ASKED</a>
