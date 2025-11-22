@@ -22,123 +22,36 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+	<link rel="stylesheet" href="styles.css" />
 	<style>
-		body,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: "Lato", sans-serif;
-		}
-
-	body,
-	html {
-		height: 100%;
-		color: #777;
-		line-height: 1.8;
-		overflow-x: hidden;
-	}
-
-	/* Dropdown styles */
-	.w3-dropdown-hover {
-		position: relative;
-		display: inline-block;
-	}
-
-	.w3-dropdown-hover:hover .w3-dropdown-content {
-		display: block;
-	}
-
-	.w3-dropdown-content {
-		display: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		background-color: #f1f1f1;
-		min-width: 200px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 999;
-		opacity: 0.95;
-		margin-left: 0;
-	}
-
-	.w3-dropdown-content a {
-		color: #777;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		font-size: 15px;
-	}
-
-	.w3-dropdown-content a:hover {
-		background-color: #ddd;
-		opacity: 1;
-		color: #000;
-	}
-
-	.w3-top {
-		z-index: 99 !important;
-	}
-
-	/* Ensure parallax sections don't overlap navbar dropdown */
-	.bgimg-1, .bgimg-2, .bgimg-3 {
-		position: relative;
-		z-index: 1;
-	}
-
-	/* Scroll offset for fixed navbar */
-	#stories, #contact {
-		scroll-margin-top: 350px;
-	}
-
-	@media only screen and (min-width: 993px) {
+		/* Scroll offset for fixed navbar */
 		#stories, #contact {
-			scroll-margin-top: 400px;
-		}
-	}
-
-	/* Create a Parallax Effect */
-
-		.bgimg-1,
-		.bgimg-2,
-		.bgimg-3 {
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
+			scroll-margin-top: 350px;
 		}
 
-		/* First image (Logo. Full height) */
+		@media only screen and (min-width: 993px) {
+			#stories, #contact {
+				scroll-margin-top: 400px;
+			}
+		}
 
+		/* Page-specific background images */
 		.bgimg-1 {
 			background-image: url("media/obg_01.jpg");
 			min-height: 100%;
 		}
-
-		/* Second image (Portfolio) */
 
 		.bgimg-2 {
 			background-image: url("media/obg_02.jpg");
 			min-height: 60%;
 		}
 
-		/* Third image (Contact) */
-
 		.bgimg-3 {
 			background-image: url("media/obg_03.jpg");
 			min-height: 45%;
 		}
 
-		.w3-wide {
-			letter-spacing: 10px;
-		}
-
-		.w3-hover-opacity {
-			cursor: pointer;
-		}
-
+		/* Page-specific sticker component */
 		.sticker {
 			width: 150px;
 			height: 150px;
@@ -161,17 +74,6 @@
 		.sticker:hover {
 			background: rgb(213, 23, 28);
 			transform: rotate(0deg);
-		}
-
-		/* Turn off parallax scrolling for tablets and phones */
-		@media only screen and (max-width: 1600px) {
-
-			.bgimg-1,
-			.bgimg-2,
-			.bgimg-3 {
-				background-attachment: scroll;
-				min-height: 400px;
-			}
 		}
 
 		@media only screen and (min-width: 768px) {
@@ -283,10 +185,10 @@
 
 				<!-- Story 14 -->
 				<div class="w3-margin w3-padding" id="story_14">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Saturday, 22 November 2025</p>
-							<h2 class="w3-xlarge w3-text-black">Something beautiful has been created in our neighbourhood</h2>
+							<h2 class="w3-xlarge">Something beautiful has been created in our neighbourhood</h2>
 						</div>
 						<div class="w3-col s12 w3-medium">
 							<p>
@@ -328,10 +230,10 @@
 
 				<!-- Story 13 -->
 				<div class="w3-margin w3-padding" id="story_13">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Saturday, 22 November 2025</p>
-							<h2 class="w3-xlarge w3-text-black">The LTNs have clearly made a huge improvement</h2>
+							<h2 class="w3-xlarge">The LTNs have clearly made a huge improvement</h2>
 						</div>
 						<div class="w3-col s12 w3-medium">
 							<p>
@@ -364,10 +266,10 @@
 
 				<!-- Story 12 -->
 				<div class="w3-margin w3-padding" id="story_12">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Friday, 22 September 2023</p>
-							<h2 class="w3-xlarge w3-text-black">Black, brown, white, yellow, or green. It doesn't
+							<h2 class="w3-xlarge">Black, brown, white, yellow, or green. It doesn't
 								matter. This is OUR Bethnal Green.</h2>
 						</div>
 						<div class="w3-col s12 w3-medium">
@@ -418,10 +320,10 @@
 
 				<!-- Story 11 -->
 				<div class="w3-margin w3-padding" id="story_11">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Thursday, 14 September 2023</p>
-							<h2 class="w3-xlarge w3-text-black">I wonder if Tower Hamlets council have ever met a
+							<h2 class="w3-xlarge">I wonder if Tower Hamlets council have ever met a
 								delivery rider</h2>
 						</div>
 						<div class="w3-col s12 w3-medium">
@@ -479,10 +381,10 @@
 
 				<!-- Story 10 -->
 				<div class="w3-margin w3-padding" id="story_10">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Tuesday, 16 August 2022</p>
-							<h2 class="w3-xlarge w3-text-black">The whole area feels so much safer</h2>
+							<h2 class="w3-xlarge">The whole area feels so much safer</h2>
 						</div>
 						<div class="w3-col s12 w3-medium">
 							<blockquote>
@@ -552,10 +454,10 @@
 
 				<!-- Story 9 -->
 				<div class="w3-margin w3-padding" id="story_9">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Monday, 1 August 2022</p>
-							<h2 class="w3-xlarge w3-text-black">Life is so much better</h2>
+							<h2 class="w3-xlarge">Life is so much better</h2>
 						</div>
 						<div class="w3-col s12 w3-medium">
 							<p>
@@ -581,10 +483,10 @@
 
 				<!-- Story 8 -->
 				<div class="w3-margin w3-padding" id="story_8">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Saturday, 30 July 2022</p>
-							<h2 class="w3-xlarge w3-text-black">
+							<h2 class="w3-xlarge">
 								We can sleep better, my brother is calmer in his own home.
 							</h2>
 						</div>
@@ -649,10 +551,10 @@
 
 				<!-- Story 7 -->
 				<div class="w3-margin w3-padding" id="story_7">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Tuesday, 26 July 2022</p>
-							<h2 class="w3-xlarge w3-text-black">
+							<h2 class="w3-xlarge">
 								I’ve always loved the East End. It’s my home
 							</h2>
 						</div>
@@ -735,10 +637,10 @@
 
 				<!-- Story 6 -->
 				<div class="w3-margin w3-padding" id="story_6">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Sunday, 24 July 2022</p>
-							<h2 class="w3-xlarge w3-text-black">Tahura and Yusuf</h2>
+							<h2 class="w3-xlarge">Tahura and Yusuf</h2>
 						</div>
 						<div class="w3-col s12 w3-center w3-padding">
 							<img src="media/resident_06.jpg" data-src="media/large_media/resident_06.jpg"
@@ -765,10 +667,10 @@
 
 				<!-- Story 5 -->
 				<div class="w3-margin w3-padding" id="story_5">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Friday, 22 July 2022</p>
-							<h2 class="w3-xlarge w3-text-black">I want it better, not worse!</h2>
+							<h2 class="w3-xlarge">I want it better, not worse!</h2>
 						</div>
 						<div class="w3-col s12 w3-center w3-padding">
 							<img src="media/resident_05.jpg" data-src="media/large_media/resident_05.jpg"
@@ -833,10 +735,10 @@
 
 				<!-- Story 4 -->
 				<div class="w3-margin w3-padding" id="story_4">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Wednesday, 20 July 2022</p>
-							<h2 class="w3-xlarge w3-text-black">
+							<h2 class="w3-xlarge">
 								Increased traffic is risking people's health
 							</h2>
 						</div>
@@ -873,10 +775,10 @@
 
 				<!-- Story 2 -->
 				<div class="w3-margin w3-padding" id="story_2">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
-							<h2 class="w3-xlarge w3-text-black">We need to move forward as a community</h2>
+							<h2 class="w3-xlarge">We need to move forward as a community</h2>
 						</div>
 						<div class="w3-col s12 w3-medium w3-padding">
 							<img src="media/resident_02.jpg" data-src="media/large_media/resident_02.jpg"
@@ -933,10 +835,10 @@
 
 				<!-- Story 1 -->
 				<div class="w3-margin w3-padding" id="story_1">
-					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-col s12">
 							<p class="w3-small w3-margin-top">Wednesday, 13 July 2022</p>
-							<h2 class="w3-xlarge w3-text-black">
+							<h2 class="w3-xlarge">
 								It's making a difference to people's lives
 							</h2>
 						</div>

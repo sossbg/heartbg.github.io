@@ -22,128 +22,36 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+	<link rel="stylesheet" href="styles.css" />
 	<style>
-		body,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: "Lato", sans-serif;
-		}
-
-	body,
-	html {
-		height: 100%;
-		color: #777;
-		line-height: 1.8;
-		overflow-x: hidden;
-	}
-
-	/* Dropdown styles */
-	.w3-dropdown-hover {
-		position: relative;
-		display: inline-block;
-	}
-
-	.w3-dropdown-hover:hover .w3-dropdown-content {
-		display: block;
-	}
-
-	.w3-dropdown-content {
-		display: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		background-color: #f1f1f1;
-		min-width: 200px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 999;
-		opacity: 0.95;
-		margin-left: 0;
-	}
-
-	.w3-dropdown-content a {
-		color: #777;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		font-size: 15px;
-	}
-
-	.w3-dropdown-content a:hover {
-		background-color: #ddd;
-		opacity: 1;
-		color: #000;
-	}
-
-	.w3-top {
-		z-index: 99 !important;
-	}
-
-	/* Ensure parallax sections don't overlap navbar dropdown */
-	.bgimg-1, .bgimg-2, .bgimg-3 {
-		position: relative;
-		z-index: 1;
-	}
-
-	/* Scroll offset for fixed navbar */
-	#news, #contact {
-		scroll-margin-top: 350px;
-	}
-
-	@media only screen and (min-width: 993px) {
+		/* Scroll offset for fixed navbar */
 		#news, #contact {
-			scroll-margin-top: 400px;
-		}
-	}
-
-	/* Create a Parallax Effect */
-
-		.bgimg-1,
-		.bgimg-2,
-		.bgimg-3 {
-			background-attachment: fixed;
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: cover;
+			scroll-margin-top: 350px;
 		}
 
-		/* First image (Logo. Full height) */
+		@media only screen and (min-width: 993px) {
+			#news, #contact {
+				scroll-margin-top: 400px;
+			}
+		}
 
+		/* Page-specific background images */
 		.bgimg-1 {
 			background-image: url("media/obg_01.jpg");
 			min-height: 100%;
 		}
-
-		.bgimg-1 {
-			background-image: url("media/obg_01.jpg");
-			min-height: 100%;
-		}
-
-		/* Second image (Portfolio) */
 
 		.bgimg-2 {
 			background-image: url("media/columbia_rd_01.jpg");
 			min-height: 60%;
 		}
 
-		/* Third image (Contact) */
-
 		.bgimg-3 {
 			background-image: url("media/obg_03.jpg");
 			min-height: 400px;
 		}
 
-		.w3-wide {
-			letter-spacing: 10px;
-		}
-
-		.w3-hover-opacity {
-			cursor: pointer;
-		}
-
+		/* Page-specific sticker component */
 		.sticker {
 			width: 150px;
 			height: 150px;
@@ -180,18 +88,7 @@
 			}
 		}
 
-		/* Turn off parallax scrolling for tablets and phones */
-
-		@media only screen and (max-width: 1600px) {
-
-			.bgimg-1,
-			.bgimg-2,
-			.bgimg-3 {
-				background-attachment: scroll;
-				min-height: 400px;
-			}
-		}
-
+		/* Page-specific video container */
 		.video-container {
 			position: relative;
 			padding-bottom: 56.25%;
@@ -286,17 +183,16 @@
 
 			<!-- News posts -->
 			<div class="w3-col s12 m8 l7">
-				<h2 class="w3-text-black w3-margin-left">NEWS</h2>
 
 					<!-- Post #58 -->
 					<div class="w3-row w3-margin w3-padding-8" id="post_58">
-						<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+						<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 							<div class="w3-content">
 								<p class="w3-small w3-margin-top">Friday, 21 November 2025</p>
-								<h3 class="w3-xlarge w3-text-black">It's time for our appeal hearing! </h3>
+								<h3 class="w3-xlarge">It's time for our appeal hearing! </h3>
 							</div>
 							<div class="w3-content w3-medium">
-								<h4 class="w3-large w3-text-black">
+								<h4 class="w3-large">
 									Next week (25 / 26 November) we’ll be back in court for our appeal against the result of the judicial review we brought last November, and the outcome could have implications across the whole of London.
 								</h4>
 								<p>TfL are once again supporting us as an ‘interested party’. The appeal is on three grounds: whether the mayor’s consultation process was fair, whether he took the borough’s Local Implementation Plan (LIP) into account when making his decision, and whether he can legally remove a scheme approved in a LIP without following the process set out in legislation.</p>	
@@ -320,13 +216,13 @@
 
 					<!-- Post #57 -->
 					<div class="w3-row w3-margin w3-padding-8" id="post_57">
-						<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+						<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 							<div class="w3-content">
 								<p class="w3-small w3-margin-top">Wednesday, 15 April 2025</p>
-								<h3 class="w3-xlarge w3-text-black">We’re going to the Court of Appeal! </h3>
+								<h3 class="w3-xlarge">We’re going to the Court of Appeal! </h3>
 							</div>
 							<div class="w3-content w3-medium">
-								<h4 class="w3-large w3-text-black">
+								<h4 class="w3-large">
 									Fantastic news - we have another chance to save our safer streets! A judge has granted us permission to appeal the judicial review ruling on three grounds. Winning this appeal would put real pressure on the mayor to rethink his decision.
 								</h4>
 								<p>Not many cases get to go to the Court of Appeal, so we are very encouraged that the court thinks that we have a realistic prospect of success and also that our case raises important issues of public interest.</p>		
@@ -341,13 +237,13 @@
 
 					<!-- Post #56 -->
 					<div class="w3-row w3-margin w3-padding-8" id="post_56">
-						<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+						<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 							<div class="w3-content">
 								<p class="w3-small w3-margin-top">Wednesday, 9 April 2025</p>
-								<h3 class="w3-xlarge w3-text-black">Please respond to Tower Hamlet's proposed transport strategy</h3>
+								<h3 class="w3-xlarge">Please respond to Tower Hamlet's proposed transport strategy</h3>
 							</div>
 							<div class="w3-content w3-medium">
-								<h4 class="w3-large w3-text-black">
+								<h4 class="w3-large">
 									The council is consulting on a new transport strategy and we have noticed some changes that seem to be a move away from prioritising safe, clean, and sustainable travel.
 								</h4>
 								<p>The new strategy removes or waters down several policies that supported safer, healthier, friendlier streets. </p>
@@ -373,13 +269,13 @@
 
 					<!-- Post #55 -->
 					<div class="w3-row w3-margin w3-padding-8" id="post_55">
-						<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+						<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 							<div class="w3-content">
 								<p class="w3-small w3-margin-top">Tuesday, 17 December 2024</p>
-								<h3 class="w3-xlarge w3-text-black">The judicial review hasn’t gone our way… but we can still win this!</h3>
+								<h3 class="w3-xlarge">The judicial review hasn’t gone our way… but we can still win this!</h3>
 							</div>
 							<div class="w3-content w3-medium">
-								<h4 class="w3-large w3-text-black">
+								<h4 class="w3-large">
 									Following months of hard work and a truly moving show of support from our community, we are deeply disappointed to announce that this judge hasn’t found in our favour. <strong>Please support our appeal.</strong>
 								</h4>
 								<p>Our Low Traffic Neighbourhoods are a major success story in a deprived area of London, virtually eliminating serious road injuries and improving air quality inside and outside the schemes. With so much support for the Low Traffic Neighbourhoods in Bethnal Green – including from schools, GPs, the Met Police, TfL and local residents – we had to do everything possible to prevent them being ripped out at a cost of millions and without listening to the people who live and work here. 
@@ -408,13 +304,13 @@
 
 					<!-- Post #54 -->
 					<div class="w3-row w3-margin w3-padding-8" id="post_54">
-						<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+						<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 							<div class="w3-content">
 								<p class="w3-small w3-margin-top">Friday, 22 November 2024</p>
-								<h3 class="w3-xlarge w3-text-black">Our hearing is done! Now, we wait...</h3>
+								<h3 class="w3-xlarge">Our hearing is done! Now, we wait...</h3>
 							</div>
 							<div class="w3-content w3-medium">
-								<h4 class="w3-large w3-text-black">
+								<h4 class="w3-large">
 									Our Judicial Review hearing concluded yesterday evening.
 								</h4>
 								<p>We enjoyed hearing the well-reasoned and compelling arguments of our barrister and TfL's too. It was great to hear our 2022 petition referenced, as well as the witness statements from residents and the headteacher of Oaklands School - local community matters in this case. 
@@ -436,10 +332,10 @@
 
 				<!-- Post #53 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_53">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 15 November 2024</p>
-							<h3 class="w3-xlarge w3-text-black">We're going to court!</h3>
+							<h3 class="w3-xlarge">We're going to court!</h3>
 						</div>
 						<div>
 							<p>
@@ -448,7 +344,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								The time has come for us to head to the High Court for our judicial review hearing! On 20 and 21 November, a judge will hear why we think Lutfur Rahman’s decision last September to rip out our safer streets was illegal.
 							</h4>
 							<p>Our lawyers from Leigh Day will be arguing on seven grounds, including that the mayor ignored government guidance on low traffic neighbourhoods, ran a flawed consultation and decision-making process, and failed to properly consider if removing the LTN’s safer street layouts was a good use of £2.5 million.
@@ -471,10 +367,10 @@
 
 				<!-- Post #52 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_52">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 11 November 2024</p>
-							<h3 class="w3-xlarge w3-text-black">Petition presented to the Mayor of London</h3>
+							<h3 class="w3-xlarge">Petition presented to the Mayor of London</h3>
 						</div>
 						<div>
 							<p>
@@ -483,7 +379,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								On Thursday 7th November, we submitted <a href="https://you.38degrees.org.uk/petitions/protect-our-safer-streets-in-tower-hamlets">our petition</a> to protect Tower Hamlets' safer streets to the London Assembly. You can watch Assembly member Caroline Russell present it <a href="https://webcasts.london.gov.uk/Assembly/Event/Index/7ed445b3-c4c1-4b9b-9eb1-300f704dbf4b?in=2024-11-07T13%3A20%3A46.750Z&out=2024-11-07T13%3A21%3A54.930Z">here</a>.
 							</h4>
 							<p>We were thrilled that by the time the petition was presented it had over 3,500 signatures - testament to how many people care about safer streets in the capital. We now await a response from Sadiq Khan and will of course update you when we have news on this. We know he’s on our side on this issue, but it’s really important that he matches this support with action and does everything he can to prevent Tower Hamlets from taking this harmful action.
@@ -500,10 +396,10 @@
 
 				<!-- Post #51 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_51">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Saturday, 28 September 2024</p>
-							<h3 class="w3-xlarge w3-text-black">New petition to the Mayor of London</h3>
+							<h3 class="w3-xlarge">New petition to the Mayor of London</h3>
 						</div>
 						<div>
 							<p>
@@ -512,7 +408,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								We are launching a petition asking Mayor Sadiq Khan to stand up for Londoners and
 								residents of Tower Hamlets by stepping in to prevent the removal of the LTNs in Tower
 								Hamlets. If necessary, we are asking him to use his legal powers to do this.
@@ -577,10 +473,10 @@
 
 				<!-- Post #50 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_50">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Saturday, 28 September 2024</p>
-							<h3 class="w3-xlarge w3-text-black">New fundraising page</h3>
+							<h3 class="w3-xlarge">New fundraising page</h3>
 						</div>
 						<div>
 							<p>
@@ -589,7 +485,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Some of you have asked if there is a way to support the campaign financially, and now
 								there is a way for you to do this!
 							</h4>
@@ -624,10 +520,10 @@
 
 				<!-- Post #49 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_49">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Tuesday, 24 September 2024</p>
-							<h3 class="w3-xlarge w3-text-black">We are recruiting!</h3>
+							<h3 class="w3-xlarge">We are recruiting!</h3>
 						</div>
 						<div>
 							<p>
@@ -636,7 +532,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								We are very excited to announce that we are hiring a community organiser! The deadline
 								for applications is October 30th.
 							</h4>
@@ -672,10 +568,10 @@
 
 				<!-- Post #48 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_48">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Tuesday, 27 February 2024</p>
-							<h3 class="w3-xlarge w3-text-black">We have a court date and we are fully funded</h3>
+							<h3 class="w3-xlarge">We have a court date and we are fully funded</h3>
 						</div>
 						<div>
 							<p>
@@ -684,11 +580,11 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								<strong>Update 26 June 2024:</strong> The court date has been moved to <strong>20 and 21
 									November 2024</strong>.
 							</h4>
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Today we have two pieces of exciting news to share. Firstly, the courts have told us
 								that our hearing for judicial review will take place at the <strong>Royal Courts of
 									Justice on 12 and 13 June 2024</strong>. Also, as of today <strong>we have hit our
@@ -768,10 +664,10 @@
 
 				<!-- Post #47 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_47">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 21 February 2024</p>
-							<h3 class="w3-xlarge w3-text-black">A judge has granted us a hearing!</h3>
+							<h3 class="w3-xlarge">A judge has granted us a hearing!</h3>
 						</div>
 						<div>
 							<p>
@@ -780,7 +676,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								We will have a two-day hearing at the High Court.
 							</h4>
 							<p class="w3-medium">
@@ -858,10 +754,10 @@
 
 				<!-- Post #46 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_46">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 6 December 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Tower Hamlets residents ask judge to rule if Lutfur
+							<h3 class="w3-xlarge">Tower Hamlets residents ask judge to rule if Lutfur
 								Rahman’s decision to rip out LTNs broke the law</h3>
 						</div>
 						<div>
@@ -871,7 +767,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Today at Save our Safer Streets, we have applied to the High Court to ask a judge to
 								review whether Mayor Lutfur Rahman broke the law when he decided in September to remove
 								our safer streets.
@@ -952,10 +848,10 @@
 
 				<!-- Post #45 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_45">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 21 September 2023</p>
-							<h3 class="w3-xlarge w3-text-black">BBC LONDON News covers Lutfur Rahman LTN removal
+							<h3 class="w3-xlarge">BBC LONDON News covers Lutfur Rahman LTN removal
 								decision</h3>
 						</div>
 						<div>
@@ -965,7 +861,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								BBC London News covers Tower Hamlets Mayor's decision to remove the safer streets in
 								Bethnal Green.
 							</h4>
@@ -985,10 +881,10 @@
 
 				<!-- Post #44 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_44">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 21 September 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Jane Harris on Talk TV</h3>
+							<h3 class="w3-xlarge">Jane Harris on Talk TV</h3>
 						</div>
 						<div>
 							<p>
@@ -997,7 +893,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Vanessa Feltz talks to SOSS campaigner Jane Harris on Talk TV
 							</h4>
 							<div class="video-container">
@@ -1016,10 +912,10 @@
 
 				<!-- Post #44_1 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_44_1">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 20 September 2023</p>
-							<h3 class="w3-xlarge w3-text-black">ITV1 LONDON coverage of Bethnal Green's safer streets
+							<h3 class="w3-xlarge">ITV1 LONDON coverage of Bethnal Green's safer streets
 							</h3>
 						</div>
 						<div>
@@ -1029,7 +925,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								ITV1 LONDON coverage of Bethnal Green's safer streets including interviews with SOSS
 								campaigner Jane Harris and Oaklands Secondary School headteacher Simon Ramsay. Broadcast
 								on 20 September 2023.
@@ -1050,10 +946,10 @@
 
 				<!-- Post #43 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_43">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 20 September 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Locals condemn “undemocratic, contemptuous and
+							<h3 class="w3-xlarge">Locals condemn “undemocratic, contemptuous and
 								dangerous” decision to rip out walking and cycling infrastructure in Tower Hamlets</h3>
 						</div>
 						<div>
@@ -1063,7 +959,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Tower Hamlets residents, including campaigners, GPs and schools, have expressed their
 								dismay at a decision by the council to remove almost the entirety of ‘Liveable Streets’
 								schemes in the borough.
@@ -1172,10 +1068,10 @@
 
 				<!-- Post #42 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_42">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 14 September 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Residents reject council proposals to reverse Liveable
+							<h3 class="w3-xlarge">Residents reject council proposals to reverse Liveable
 								Streets schemes</h3>
 						</div>
 						<div>
@@ -1185,7 +1081,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								TOWER HAMLETS: Papers published ahead of a decision next week (20 Sept) on the future of
 								the Liveable Streets scheme have revealed that 58% of local residents want to keep the
 								new road layouts in place.
@@ -1256,7 +1152,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Sunday, 06 August 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Rishi Sunak is wrong to demonise LTNs - they work well
+							<h3 class="w3-xlarge">Rishi Sunak is wrong to demonise LTNs - they work well
 								for us</h3>
 						</div>
 						<div>
@@ -1265,7 +1161,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Jane Harris, a local resident and campaigner, explains why the Bethnal Green and Weavers
 								LTNs work well for the local community, in response to Rishi Sunak's latest comments.
 							</h4>
@@ -1335,7 +1231,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 31 July 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Channel 4 report on LTNs</h3>
+							<h3 class="w3-xlarge">Channel 4 report on LTNs</h3>
 						</div>
 						<div>
 							<p>
@@ -1345,7 +1241,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Prime Minister Rishi Sunak has ordered a review of low traffic neighbourhoods in
 								England
 							</h4>
@@ -1370,7 +1266,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 19 April 2023</p>
-							<h3 class="w3-xlarge w3-text-black">New report describes flaws in recent Liveable Streets
+							<h3 class="w3-xlarge">New report describes flaws in recent Liveable Streets
 								consultations</h3>
 						</div>
 						<div>
@@ -1381,7 +1277,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								400+ support the report findings and sign open letter to Tower Hamlets mayor and
 								council.
 							</h4>
@@ -1448,7 +1344,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Tuesday, 11 April 2023</p>
-							<h3 class="w3-xlarge w3-text-black">New analysis of 2022 consultation results</h3>
+							<h3 class="w3-xlarge">New analysis of 2022 consultation results</h3>
 						</div>
 						<div>
 							<p>
@@ -1459,7 +1355,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								SOSS campaign discovers hundreds of local residents’ views were excluded from LBTH
 								Council’s consultation report
 							</h4>
@@ -1512,7 +1408,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 17 March 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Press coverage - TfL response</h3>
+							<h3 class="w3-xlarge">Press coverage - TfL response</h3>
 						</div>
 						<div>
 							<p>
@@ -1521,7 +1417,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								"Tower Hamlets Council 'misrepresented' TfL on Liveable Streets"
 							</h4>
 							<p class="w3-medium">
@@ -1568,7 +1464,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 15 February 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Sign the Save Our Safer Streets open letter</h3>
+							<h3 class="w3-xlarge">Sign the Save Our Safer Streets open letter</h3>
 						</div>
 						<div>
 							<p>
@@ -1577,7 +1473,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								We have written <a href="https://i.heartbg.uk/open-letter-2023">an open letter</a>
 								to
 								the Tower Hamlets council and mayor in response to the
@@ -1620,7 +1516,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Tuesday, 14 February 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Press coverage of campaign</h3>
+							<h3 class="w3-xlarge">Press coverage of campaign</h3>
 						</div>
 						<div>
 							<p>
@@ -1629,7 +1525,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								"Tower Hamlets mayor accused of ‘culture war’ against low-traffic schemes"
 							</h4>
 							<p class="w3-medium">
@@ -1677,7 +1573,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 30 January 2023</p>
-							<h3 class="w3-xlarge w3-text-black">Head teachers sign letter of support</h3>
+							<h3 class="w3-xlarge">Head teachers sign letter of support</h3>
 						</div>
 						<div>
 							<p>
@@ -1686,7 +1582,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								Head teachers from Old Bethnal Green Road and Weavers Ward sign letter in
 								support of new road layouts.
 							</h4>
@@ -1791,7 +1687,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 20 January 2023</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Tower Hamlets' re-run of Liveable Streets consultation very misleading
 							</h3>
 						</div>
@@ -1802,7 +1698,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<h4 class="w3-large w3-text-black">
+							<h4 class="w3-large">
 								We urge residents to “see through council’s greenwash” and
 								<a href="https://talk.towerhamlets.gov.uk/liveablestreets" target="_blank">vote to keep
 									the current street layouts</a>.
@@ -1890,7 +1786,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 28 December 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Reflecting on 2022</h3>
+							<h3 class="w3-xlarge">Reflecting on 2022</h3>
 						</div>
 						<div>
 							<p>
@@ -1923,7 +1819,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 6 October 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Our record-breaking petition dismissed out of hand by “listening council”
 							</h3>
 						</div>
@@ -1934,7 +1830,7 @@
 							</p>
 						</div>
 						<div>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								<b>
 									Thanks to all our supporters who helped trigger a debate at the Tower Hamlets
 									council meeting last night. Our record-breaking
@@ -1952,17 +1848,17 @@
 									<source src="media/TH_council_petitioners.ogg" type="video/ogg" />
 								</video>
 							</div>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								We’re so proud of what we achieved in the meeting but very disappointed by the
 								stonewalling and extremely partisan political behaviour from Aspire party
 								councillors.
 							</p>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								Our petition asked the council not to rush ahead with its plan to “reopen the
 								roads”, but listen to community voices, experts and data before making decisions
 								more likely to “please almost everyone”.
 							</p>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								Outside the meeting we had a fantastic noisy showing including students from
 								Oaklands Secondary School."
 							</p>
@@ -1970,7 +1866,7 @@
 								class="w3-image w3-margin-bottom w3-round lazy"
 								alt="Image from Roman Road London webpage." />
 
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								Inside, speakers for the petition, acting on our behalf, were Simon Ramsay,
 								headteacher of Oaklands School in Bethnal Green, Jane Harris, a carer for her
 								disabled husband, and Shaheena Parvin, a mother of five and Aspire voter, who
@@ -1978,7 +1874,7 @@
 								family – especially her four-year-old autistic son.
 							</p>
 
-							<p class="w3-medium w3-text-black">After the meeting, Jane Harris said:</p>
+							<p class="w3-medium">After the meeting, Jane Harris said:</p>
 							<blockquote>
 								“I was so proud of the three of us this evening – and of the 50 supporters who
 								came all the way to the Town Hall on a rainy weeknight to show how much they
@@ -2009,7 +1905,7 @@
 								decisions about our streets.”
 							</blockquote>
 
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								Jane said that a minority of councillors did show willingness to engage.
 							</p>
 
@@ -2028,14 +1924,14 @@
 								improve things now and for the future?”
 							</blockquote>
 
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								We heard later in the meeting, Mayor Rahman announce that he would be keeping
 								the Wapping bus gate, citing “<a
 									href="https://twitter.com/LutfurRahmanTH/status/1577742488655241217"
 									target="_blank">evidence and responses to public opinion surveys.</a>”
 							</p>
 
-							<p class="w3-medium w3-text-black">Responding to this, Jane continued:</p>
+							<p class="w3-medium">Responding to this, Jane continued:</p>
 
 							<blockquote>
 								“We are pleased about the bus gate, but we’re incredulous to hear that he based
@@ -2049,7 +1945,7 @@
 								keep trying to tell them – that these schemes have massive benefits.”
 							</blockquote>
 
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								Unsatisfied by the council’s response, we are considering our options for next
 								steps, including a possible <a href="legal-challenge.html">legal challenge</a>.
 							</p>
@@ -2062,7 +1958,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 3 October 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Our data analysis shows Bethnal Green LTNs are not causing pollution or delays
 							</h3>
 						</div>
@@ -2075,7 +1971,7 @@
 							</p>
 						</div>
 						<div>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								<b>
 									We at Save Our Safer Streets campaign are challenging the new Tower Hamlets
 									Mayor and Council to publish local data on emergency service response times, air
@@ -2085,10 +1981,10 @@
 									mayor and others have claimed.
 								</b>
 							</p>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								<b>Our analysis, using FoIs and public domain data, has shown that:</b>
 							</p>
-							<ul class="w3-medium w3-text-black">
+							<ul class="w3-medium">
 								<li>
 									<b>There has been
 										<a href="https://i.heartbg.uk/fire">NO increase in fire service response
@@ -2123,14 +2019,14 @@
 									including LTNs.
 								</li>
 							</ul>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								We are publishing our analysis today on a
 								<a href="https://i.heartbg.uk/you-asked">question and answer page</a>. Some of
 								our research is presented in a ‘look-up’ format where you can find further
 								details and analysis on emergency response times, air quality and traffic
 								congestion.
 							</p>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								We’re also highlighting
 								<a href="https://i.heartbg.uk/transport">a letter to the mayor from Transport for
 									London
@@ -2154,7 +2050,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 14 October 2022</p>
-							<h3 class="w3-xlarge w3-text-black">FT Letter</h3>
+							<h3 class="w3-xlarge">FT Letter</h3>
 						</div>
 						<div>
 							<p>
@@ -2184,7 +2080,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 29 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Campaigners respond to Mayor Rahman’s statement about the future of Liveable
 								Streets
 							</h3>
@@ -2196,14 +2092,14 @@
 							</p>
 						</div>
 						<div>
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								Responding to Tower Hamlets Mayor Lutfur Rahman’s
 								<a href="https://twitter.com/LutfurRahmanTH/status/1575178336640241664">statement</a>
 								at the cabinet meeting on 28 September, Simon Ramsay, headteacher of Oaklands
 								School on Old Bethnal Green Road, said:
 							</p>
 							<blockquote>
-								<p class="w3-medium w3-text-black">
+								<p class="w3-medium">
 									“There was some positive new information in the Mayor’s announcement, such as a
 									commitment to ‘grasp all the issues affecting our residents on both sides of the
 									debate’. However, we are disappointed to hear him repeat many unproven claims
@@ -2211,12 +2107,12 @@
 									share the results of the recent consultation either, six weeks after it
 									finished.
 								</p>
-								<p class="w3-medium w3-text-black">
+								<p class="w3-medium">
 									“Our petition, signed by over 3,000 locals, asked him to take the time to
 									listen. He says that he will, and we hope this means he will truly take all
 									views on board.
 								</p>
-								<p class="w3-medium w3-text-black">
+								<p class="w3-medium">
 									“If he were to listen, he would hear from many people right across the community
 									whose lives are made better by the new streets,
 									<a href="https://heartbg.uk/stories.html" target="_blank">as we have</a>. He
@@ -2224,7 +2120,7 @@
 									better across all of Tower Hamlets than it was in 2019 and that the changes
 									haven’t had a significant impact on traffic on boundary roads.
 								</p>
-								<p class="w3-medium w3-text-black">
+								<p class="w3-medium">
 									“If he were to listen, he would note the
 									<a href="https://foi.tfl.gov.uk/FOI-1142-2223/LR%20Tower%20Hamlets%2028072022_Redacted.pdf"
 										target="_blank">letter he received from TfL</a>
@@ -2232,20 +2128,20 @@
 									would prevent TfL introducing a bus priority scheme on Hackney Road as cyclists
 									who currently benefit from the scheme would be forced back to use that road.’
 								</p>
-								<p class="w3-medium w3-text-black">
+								<p class="w3-medium">
 									“We were glad to hear the mayor talk about his commitment to net zero emissions
 									and to working with the community to encourage people to move away from car use
 									towards public transport and active travel. We strongly support these aims, but
 									we’re baffled that he thinks they could be compatible with removing the street
 									improvements that help people to walk and cycle.
 								</p>
-								<p class="w3-medium w3-text-black">
+								<p class="w3-medium">
 									“The mayor says he will provide updates on this issue ‘in due course’. A good
 									opportunity would be 5 October, when the council will debate the
 									<a href="https://i.heartbg.uk/petition" target="_blank">petition</a> I submitted
 									to ‘Save our safer streets in Tower Hamlets’.
 								</p>
-								<p class="w3-medium w3-text-black">
+								<p class="w3-medium">
 									“We will be asking the council to publish evidence about the impact of street
 									layout changes and release the results of the consultation, two months on from
 									its closure. We are calling on them to allow time for a thorough process that
@@ -2262,7 +2158,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 27 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Evening standard coverage</h3>
+							<h3 class="w3-xlarge">Evening standard coverage</h3>
 						</div>
 						<div>
 							<p>
@@ -2304,7 +2200,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 26 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Petition closes with over 3,000 signatures!
 							</h3>
 						</div>
@@ -2333,7 +2229,7 @@
 								streets with flyers, day after day, to make sure everyone in the neighbourhood
 								heard about the council’s plans and got the chance to raise their voice.
 							</p>
-							<p class="w3-large w3-text-black">THANK YOU EVERYONE!</p>
+							<p class="w3-large">THANK YOU EVERYONE!</p>
 							<p>
 								We hope the debate might lead to a process of listening and collaboration
 								between the council and the community. But this is far from over, so please stay
@@ -2349,8 +2245,8 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 21 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black"><b>Save Our Safer Streets success!</b></h3>
-							<p class="w3-content w3-large w3-text-black">
+							<h3 class="w3-xlarge"><b>Save Our Safer Streets success!</b></h3>
+							<p class="w3-content w3-large">
 								<b>Tower Hamlets Council PAUSES plans to rip out street improvements in Tower
 									Hamlets</b>
 							</p>
@@ -2364,7 +2260,7 @@
 							</p>
 						</div>
 						<div class="w3-content w3-medium">
-							<p class="w3-medium w3-text-black">
+							<p class="w3-medium">
 								Today we can say with some confidence that
 								<b>Save Our Safer Streets is having an impact on Tower Hamlets council</b>.
 							</p>
@@ -2380,7 +2276,7 @@
 								It is on the agenda for the 28 September 2022 cabinet meeting as an
 								announcement, which means that no decision is going to be made.
 							</p>
-							<p class="w3-large w3-text-black">
+							<p class="w3-large">
 								<b>OUR CAMPAIGN ACTIVITIES IN AUGUST AND SEPTEMBER BEAR FRUIT</b>
 							</p>
 							<p>
@@ -2407,21 +2303,21 @@
 									is currently pursuing.
 								</li>
 							</ul>
-							<p class="w3-large w3-text-black">
+							<p class="w3-large">
 								<b>WHAT DOES THIS DELAY MEAN?</b>
 							</p>
 							<p>
 								This delay to the council’s plan is a meaningful win for our campaign – in fact
 								you could say that we are a step closer to achieving step 1 of our petition:
 							</p>
-							<blockquote class="w3-large w3-text-black">
+							<blockquote class="w3-large">
 								1. We
 								<a href="https://i.heartbg.uk/petition" target="_blank">petition the council to STOP
 									plans to scrap the new street layouts</a>
 								so there is time to reach a justified decision.
 							</blockquote>
 
-							<p class="w3-large w3-text-black">
+							<p class="w3-large">
 								<b>SO WHAT’S NEXT?</b>
 							</p>
 							<p>
@@ -2434,7 +2330,7 @@
 								We can’t be sure what the announcement will be, but we now have some time to
 								move on to the other parts of our petition, starting with step 2:
 							</p>
-							<blockquote class="w3-large w3-text-black">
+							<blockquote class="w3-large">
 								2. We ask the council to LISTEN to residents, businesses, schools and service
 								providers across our diverse community to understand the benefits of the new
 								street layouts, as well as any issues.
@@ -2451,7 +2347,7 @@
 								meeting is the beginning of an ongoing dialogue with the council which could
 								culminate in step 3 of our petition:
 							</p>
-							<blockquote class="w3-large w3-text-black">
+							<blockquote class="w3-large">
 								3. We want to find ways to IMPROVE, not hastily remove the new street layouts.
 							</blockquote>
 							<p>
@@ -2459,7 +2355,7 @@
 								the whole community to come up with ways to improve what we have, rather than
 								challenge any unlawful decision through the courts.
 							</p>
-							<p class="w3-large w3-text-black">
+							<p class="w3-large">
 								<b>THERE’S PLENTY MORE TO DO – SO STAY IN TOUCH</b>
 							</p>
 							<p>
@@ -2481,7 +2377,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Tuesday, 20 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Local magazine reports TFL's disappointment with TH's Council on removing new
 								road layouts
 							</h3>
@@ -2524,7 +2420,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 5 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								We need your help with a potential legal challenge
 							</h3>
 						</div>
@@ -2551,7 +2447,7 @@
 									CrowdJustice
 									fundraiser page</a>
 							</p>
-							<p class="w3-large w3-text-black">
+							<p class="w3-large">
 								Click <a href="/legal-challenge.html">here</a> for more information about our
 								legal challenge and what we need from you.
 							</p>
@@ -2561,10 +2457,10 @@
 
 				<!-- Post #22 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_22">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Sunday, 4 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black">We've got our very own newsletter!</h3>
+							<h3 class="w3-xlarge">We've got our very own newsletter!</h3>
 						</div>
 						<div>
 							<p>
@@ -2592,10 +2488,10 @@
 
 				<!-- Post #21 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_21">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Sunday, 4 September 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Local outrage to reopen roads closed for pedestrians
 							</h3>
 						</div>
@@ -2626,10 +2522,10 @@
 
 				<!-- Post #20 -->
 				<div class="w3-row w3-margin w3-padding-8" id="post_20">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 25 August 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Article in East London Advertiser</h3>
+							<h3 class="w3-xlarge">Article in East London Advertiser</h3>
 						</div>
 						<div>
 							<p>
@@ -2676,7 +2572,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-yellow w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 2 August 2022</p>
-							<h3 class="w3-xlarge w3-text-black w3-tooltip">
+							<h3 class="w3-xlarge w3-tooltip">
 								Spreading the <span class="w3-text w3-tag"> <b>LOVE</b></span>
 								<span class="w3-text-red">&hearts;</span>
 							</h3>
@@ -2738,7 +2634,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 11 August 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Petition to Tower Hamlets Council</h3>
+							<h3 class="w3-xlarge">Petition to Tower Hamlets Council</h3>
 						</div>
 						<div>
 							<p>
@@ -2777,7 +2673,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 29 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Improve the new roads don't remove them</h3>
+							<h3 class="w3-xlarge">Improve the new roads don't remove them</h3>
 						</div>
 						<div>
 							<p>
@@ -2846,7 +2742,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Sunday, 24 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Tahura and Yusuf</h3>
+							<h3 class="w3-xlarge">Tahura and Yusuf</h3>
 						</div>
 						<div>
 							<p>
@@ -2876,7 +2772,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-lime w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Sunday, 24 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								More cars on roads only benefits the few
 							</h3>
 						</div>
@@ -2921,7 +2817,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 22 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">I want it better, not worse!</h3>
+							<h3 class="w3-xlarge">I want it better, not worse!</h3>
 						</div>
 						<div>
 							<p>
@@ -2994,7 +2890,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-lime w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Friday, 22 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Let's not throw away £2m</h3>
+							<h3 class="w3-xlarge">Let's not throw away £2m</h3>
 						</div>
 						<div>
 							<p>
@@ -3040,7 +2936,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-orange w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 21 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Before and after</h3>
+							<h3 class="w3-xlarge">Before and after</h3>
 						</div>
 						<div>
 							<p>
@@ -3073,7 +2969,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 20 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Increased traffic is risking people's health
 							</h3>
 						</div>
@@ -3115,10 +3011,10 @@
 
 				<!-- Post #9 -->
 				<div class="w3-row w3-margin w3-padding-8">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Tuesday, 19 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Question Luftur Rahman on BBC London</h3>
+							<h3 class="w3-xlarge">Question Luftur Rahman on BBC London</h3>
 						</div>
 						<div>
 							<p>
@@ -3180,7 +3076,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-black w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Tuesday, 19 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								900+ sign letter to keep pedestrian-friendly streets
 							</h3>
 						</div>
@@ -3221,7 +3117,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-lime w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 18 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Fire brigade report - No noticeable impact
 							</h3>
 						</div>
@@ -3254,7 +3150,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-blue w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Monday, 18 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Bow is up in arms!</h3>
+							<h3 class="w3-xlarge">Bow is up in arms!</h3>
 						</div>
 						<div>
 							<p>
@@ -3303,7 +3199,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-lime w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Saturday, 16 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								No evidence that LTNs have changed fire engine response times
 							</h3>
 						</div>
@@ -3347,7 +3243,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-blue w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Let's Play! - Sunday 17th</h3>
+							<h3 class="w3-xlarge">Let's Play! - Sunday 17th</h3>
 						</div>
 						<div>
 							<p>
@@ -3370,7 +3266,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">We need to move forward as a community</h3>
+							<h3 class="w3-xlarge">We need to move forward as a community</h3>
 						</div>
 						<div>
 							<p>
@@ -3435,7 +3331,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-orange w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Thursday, 14 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Before and after</h3>
+							<h3 class="w3-xlarge">Before and after</h3>
 						</div>
 						<div>
 							<p>
@@ -3473,7 +3369,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-pink w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 13 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								It's making a difference to people's lives
 							</h3>
 						</div>
@@ -3510,7 +3406,7 @@
 					<div class="w3-panel w3-container w3-border w3-border-purple w3-hover-border-gray">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 12 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">Collective action</h3>
+							<h3 class="w3-xlarge">Collective action</h3>
 						</div>
 						<div>
 							<p>
@@ -3545,10 +3441,10 @@
 
 				<!-- Post # -->
 				<div class="w3-row w3-margin w3-padding-16 w3-hide">
-					<div class="w3-panel w3-container w3-border w3-border-red w3-hover-border-gray">
+					<div class="w3-panel w3-container w3-border w3-border-coral w3-hover-border-coral">
 						<div class="w3-content">
 							<p class="w3-small w3-margin-top">Wednesday, 12 July 2022</p>
-							<h3 class="w3-xlarge w3-text-black">
+							<h3 class="w3-xlarge">
 								Mandate for reversing the new green spaces and safer streets?
 							</h3>
 						</div>

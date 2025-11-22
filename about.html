@@ -23,67 +23,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Lato", sans-serif;
+        /* Scroll offset for fixed navbar */
+        #about, #ltns, #contact {
+            scroll-margin-top: 350px;
         }
 
-        body,
-        html {
-            height: 100%;
-            color: #777;
-            line-height: 1.8;
-            overflow-x: hidden;
+        @media only screen and (min-width: 993px) {
+            #about, #ltns, #contact {
+                scroll-margin-top: 400px;
+            }
         }
 
-        /* Create a Parallax Effect */
-
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3,
-        .bgimg-4 {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* First image  */
-        /* Second image */
-
+        /* Page-specific background images */
         .bgimg-2 {
             background-image: url("media/obg_02.jpg");
             min-height: 400px;
         }
-
-        /* Third image */
 
         .bgimg-3 {
             background-image: url("media/obg_03.jpg");
             min-height: 400px;
         }
 
-        /* Fourth image */
-
         .bgimg-4 {
             background-image: url("media/ac_01.jpg");
             min-height: 400px;
         }
 
-        .w3-wide {
-            letter-spacing: 10px;
-        }
-
-        .w3-hover-opacity {
-            cursor: pointer;
-        }
-
+        /* Page-specific sticker component */
         .sticker {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
@@ -143,68 +112,8 @@
             box-shadow: 0 0 0;
         }
 
-        /* Dropdown styles */
-        .w3-dropdown-hover {
-            position: relative;
-            display: inline-block;
-        }
-
-        .w3-dropdown-hover:hover .w3-dropdown-content {
-            display: block;
-        }
-
-        .w3-dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f1f1f1;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 999;
-            opacity: 0.95;
-            margin-left: 0;
-        }
-
-        .w3-top {
-            z-index: 99 !important;
-        }
-
-        /* Ensure parallax sections don't overlap navbar dropdown */
-        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-            position: relative;
-            z-index: 1;
-        }
-
-        .w3-dropdown-content a {
-            color: #777;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-size: 15px;
-        }
-
-        .w3-dropdown-content a:hover {
-            background-color: #ddd;
-            opacity: 1;
-            color: #000;
-        }
-
-        /* Scroll offset for fixed navbar */
-        #about, #ltns, #contact {
-            scroll-margin-top: 350px;
-        }
-
-        @media only screen and (min-width: 993px) {
-            #about, #ltns, #contact {
-                scroll-margin-top: 400px;
-            }
-        }
-
-        /* Turn off parallax scrolling for tablets and phones */
-
+        /* Override parallax disable for bgimg-2, bgimg-3, bgimg-4 on smaller screens */
         @media only screen and (max-width: 1600px) {
-
             .bgimg-2,
             .bgimg-3,
             .bgimg-4 {
