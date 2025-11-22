@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 	<link rel="stylesheet" href="styles.css" />
+	<script src="scripts.js"></script>
+	<script src="navbar.js"></script>
 	<style>
 		/* Scroll offset for fixed navbar */
 		#youasked, #contact {
@@ -73,57 +75,7 @@
 </head>
 
 <body>
-	<!-- Navbar (sit on top) -->
-	<div class="w3-top">
-		<div class="w3-bar w3-text-white" id="myNavbar" style="z-index: 99">
-			<a class="
-						w3-bar-item
-						w3-button
-						w3-white
-						w3-opacity
-						w3-hover-black
-						w3-hide-medium
-						w3-hide-large
-						w3-right
-					" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-				<i class="fa fa-bars"></i>
-			</a>
-		<a href="index.html#home" class="w3-bar-item w3-button w3-white w3-opacity">HOME</a>
-		<div class="w3-dropdown-hover w3-hide-small">
-			<button class="w3-bar-item w3-button w3-white w3-opacity" style="border: none; outline: none;">ABOUT</button>
-			<div class="w3-dropdown-content">
-				<a href="about.html#about">About us</a>
-				<a href="about.html#ltns">Low traffic neighbourhoods</a>
-			</div>
-		</div>
-		<a href="index.html#preaction" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">ACTION</a>
-			<a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">NEWS</a>
-			<a href="stories.html" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">STORIES</a>
-			<a href="you-asked.html"
-				class="w3-bar-item w3-button w3-gray w3-text-white w3-opacity-min w3-hide-small"><b>YOU ASKED</b></a>
-			<a href="press.html"
-				class="w3-bar-item w3-button w3-opacity w3-hide-small w3-hide-medium w3-white">PRESS</a>
-			<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-white w3-opacity">CONTACT</a>
-			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-hide">
-			</a>
-		</div>
-
-		<!-- Navbar on small screens -->
-	<div id="navDemo" class="
-				w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-opacity-min
-			">
-		<a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-		<a href="about.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()" style="padding-left: 32px;">About us</a>
-		<a href="about.html#ltns" class="w3-bar-item w3-button" onclick="toggleFunction()" style="padding-left: 32px;">Low traffic neighbourhoods</a>
-		<a href="index.html#preaction" class="w3-bar-item w3-button" onclick="toggleFunction()">ACTION</a>
-			<a href="news.html" class="w3-bar-item w3-button" onclick="toggleFunction()">NEWS</a>
-			<a href="stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STORIES</a>
-			<a href="you-asked.html" class="w3-bar-item w3-button" onclick="toggleFunction()">YOU ASKED</a>
-			<a href="press.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PRESS</a>
-			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-			<a href="#" class="w3-bar-item w3-button w3-hide">SEARCH</a>
-		</div>
-	</div>
+	<!-- Navbar injected by navbar.js -->
 
 	<!-- Top Parallax Image with SOSS Text -->
 	<div class="bgimg-3 w3-display-container w3-opacity-min" id="title">
@@ -1178,10 +1130,6 @@
 		var lazyLoadInstance = new LazyLoad({
 			// Your custom settings go here
 		});
-
-	<!-- Shared JavaScript -->
-	<script src="scripts.js"></script>
-
 </body>
 
 </html>
