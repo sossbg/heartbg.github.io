@@ -132,6 +132,22 @@
 				min-height: 400px;
 			}
 		}
+
+		.video-container {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+		height: 0;
+		overflow: hidden;
+		max-width: 100%;
+		}
+
+		.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		}
 	</style>
 	<!-- MailerLite Universal -->
 	<script>
@@ -277,13 +293,40 @@
 	</div>
 
 	<!-- Second Parallax Image with Portfolio Text -->
-	<!-- <div class="bgimg-4 w3-display-container w3-opacity-min" id="preaction">
+	<div class="bgimg-4 w3-display-container w3-opacity-min" id="preaction">
 		<div class="w3-display-middle">
-			<span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow: 3px 3px 8px rgba(0,0,0,0.8), -1px -1px 8px rgba(0,0,0,0.8);"><strong>ACTION</strong></span>
+			<span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow: 3px 3px 8px rgba(0,0,0,0.8), -1px -1px 8px rgba(0,0,0,0.8);"><strong>THE BETHNAL GREEN LTN</strong></span>
 		</div>
-	</div> -->
+	</div>
 
 	<!-- Container (Action Section - urgent) -->
+	<div class="w3-container w3-padding-32">
+		<div class="w3-content" id="bethnal-green-ltn">
+			<div class="w3-row w3-display-center w3-margin">
+				<p>
+					The Bethnal Green LTN is a low traffic neighbourhood in Bethnal Green, London. It extends from Old Bethnal Green Road to Columbia Road and Arnold Circus.
+				</p>
+				<p>
+					The LTN was implemented in 2021 as part of the Bethnal Green Liveable Streets scheme. It was designed to reduce traffic and improve air quality in the area.
+				</p>
+				<p>
+					The following video from Youtuber Evan Edinger gives an overview of the LTN, its history and our campaign to save it.
+				</p>
+				<div class="w3-content" style="max-width:560px"> 
+					<div class="video-container">
+						<iframe 
+							src="https://www.youtube.com/embed/RsuFzwUnT7I"
+							title="YouTube video player" 
+							frameborder="0"
+							allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen>
+					</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- <div class="w3-container w3-padding-32">
 		<div class="w3-content" id="action">
 			<div class="w3-row w3-display-center w3-margin">
